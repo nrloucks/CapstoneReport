@@ -1,0 +1,14 @@
+\BOOKMARK [1][-]{section.0.1}{Abstract}{}% 1
+\BOOKMARK [1][-]{section.0.2}{Acknowledgments}{}% 2
+\BOOKMARK [1][-]{section.0.3}{Student Statement}{}% 3
+\BOOKMARK [1][-]{section.0.4}{Research and Design}{}% 4
+\BOOKMARK [2][-]{subsection.0.4.1}{Supplying Power}{section.0.4}% 5
+\BOOKMARK [2][-]{subsection.0.4.2}{Raspberry Pi}{section.0.4}% 6
+\BOOKMARK [2][-]{subsection.0.4.3}{MQ6 LP Gas Sensor}{section.0.4}% 7
+\BOOKMARK [2][-]{subsection.0.4.4}{Testing the MQ6 gas sensor}{section.0.4}% 8
+\BOOKMARK [2][-]{subsection.0.4.5}{Python, Primary Programming Language}{section.0.4}% 9
+\BOOKMARK [2][-]{subsection.0.4.6}{Creating the Wireless Network between the Coordinator and Router modules}{section.0.4}% 10
+\BOOKMARK [2][-]{subsection.0.4.7}{Controlling the Router XBee with XCTU Remote AT Command}{section.0.4}% 11
+\BOOKMARK [2][-]{subsection.0.4.8}{Controlling XBee module using Python}{section.0.4}% 12
+\BOOKMARK [1][-]{section.0.5}{Problem Formulation}{}% 13
+\BOOKMARK [2][-]{subsection.0.5.1}{Problem Statement}{section.0.5}% 14

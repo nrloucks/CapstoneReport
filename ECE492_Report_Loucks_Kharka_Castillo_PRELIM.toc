@@ -1,0 +1,17 @@
+\contentsline {section}{\numberline {I}Abstract}{1}{section.0.1}% 
+\contentsline {section}{\numberline {II}Acknowledgments}{2}{section.0.2}% 
+\contentsline {section}{\numberline {III}Student Statement}{3}{section.0.3}% 
+\contentsline {section}{\numberline {IV}Research and Design}{5}{section.0.4}% 
+\contentsline {subsection}{\numberline {IV.1}Supplying Power}{5}{subsection.0.4.1}% 
+\contentsline {paragraph}{\normalsize LM317 Linear Voltage Regulator \hspace {1.5em}}{5}{figure.caption.2}% 
+\contentsline {paragraph}{\normalsize LM7805 5V Voltage Regulator}{6}{figure.caption.3}% 
+\contentsline {paragraph}{\normalsize Physical Construction of Modules}{7}{figure.caption.3}% 
+\contentsline {subsection}{\numberline {IV.2}Raspberry Pi}{8}{subsection.0.4.2}% 
+\contentsline {subsection}{\numberline {IV.3}MQ6 LP Gas Sensor}{9}{subsection.0.4.3}% 
+\contentsline {subsection}{\numberline {IV.4}Testing the MQ6 gas sensor}{10}{subsection.0.4.4}% 
+\contentsline {subsection}{\numberline {IV.5}Python, Primary Programming Language}{10}{subsection.0.4.5}% 
+\contentsline {subsection}{\numberline {IV.6}Creating the Wireless Network between the Coordinator and Router modules}{11}{subsection.0.4.6}% 
+\contentsline {subsection}{\numberline {IV.7}Controlling the Router XBee with XCTU Remote AT Command}{12}{subsection.0.4.7}% 
+\contentsline {subsection}{\numberline {IV.8}Controlling XBee module using Python}{13}{subsection.0.4.8}% 
+\contentsline {section}{\numberline {V}Problem Formulation}{15}{section.0.5}% 
+\contentsline {subsection}{\numberline {V.1}Problem Statement}{15}{subsection.0.5.1}% 
