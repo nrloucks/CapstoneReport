@@ -102,6 +102,13 @@
 	%############################################################################################################
 	%############################################################################################################
 	\section{Research and Design}
+		\subsection{The XBee S2C Module}
+		\par For the heart of this wireless system we decided to use the XBee IEEE 802.15.4 RF modules manufactured by Digi International. These light weight, low-power modules are idea for this type of system given the desired ranges and performance characteristics we were looking for. To make a suitable home security system, the transfer of information from point A to B must be fast but reliable, and without errors or interference. \par IEEE 802.15.4 standard is a member of the 802.15 group if standards for wireless personal area networks (WPAN) and is used for a wide variety of applications. In our case, the implementation of this standard in the XBee modules provides an adequate range, about 200 ft (60 m) in an indoor environment, as well as an adequate data transfer speed of 250 Kbps over the 2.4 GHz RF channel.     
+		\par The nodes we designed around the XBee modules are battery operated and thus must have relatively low power consumption. The XBee modules themselves draw a maximum of 45 mA when transmitting, 31 mA when receiving, and sell than 1 $\mu$A when in the powered down state. 
+		\par The XBee modules come complete with 15 I/O pins and multiple analog to digital converters. This makes them the perfect choice for data acquisition of remote transducers. 
+		\par XBee modules are available in a variety of form factors. We chose the XB24CAPIT form factor for out designs. Its antenna is intained within the PCB, while this may have less range than a wire antenna or U.fl add-on type of antenna, it provides excellent range for our application with minimal complexity. This model XBee is through-hole mounted, making initial designs and testing much easier that with a surface mount variety, though these occupy a smaller rectangular footprint. 
+		\par All of these considerations taken into account we decided that the XBee-XB24CAPIT would be the ideal communication module for the system we we have designed. \\
+		
 		\subsection{Supplying Power}
 			\begin{wrapfigure}[]{l}{2.5in}
 				\includegraphics[width=2in]{lm317.jpg}
@@ -120,31 +127,8 @@
 			\paragraph{\normalsize LM7805 5V Voltage Regulator}
 			To power our devices that require a 5 volt source such as the MQ-6 LP gas sensor, we chose to design a circuit around the LM7805 voltage regulator. This regulator has an input range of 5 to 18 volts, ideal for out 6 volt battery packs, and produces a constant 5 volt output. 
 			
-			\newpage
-			\paragraph{\normalsize Physical Construction of Modules} The modules themselves will be constructed on 6x8 cm perf-board and will be contained in a housing. Each module will contain all circuitry necessary including power, data acquisition and transmission. 
-			\begin{figure}[h!]
-				\centering
-				\begin{subfigure}[t]{0.45\textwidth}
-					\centering
-					\includegraphics[height=1.5in]{module_gas.jpg}
-					\caption{Gas Module}
-				\end{subfigure}
-				\begin{subfigure}[t]{0.45\textwidth}
-					\centering
-					\includegraphics[height=1.5in]{module_motion.jpg}
-					\caption{Motion Module}
-				\end{subfigure}
-				\caption{Physical construction of modules}
-			\end{figure}
-			\par The gas sensor module requires two power supplies, one 3.3 volts to power the XBee itself and 5 volts to operate the gas transducer. \\
-			\par Our system consists of 4 separate modules:
-			\begin{itemize}
-				\item Coordinator Module - Connects directly to the PC, connects to user interface and controls messages between subsequent end point modules. 
-				\item LP Gas Module - A liquid petroleum gas sensor to detect gas leaks in the home. Can detect a wide range of flammable gasses commonly found a typical home.
-				\item Motion Sensing Module - The motion sensing module will detect movement and trigger a system response to suit. The Motion module is stand alone to allow the as much freedom of placement as possible.
-				\item Door Camera/Lock Module - This module, when directed to do so, can take an image of the area as well as lock the door automatically. This is the most complicated module in the system and includes a Raspberry Pi to transfer frames over the local area network.
-			\end{itemize}
-		\newpage
+
+			
 	\subsection{Raspberry Pi}
 	\par The Raspberry Pi 3 Model A+ is the latest product in the Raspberry Pi 3 range, weighing in at just 29 g. Like the Raspberry Pi 3 Model B+, it boasts a 64-bit quad core processor running at 1.4?GHz, dual-band 2.4?GHz and 5?GHz wireless LAN, and Bluetooth 4.2/BLE. The dual-band wireless LAN comes with modular compliance certification, allowing the board to be designed into end products with significantly reduced wireless LAN compliance testing, improving both cost and time to market. The Raspberry Pi 3 Model A+ has the same mechanical footprint as the older Raspberry Pi 1 Model A+.
 	\begin{figure}
@@ -152,48 +136,64 @@
 		\includegraphics[width=3in]{rasPi.png}
 		\caption{Raspberry Pi 3 Model A+}
 	\end{figure}
-	\begin{itemize}
-		\item Processor 
-		\begin{itemize}
-			\item Broadcom BCM2837B0, Cortex-A53
-			\item 64-bit SoC @ 1.4 GHz
-		\end{itemize}
-		\item Memory
-		\begin{itemize}
-			\item 512MB LPDDR2 SDRAM
-		\end{itemize}
-		\item Connectivity
-		\begin{itemize}
-			\item 2.4 GHz and 5 GHz IEEE 802.11.b/g/n/ac wireless LAN
-			\item Bluetooth 4.2/BLE
-		\end{itemize}
-		\item Data and I/O interfacing
-		\begin{itemize}
-			\item Extended 40-pin GPIO header
-		\end{itemize}
-		\item Video and Sound
-		\begin{itemize}
-			\item 1x HDMI
-			\item MIPI DSI display port
-			\item MIPI CSI camera port
-			\item 4 pole stereo output and composite video port
-		\end{itemize}
-		\item Multimedia 
-		\begin{itemize}
-			\item H.264, MPEG-4 decode (1080p30)
-			\item H.264 encode (1080p30)
-			\item OpenGL ES 1.1, 2.0 graphics
-		\end{itemize}
-		\item SD card Support
-		\begin{itemize}
-			\item Micro SD format for loading operating system and data storage
-		\end{itemize}
-		\item Input Power Specifications
-		\begin{itemize}
-			\item 5 V/2.5 A DC via micro USB connector
-			\item 5 V DC via GPIO header
-		\end{itemize}
-	\end{itemize}
+	\subsection{Raspberry Pi Camera (Hardware and Software)}
+	\par The Raspberry Pi Camera v2 is the new official camera board released by the Raspberry Pi Foundation. The Raspberry Pi Camera Module v2 is a high quality 8 megapixel Sony IMX219 imagesensor custom designed add-on board for Raspberry Pi, featuring a fixed focus lens. It's capable of 3280 x 2464 pixel static images, and also supports 1080p30, 720p60 and 640x480p90 video. It attaches to Pi by way of one of the small sockets on the board upper surface and uses the dedicated CSi interface, designed especially for interfacing to cameras.
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=2in]{picam.jpg}
+		\caption{PiCamera Python Module}
+	\end{figure}
+	\par This package provides a pure Python interface to the Raspberry Pi camera module for Python 2.7 (or above) or Python 3.2 (or above).
+	\footnote{PiCamera https://picamera.readthedocs.io/en/release-1.13/recipes1.html}
+	\par This package provides a pure Python interface to the Raspberry Pi camera module for Python 2.7 (or above) or Python 3.2 (or above).It can configure resolution and give different dimensions to the video or picture files. It can also take photos under varying conditions if given the right parameters for a camera to take a good picture under different conditions such as lighting conditions. 
+	The code for the camera is as follows
+	\begin{figure}
+		\includegraphics[width=2.3in]{camcode1.jpg}\\
+		\includegraphics[width=\textwidth]{camcode2.jpg}
+	\end{figure}
+	
+%	\begin{itemize}
+%		\item Processor 
+%		\begin{itemize}
+%			\item Broadcom BCM2837B0, Cortex-A53
+%			\item 64-bit SoC @ 1.4 GHz
+%		\end{itemize}
+%		\item Memory
+%		\begin{itemize}
+%			\item 512MB LPDDR2 SDRAM
+%		\end{itemize}
+%		\item Connectivity
+%		\begin{itemize}
+%			\item 2.4 GHz and 5 GHz IEEE 802.11.b/g/n/ac wireless LAN
+%			\item Bluetooth 4.2/BLE
+%		\end{itemize}
+%		\item Data and I/O interfacing
+%		\begin{itemize}
+%			\item Extended 40-pin GPIO header
+%		\end{itemize}
+%		\item Video and Sound
+%		\begin{itemize}
+%			\item 1x HDMI
+%			\item MIPI DSI display port
+%			\item MIPI CSI camera port
+%			\item 4 pole stereo output and composite video port
+%		\end{itemize}
+%		\item Multimedia 
+%		\begin{itemize}
+%			\item H.264, MPEG-4 decode (1080p30)
+%			\item H.264 encode (1080p30)
+%			\item OpenGL ES 1.1, 2.0 graphics
+%		\end{itemize}
+%		\item SD card Support
+%		\begin{itemize}
+%			\item Micro SD format for loading operating system and data storage
+%		\end{itemize}
+%		\item Input Power Specifications
+%		\begin{itemize}
+%			\item 5 V/2.5 A DC via micro USB connector
+%			\item 5 V DC via GPIO header
+%		\end{itemize}
+%	\end{itemize}
 	\subsection{MQ6 LP Gas Sensor}
 	\par The MQ-6 gas sensor is a highly sensitive sensor designed to detect different atmospheric gases, such as propane, butane and other LPG (Liquid Petroleum Gas), also response to natural gas. It can also detect different some other combustible gases, notably methane. The sensor's conductivity changes proportional to the ambient gas concentration. The relatively low cost and wide range of detection make it an excellent choice for our system. The MQ-6 sensor operates at 5-volts.
 	\begin{figure}[h!]
@@ -238,6 +238,31 @@
 	\end{equation}
 	\[R1 = 16150 \Omega\]
 	
+	\paragraph{\normalsize Physical Construction of Modules} The modules themselves will be constructed on 6x8 cm perf-board and will be contained in a housing. Each module will contain all circuitry necessary including power, data acquisition and transmission. 
+	\begin{figure}[h!]
+		\centering
+		\begin{subfigure}[t]{0.45\textwidth}
+			\centering
+			\includegraphics[height=1.5in]{module_gas.jpg}
+			\caption{Gas Module}
+		\end{subfigure}
+		\begin{subfigure}[t]{0.45\textwidth}
+			\centering
+			\includegraphics[height=1.5in]{module_motion.jpg}
+			\caption{Motion Module}
+		\end{subfigure}
+		\caption{Physical construction of modules}
+	\end{figure}
+	\par The gas sensor module requires two power supplies, one 3.3 volts to power the XBee itself and 5 volts to operate the gas transducer. \\
+	\par Our system consists of 4 separate modules:
+	\begin{itemize}
+		\item Coordinator Module - Connects directly to the PC, connects to user interface and controls messages between subsequent end point modules. 
+		\item LP Gas Module - A liquid petroleum gas sensor to detect gas leaks in the home. Can detect a wide range of flammable gasses commonly found a typical home.
+		\item Motion Sensing Module - The motion sensing module will detect movement and trigger a system response to suit. The Motion module is stand alone to allow the as much freedom of placement as possible.
+		\item Door Camera/Lock Module - This module, when directed to do so, can take an image of the area as well as lock the door automatically. This is the most complicated module in the system and includes a Raspberry Pi to transfer frames over the local area network.
+	\end{itemize}
+
+	
 	\subsection{Python, Primary Programming Language}
 	Python is an interpreted, interactive, object-oriented programming language. It incorporates modules, exceptions, dynamic typing, very high-level dynamic data types, and classes. Python combines remarkable power with very clear syntax. It has interfaces to many system calls and libraries, as well as to various window systems, and is extensible in C or C++. It is also usable as an extension language for applications that need a programmable interface. Finally, Python is portable: it runs on many Unix variants, on the Mac, and on Windows 2000 and later.
 	\subsection{Creating the Wireless Network between the Coordinator and Router modules}
@@ -247,7 +272,6 @@
 		\includegraphics[width = 0.3\textwidth]{xbeeMiniExplorer.png}
 		\caption{Small XBee interface to be used in each module}
 	\end{figure}
-	\newpage
 	\subsection{Controlling the Router XBee with XCTU Remote AT Command}
 	\par We decided to test our router XBee remotely by sending some AT Commands remotely. We used the XCTU application to first create the Remote AT Command to turn on and off pin 18 of the router Xbee. To see if we receive any output, we put an LED to see if the pin was turned on or not. In the figure below you can see the LED turning on and off via Pin 18 of the Xbee device. The pictures help visualize what the pin is doing corresponding to the LED.
 	\begin{figure}[h!]
@@ -327,14 +351,6 @@
 		count = count + 1
 	\end{lstlisting}
 
-		
-	\section{Problem Formulation}
-		\subsection{Problem Statement}
-		\par Home Security systems can be expensive and require monthly payments to have installed and to monitor your homes. These systems can be very inexpensive and should not have to require “professional installers” to implement into your home. There is no way to properly monitor if systems are working correctly in the home you are living in. One way to access that information of your house is through the home security automation. Security not only means being protected from outside danger as one would normally think. However, there are other factors that play into being “Safe”. In a home there are systems such as heating, and cooking that can pose danger to tenants if not properly take care of or monitored. If there is a gas leak, then that means that the system is flawed and could cause enough issues to be fatal to those living in the house. Through the security system it makes the user aware of the gas levels in the house and it determines if there is cause for concern/alarm, or if it just means that the tenant is cooking. 
-	
 	\listoffigures
-			
-		
-		
 			
 \end{document}
