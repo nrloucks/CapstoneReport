@@ -16,10 +16,14 @@
 \usepackage{listings}
 \usepackage{color}
 \usepackage{subcaption}
+\usepackage[style=ieee]{biblatex}
+
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
 
+
+% DEFINE LISTING STYLE FOR CODE BLOCKS
 \lstset{frame=tb,
 	language=Python,
 	aboveskip=3mm,
@@ -37,14 +41,33 @@
 	tabsize=3
 }
 
+% DEFINE TITLE, SECTION & SUBSECTION STYLES
 \renewcommand\thepart{\Arabic{part}}
 \renewcommand\thesection{\Roman{section}}
-
-
 \titleclass{\section}{top}
 %\titleformat{command}[shape]{format}{label}{sep}{before-code}[after-code]
 \titleformat{\section}{\titlerule\centering\LARGE\bfseries}{\thesection{}}{5pt}{}
 \titleformat{\subsection}{\Large\bfseries}{}{0pt}{}
+
+
+% 5/4/20 from Mario
+% Adding new sections:
+% 1- Add an "Introduction" section where you describe the general idea of the project and its objective. I think your Abstract section can be renamed as an Introduction section, and you can write a more concise Abstract at the % beginning. Abstract should be around 150-200 words at most.
+% 2- You need to add a section on Performance Results, where you show the graphs of the gas sensor, light sensor and the measurement from the camera (or the audio measurements).
+% 3- You need to add a Conclusion and a Bibliography section. References should be listed in a Bibliography section at the end of the report (and not as Footnotes). You can use in-text citation to refer to each bibliography item in the text.
+
+% Missing parts:
+% 1- There was no discussion about the motion sensor. This section should be added, in addition to the code that was used to read digital data.
+% 2- You need to add the detailed computation of the gas sensor and PPM measurements (from Ashish's report).
+% 3- You need to add a section including the Python codes that were used to read both analog and digital data, explaining briefly the function of each code.
+% 4- Include a block diagram showing the connection among the different system components (Raspberry Pi to sensors, etc.)
+
+% Report structure:
+% 1- You need to add references for the Zigbee protocol in section IV
+% 2- In page 6 (Raspberry Pi), remove the question mark before GHz
+% 3- List of figures, page 15, should be moved after the table of content.
+
+% Please try to make these changes and send me your final report by May 8th.
 
 \begin{document}
 	\begin{titlepage}
@@ -65,9 +88,14 @@
 		\end{center}
 	\end{titlepage}
 	\newpage
-	%############################################################################################################
-	%############################################################################################################
-		\section{Abstract}
+	%########################################################################################################################################################################################################################
+	\section{Abstract}
+	{
+	\centering
+	**TODO**\\
+	Concise version of what now is the Introduction
+	}
+	\section{Introduction}
 	\par Home security systems are becoming a staple for home owners in America. The expansion of the embedded systems market over the past few decades has made microprocessors and embedded RF communication commonplace in today's society. Most cell phones today contain several of these devices with WiFi, Bluetooth, GSM, and even satellite navigation right in your pocket. In the home, many people are using “Smart Home” devices such as voice assistants, automated thermostats and light switches. As these devices have gained a significant amount of popularity in recent years, “Smart” home security is also a rapidly growing trend. 
 	\par There are a plethora of viral videos out there showing footage of criminal activity occurring right outside someone's home, without their home security system they may have never been alerted to any potential danger. 
 	\par In a study released in 2010\footnote{
@@ -84,22 +112,24 @@
 	\par Most modern security systems have sensors that can detect carbon monoxide and motion or glass-break, and record and send live video for the user to view remotely. This provides a safer living environment for the occupants when they’re home or away, as well as peace of mind. Major security companies often require a service or subscription that a user pays periodically, as well as relatively complicated installation.  
 	\par An inexpensive and easy to use home security system would let the user take control of their own home security. Making erstwhile wired sensors operate over a wireless channel would allow for the greatest ease of use for a typical consumer. 
 	\par Using XBee RF modules and a Raspberry Pi, one can create their own automated home security system with the aforementioned functionalities. The XBee modules are used as communication devices that report sensor data back to a main unit, housing a system that processes the data and responds accordingly.The Raspberry Pi will serve as the main control unit to coordinate the signals coming from each sensor module, as well as transmit  or store video depending on user configuration.. The goal of this project is to create an automated home security system that is inexpensive yet delivers the user a range of  key capabilities to help protect their home and loved ones from preventable harm. 
-	%############################################################################################################
-	%############################################################################################################
+	%########################################################################################################################################################################################################################
 	\section{Acknowledgments}
 	\par We would like to express our gratitude to Mario Bkassiny, for his constant support and guidance.  \\
 	\par Our sincere thanks goes to Dennis Quill for all his help with parts as well as his expertise on working with Raspberry Pi devices. \\
 	\par Finally we would like to thank the ECE department as a whole for providing the resources necessary to make this research possible despite having to work remotely due to the unique circumstances of the spring 2020 semester. Without the planning and preparation made by the ECE department this project and many others would not have been possible. 
-	%############################################################################################################
+	%########################################################################################################################################################################################################################
 	%############################################################################################################
 	\section{Student Statement}
 	As one of the final steps in the pursuit of our degrees, this project has been a long but rewarding process. The Spring 2020 semester was significantly impacted by the COVID-19 outbreak. 
 	\par All of us, students and staff, were required to come up contingencies on short notice to facilitate the completion of our projects. As a result we needed to find solutions not only to the problems initially proposed, but also to the new problems created by the aberrant situation. 
 	\par Our erstwhile well planned timeline was thrown entirely out the window. Luckily, we had been ahead of schedule prior to the transition to remote collaboration. Within a short time we had a tentative plan to bring our system to fruition. Ultimately our end product lacks some functionality that was initially proposed due to a variety of extenuating factors, beyond our control. 
+	%########################################################################################################################################################################################################################
 	%############################################################################################################
-	%############################################################################################################
+	
 	\tableofcontents
-	%############################################################################################################
+	\listoffigures
+	
+	%########################################################################################################################################################################################################################
 	%############################################################################################################
 	\section{Research and Design}
 		\subsection{The XBee S2C Module}
@@ -108,27 +138,8 @@
 		\par The XBee modules come complete with 15 I/O pins and multiple analog to digital converters. This makes them the perfect choice for data acquisition of remote transducers. 
 		\par XBee modules are available in a variety of form factors. We chose the XB24CAPIT form factor for out designs. Its antenna is intained within the PCB, while this may have less range than a wire antenna or U.fl add-on type of antenna, it provides excellent range for our application with minimal complexity. This model XBee is through-hole mounted, making initial designs and testing much easier that with a surface mount variety, though these occupy a smaller rectangular footprint. 
 		\par All of these considerations taken into account we decided that the XBee-XB24CAPIT would be the ideal communication module for the system we we have designed. \\
+	%########################################################################################################################################################################################################################
 		
-		\subsection{Supplying Power}
-			\begin{wrapfigure}[]{l}{2.5in}
-				\includegraphics[width=2in]{lm317.jpg}
-				\caption{\small LM317 Linear Regulator (TH)}
-			\end{wrapfigure}
-			\paragraph{\normalsize LM317 Linear Voltage Regulator \hspace{1.5em}} 
-			The LM317 is an IC designed to maintain a constant voltage level. Voltage regulators usually have an input voltage range, but for the LM317 voltage regulator, the range is not specified because it has no ground connection. It has an output voltage range from 1.2 V to 37 V at 1.5 A. Since it is a linear regulator, the output voltage is always lower than input. The LM317 is used in our project to power the XBee modules which require a supply voltage between 2.1 V and 3.6 V. We designed a circuit incorporating the LM317 to output 3.3 V, which is ideal to power our devices. \\ 
-			\begin{figure}[h]
-				\centering
-				\includegraphics[width=3in]{33vsource.jpg}
-				\caption{Complete power supply circuit.}
-				\label{3v_circuit}
-			\end{figure}
-			\par As in figure \ref{3v_circuit}, the values we know are V\textsubscript{o} = 1.2 V, V\textsubscript{out} = 3.3 V and setting R1 = 330 $\Omega$.  The value of Iadj is very small hence it can have considered negligible. The value of R2 came to 550 $\Omega$. We then added the C1 = 100 $\mu$F, C2 = 0.1 $\mu$F and C3 = 10 $\mu$F for the improvement of transient response of a system to change from steady state. 
-			
-			\paragraph{\normalsize LM7805 5V Voltage Regulator}
-			To power our devices that require a 5 volt source such as the MQ-6 LP gas sensor, we chose to design a circuit around the LM7805 voltage regulator. This regulator has an input range of 5 to 18 volts, ideal for out 6 volt battery packs, and produces a constant 5 volt output. 
-			
-
-			
 	\subsection{Raspberry Pi}
 	\par The Raspberry Pi 3 Model A+ is the latest product in the Raspberry Pi 3 range, weighing in at just 29 g. Like the Raspberry Pi 3 Model B+, it boasts a 64-bit quad core processor running at 1.4?GHz, dual-band 2.4?GHz and 5?GHz wireless LAN, and Bluetooth 4.2/BLE. The dual-band wireless LAN comes with modular compliance certification, allowing the board to be designed into end products with significantly reduced wireless LAN compliance testing, improving both cost and time to market. The Raspberry Pi 3 Model A+ has the same mechanical footprint as the older Raspberry Pi 1 Model A+.
 	\begin{figure}
@@ -136,6 +147,8 @@
 		\includegraphics[width=3in]{rasPi.png}
 		\caption{Raspberry Pi 3 Model A+}
 	\end{figure}
+	%########################################################################################################################################################################################################################
+	
 	\subsection{Raspberry Pi Camera (Hardware and Software)}
 	\par The Raspberry Pi Camera v2 is the new official camera board released by the Raspberry Pi Foundation. The Raspberry Pi Camera Module v2 is a high quality 8 megapixel Sony IMX219 imagesensor custom designed add-on board for Raspberry Pi, featuring a fixed focus lens. It's capable of 3280 x 2464 pixel static images, and also supports 1080p30, 720p60 and 640x480p90 video. It attaches to Pi by way of one of the small sockets on the board upper surface and uses the dedicated CSi interface, designed especially for interfacing to cameras.
 	\begin{figure}[h]
@@ -151,7 +164,32 @@
 		\includegraphics[width=2.3in]{camcode1.jpg}\\
 		\includegraphics[width=\textwidth]{camcode2.jpg}
 	\end{figure}
+	%########################################################################################################################################################################################################################
 	
+	\subsection{Python, Primary Programming Language}
+	Python is an interpreted, interactive, object-oriented programming language. It incorporates modules, exceptions, dynamic typing, very high-level dynamic data types, and classes. Python combines remarkable power with very clear syntax. It has interfaces to many system calls and libraries, as well as to various window systems, and is extensible in C or C++. It is also usable as an extension language for applications that need a programmable interface. Finally, Python is portable: it runs on many Unix variants, on the Mac, and on Windows 2000 and later.
+	%########################################################################################################################################################################################################################
+	
+	\subsection{Supplying Power}
+	\begin{wrapfigure}[]{l}{2.5in}
+		\includegraphics[width=2in]{lm317.jpg}
+		\caption{\small LM317 Linear Regulator (TH)}
+	\end{wrapfigure}
+	\paragraph{\normalsize LM317 Linear Voltage Regulator \hspace{1.5em}} 
+	The LM317 is an IC designed to maintain a constant voltage level. Voltage regulators usually have an input voltage range, but for the LM317 voltage regulator, the range is not specified because it has no ground connection. It has an output voltage range from 1.2 V to 37 V at 1.5 A. Since it is a linear regulator, the output voltage is always lower than input. The LM317 is used in our project to power the XBee modules which require a supply voltage between 2.1 V and 3.6 V. We designed a circuit incorporating the LM317 to output 3.3 V, which is ideal to power our devices. \\ 
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=3in]{33vsource.jpg}
+		\caption{Complete power supply circuit.}
+		\label{3v_circuit}
+	\end{figure}
+	\par As in figure \ref{3v_circuit}, the values we know are V\textsubscript{o} = 1.2 V, V\textsubscript{out} = 3.3 V and setting R1 = 330 $\Omega$.  The value of Iadj is very small hence it can have considered negligible. The value of R2 came to 550 $\Omega$. We then added the C1 = 100 $\mu$F, C2 = 0.1 $\mu$F and C3 = 10 $\mu$F for the improvement of transient response of a system to change from steady state. 
+	
+	\paragraph{\normalsize LM7805 5V Voltage Regulator}
+	To power our devices that require a 5 volt source such as the MQ-6 LP gas sensor, we chose to design a circuit around the LM7805 voltage regulator. This regulator has an input range of 5 to 18 volts, ideal for out 6 volt battery packs, and produces a constant 5 volt output. 
+
+
+%%%% REMOVED DETAILED LIST OF RASBERRY PI FEATURES	
 %	\begin{itemize}
 %		\item Processor 
 %		\begin{itemize}
@@ -194,6 +232,8 @@
 %			\item 5 V DC via GPIO header
 %		\end{itemize}
 %	\end{itemize}
+
+	\section{Environment Monitoring Hardware}
 	\subsection{MQ6 LP Gas Sensor}
 	\par The MQ-6 gas sensor is a highly sensitive sensor designed to detect different atmospheric gases, such as propane, butane and other LPG (Liquid Petroleum Gas), also response to natural gas. It can also detect different some other combustible gases, notably methane. The sensor's conductivity changes proportional to the ambient gas concentration. The relatively low cost and wide range of detection make it an excellent choice for our system. The MQ-6 sensor operates at 5-volts.
 	\begin{figure}[h!]
@@ -263,8 +303,6 @@
 	\end{itemize}
 
 	
-	\subsection{Python, Primary Programming Language}
-	Python is an interpreted, interactive, object-oriented programming language. It incorporates modules, exceptions, dynamic typing, very high-level dynamic data types, and classes. Python combines remarkable power with very clear syntax. It has interfaces to many system calls and libraries, as well as to various window systems, and is extensible in C or C++. It is also usable as an extension language for applications that need a programmable interface. Finally, Python is portable: it runs on many Unix variants, on the Mac, and on Windows 2000 and later.
 	\subsection{Creating the Wireless Network between the Coordinator and Router modules}
 	\par We wanted to create a wireless network between the coordinator and router modules this time. Firstly, we started off with soldering our XBee Explorer to connect our router modules on top of them. The reason we chose Xbee Explorer was because it will allow us to solder the input power voltage and the output pins that will be connected to the sensors. We used the application XCTU to help us set up each Xbee as a coordinator or router modules. We first set our coordinator in API mode that will allow us to communicate directly with the sensors via router modules. At the same time, we set the other three router modules to be in a AT or Transparent mode. This will allow sensors to send data directly to the coordinator. We also made sure all the XBee modules used the same Channel and Personal area network (PAN) ID. 
 	\begin{figure}[h]
@@ -351,6 +389,6 @@
 		count = count + 1
 	\end{lstlisting}
 
-	\listoffigures
+	
 			
 \end{document}

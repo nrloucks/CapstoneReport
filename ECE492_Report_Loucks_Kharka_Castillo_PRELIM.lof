@@ -2,14 +2,15 @@
 \ttl@tocsep 
 \ttl@tocsep 
 \ttl@tocsep 
-\contentsline {figure}{\numberline {1}{\ignorespaces \small LM317 Linear Regulator (TH)\relax }}{5}{figure.caption.2}% 
-\contentsline {figure}{\numberline {2}{\ignorespaces Complete power supply circuit.\relax }}{6}{figure.caption.3}% 
-\contentsline {figure}{\numberline {3}{\ignorespaces Raspberry Pi 3 Model A+\relax }}{7}{figure.caption.4}% 
-\contentsline {figure}{\numberline {4}{\ignorespaces PiCamera Python Module\relax }}{7}{figure.caption.5}% 
-\contentsline {figure}{\numberline {5}{\ignorespaces MQ6 Gas Sensor\relax }}{8}{figure.caption.7}% 
-\contentsline {figure}{\numberline {6}{\ignorespaces Simple LED activation over 802.15.4 (2)\relax }}{9}{figure.caption.8}% 
-\contentsline {figure}{\numberline {7}{\ignorespaces Physical construction of modules\relax }}{10}{figure.caption.9}% 
-\contentsline {figure}{\numberline {8}{\ignorespaces Small XBee interface to be used in each module\relax }}{11}{figure.caption.10}% 
-\contentsline {figure}{\numberline {9}{\ignorespaces Simple LED activation over 802.15.4\relax }}{12}{figure.caption.11}% 
-\contentsline {figure}{\numberline {10}{\ignorespaces Simple LED activation over 802.15.4 (2)\relax }}{12}{figure.caption.12}% 
-\contentsline {figure}{\numberline {11}{\ignorespaces API Frames created in XCTU\relax }}{13}{figure.caption.13}% 
+\ttl@tocsep 
+\contentsline {figure}{\numberline {1}{\ignorespaces \small LM317 Linear Regulator (TH)\relax }}{6}{figure.caption.2}% 
+\contentsline {figure}{\numberline {2}{\ignorespaces Complete power supply circuit.\relax }}{7}{figure.caption.3}% 
+\contentsline {figure}{\numberline {3}{\ignorespaces Raspberry Pi 3 Model A+\relax }}{8}{figure.caption.4}% 
+\contentsline {figure}{\numberline {4}{\ignorespaces PiCamera Python Module\relax }}{8}{figure.caption.5}% 
+\contentsline {figure}{\numberline {5}{\ignorespaces MQ6 Gas Sensor\relax }}{9}{figure.caption.7}% 
+\contentsline {figure}{\numberline {6}{\ignorespaces Simple LED activation over 802.15.4 (2)\relax }}{10}{figure.caption.8}% 
+\contentsline {figure}{\numberline {7}{\ignorespaces Physical construction of modules\relax }}{11}{figure.caption.9}% 
+\contentsline {figure}{\numberline {8}{\ignorespaces Small XBee interface to be used in each module\relax }}{12}{figure.caption.10}% 
+\contentsline {figure}{\numberline {9}{\ignorespaces Simple LED activation over 802.15.4\relax }}{13}{figure.caption.11}% 
+\contentsline {figure}{\numberline {10}{\ignorespaces Simple LED activation over 802.15.4 (2)\relax }}{13}{figure.caption.12}% 
+\contentsline {figure}{\numberline {11}{\ignorespaces API Frames created in XCTU\relax }}{14}{figure.caption.13}% 
