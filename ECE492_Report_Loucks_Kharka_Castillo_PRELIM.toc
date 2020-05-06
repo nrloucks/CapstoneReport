@@ -43,3 +43,5 @@
 \contentsline {subsection}{\numberline {VIII.2}Controlling the Router XBee with XCTU Remote AT Command}{13}{subsection.0.8.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {VIII.3}Controlling XBee module using Python}{15}{subsection.0.8.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Appendices}{17}{section*.17}% 

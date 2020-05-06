@@ -16,6 +16,10 @@
 \usepackage[export]{adjustbox}
 \usepackage[shortlabels]{enumitem}
 
+%For adding PDF final cover & datasheets
+\usepackage{pdfpages}
+\usepackage[toc,page]{appendix}
+
 %For bibliography 
 \usepackage[backend=bibtex,style=ieee]{biblatex}
 \addbibresource{refs.bib}
@@ -56,11 +60,12 @@
 % Titlesec - for formatting section and subsection headings
 \usepackage{titlesec}
 	% format title, section, subsection, etc.
-	\renewcommand\thepart{\Arabic{part}}
+
 	\renewcommand\thesection{\Roman{section}}
 	\titleclass{\section}{top}
 	\titleformat{\section}{\titlerule\centering\LARGE\bfseries}{\thesection{}}{5pt}{}
 	\titleformat{\subsection}{\Large\bfseries}{}{0pt}{}
+	\appendicestocpagenum
 
 
 % 5/4/20 from Mario
@@ -134,9 +139,9 @@
 			\includegraphics[height=1.5in]{module_motion.jpg}
 			\caption{Motion Module}
 		\end{subfigure}
-		\caption{Physical construction of modules}
+		\caption{Internals of Gas (a), and Motion (b) sensing units}
 	\end{figure}
-	\par The gas sensor module requires two power supplies, one 3.3 volts to power the XBee itself and 5 volts to operate the gas transducer. \\
+	\par The gas sensor module requires two power supplies, one 3.3 volts to power the XBee itself and 5 volts to operate the Tin Dioxide (SnO2) gas sensor. \\
 	\par Our system consists of 4 separate modules:
 	\begin{itemize}
 		\item Coordinator Module - Connects directly to the PC, connects to user interface and controls messages between subsequent end point modules. 
@@ -154,7 +159,7 @@
 		\caption{Small XBee interface to be used in each module}
 	\end{figure}
 	\subsection{Controlling the Router XBee with XCTU Remote AT Command}
-	\par We decided to test our router XBee remotely by sending some AT Commands remotely. We used the XCTU application to first create the Remote AT Command to turn on and off pin 18 of the router Xbee. To see if we receive any output, we put an LED to see if the pin was turned on or not. In the figure below you can see the LED turning on and off via Pin 18 of the Xbee device. The pictures help visualize what the pin is doing corresponding to the LED.
+	\par We decided to test our router XBee remotely by sending some AT Commands. We used the XCTU application to first create the Remote AT Command to turn on and off pin 18 of the router XBee. To see if we receive any output, we put an LED to see if the pin was turned on or not. In the figure below you can see the LED turning on and off via Pin 18 of the XBee device. The pictures help visualize what the pin is doing corresponding to the LED.
 	\begin{figure}[h!]
 		\centering
 		\begin{subfigure}[t]{0.45\textwidth}
@@ -233,4 +238,23 @@
 	\end{lstlisting}
 	
 	\printbibliography		
+
+	\begin{appendices}
+		\begin{center}
+			\textbf{\vspace{0.35\textheight}\Huge Appendix A\label{mq6:MDS} \\MQ-6 LPG Sensor Data-sheet}
+			\newpage
+		\end{center}
+		\includepdf{MQ6.pdf}
+		
+		\begin{center}
+			\textbf{\vspace{0.35\textheight}\Huge Appendix B\label{PIR:MDS} \\Parallax PIR Motion Sensor Data-sheet}
+			\newpage
+		\end{center}
+		\includepdf{PIRMDS.pdf}
+
+		\begin{center}
+			\textbf{\vspace{0.35\textheight}\Huge Appendix C\label{refs} \\Included Reference}
+			\newpage
+		\end{center}
+	\end{appendices}	
 \end{document}

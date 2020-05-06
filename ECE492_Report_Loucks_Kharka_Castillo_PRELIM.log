@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.7)  6 MAY 2020 00:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.7)  6 MAY 2020 03:04
 entering extended mode
 **./ECE492_Report_Loucks_Kharka_Castillo_PRELIM.tex
 (ECE492_Report_Loucks_Kharka_Castillo_PRELIM.tex
@@ -252,6 +252,56 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@count@id=\count128
 \enitdp@description=\count129
 )
+(C:\Users\Nathan\AppData\Roaming\MiKTeX\2.9\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2020/01/28 v0.5q Insert pages of external PDF documents (AM)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\calc.sty"
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count130
+\calc@Bcount=\count131
+\calc@Adimen=\dimen146
+\calc@Bdimen=\dimen147
+\calc@Askip=\skip46
+\calc@Bskip=\skip47
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count132
+\calc@Cskip=\skip48
+)
+(C:\Users\Nathan\AppData\Roaming\MiKTeX\2.9\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\atbegshi.sty"
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+\AM@pagewidth=\dimen148
+\AM@pageheight=\dimen149
+
+(C:\Users\Nathan\AppData\Roaming\MiKTeX\2.9\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box57
+\AM@global@opts=\toks20
+\AM@pagecnt=\count133
+\AM@toc@title=\toks21
+\c@AM@survey=\count134
+\AM@templatesizebox=\box58
+)
+(C:\Users\Nathan\AppData\Roaming\MiKTeX\2.9\tex/latex/appendix\appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count135
+\c@@ppsavesec=\count136
+\c@@ppsaveapp=\count137
+)
 (C:\Users\Nathan\AppData\Roaming\MiKTeX\2.9\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
 
@@ -259,15 +309,9 @@ Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
 Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\infwarerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifluatex.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ltxcmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -276,7 +320,7 @@ Package pdftexcmds Info: \pdfdraftmode found.
 )
 (C:\Users\Nathan\AppData\Roaming\MiKTeX\2.9\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count130
+\etb@tempcnta=\count138
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
@@ -289,73 +333,70 @@ Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 )))
 (C:\Users\Nathan\AppData\Roaming\MiKTeX\2.9\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count131
+\lrq@indent=\count139
 
 (C:\Users\Nathan\AppData\Roaming\MiKTeX\2.9\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
 (C:\Users\Nathan\AppData\Roaming\MiKTeX\2.9\tex/latex/url\url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count132
-\c@listtotal=\count133
-\c@listcount=\count134
-\c@liststart=\count135
-\c@liststop=\count136
-\c@citecount=\count137
-\c@citetotal=\count138
-\c@multicitecount=\count139
-\c@multicitetotal=\count140
-\c@instcount=\count141
-\c@maxnames=\count142
-\c@minnames=\count143
-\c@maxitems=\count144
-\c@minitems=\count145
-\c@citecounter=\count146
-\c@maxcitecounter=\count147
-\c@savedcitecounter=\count148
-\c@uniquelist=\count149
-\c@uniquename=\count150
-\c@refsection=\count151
-\c@refsegment=\count152
-\c@maxextratitle=\count153
-\c@maxextratitleyear=\count154
-\c@maxextraname=\count155
-\c@maxextradate=\count156
-\c@maxextraalpha=\count157
-\c@abbrvpenalty=\count158
-\c@highnamepenalty=\count159
-\c@lownamepenalty=\count160
-\c@maxparens=\count161
-\c@parenlevel=\count162
-\blx@tempcnta=\count163
-\blx@tempcntb=\count164
-\blx@tempcntc=\count165
-\blx@maxsection=\count166
-\blx@maxsegment@0=\count167
-\blx@notetype=\count168
-\blx@parenlevel@text=\count169
-\blx@parenlevel@foot=\count170
-\blx@sectionciteorder@0=\count171
-\blx@entrysetcounter=\count172
-\labelnumberwidth=\skip46
-\labelalphawidth=\skip47
-\biblabelsep=\skip48
-\bibitemsep=\skip49
-\bibnamesep=\skip50
-\bibinitsep=\skip51
-\bibparsep=\skip52
-\bibhang=\skip53
+\c@tabx@nest=\count140
+\c@listtotal=\count141
+\c@listcount=\count142
+\c@liststart=\count143
+\c@liststop=\count144
+\c@citecount=\count145
+\c@citetotal=\count146
+\c@multicitecount=\count147
+\c@multicitetotal=\count148
+\c@instcount=\count149
+\c@maxnames=\count150
+\c@minnames=\count151
+\c@maxitems=\count152
+\c@minitems=\count153
+\c@citecounter=\count154
+\c@maxcitecounter=\count155
+\c@savedcitecounter=\count156
+\c@uniquelist=\count157
+\c@uniquename=\count158
+\c@refsection=\count159
+\c@refsegment=\count160
+\c@maxextratitle=\count161
+\c@maxextratitleyear=\count162
+\c@maxextraname=\count163
+\c@maxextradate=\count164
+\c@maxextraalpha=\count165
+\c@abbrvpenalty=\count166
+\c@highnamepenalty=\count167
+\c@lownamepenalty=\count168
+\c@maxparens=\count169
+\c@parenlevel=\count170
+\blx@tempcnta=\count171
+\blx@tempcntb=\count172
+\blx@tempcntc=\count173
+\blx@maxsection=\count174
+\blx@maxsegment@0=\count175
+\blx@notetype=\count176
+\blx@parenlevel@text=\count177
+\blx@parenlevel@foot=\count178
+\blx@sectionciteorder@0=\count179
+\blx@entrysetcounter=\count180
+\labelnumberwidth=\skip49
+\labelalphawidth=\skip50
+\biblabelsep=\skip51
+\bibitemsep=\skip52
+\bibnamesep=\skip53
+\bibinitsep=\skip54
+\bibparsep=\skip55
+\bibhang=\skip56
 \blx@bcfin=\read1
 \blx@bcfout=\write3
 \blx@langwohyphens=\language82
-\c@mincomprange=\count173
-\c@maxcomprange=\count174
-\c@mincompwidth=\count175
+\c@mincomprange=\count181
+\c@maxcomprange=\count182
+\c@mincompwidth=\count183
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -366,88 +407,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'ieee.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count176
-\c@savedafterword=\count177
-\c@annotator=\count178
-\c@savedannotator=\count179
-\c@author=\count180
-\c@savedauthor=\count181
-\c@bookauthor=\count182
-\c@savedbookauthor=\count183
-\c@commentator=\count184
-\c@savedcommentator=\count185
-\c@editor=\count186
-\c@savededitor=\count187
-\c@editora=\count188
-\c@savededitora=\count189
-\c@editorb=\count190
-\c@savededitorb=\count191
-\c@editorc=\count192
-\c@savededitorc=\count193
-\c@foreword=\count194
-\c@savedforeword=\count195
-\c@holder=\count196
-\c@savedholder=\count197
-\c@introduction=\count198
-\c@savedintroduction=\count199
-\c@namea=\count266
-\c@savednamea=\count267
-\c@nameb=\count268
-\c@savednameb=\count269
-\c@namec=\count270
-\c@savednamec=\count271
-\c@translator=\count272
-\c@savedtranslator=\count273
-\c@shortauthor=\count274
-\c@savedshortauthor=\count275
-\c@shorteditor=\count276
-\c@savedshorteditor=\count277
-\c@labelname=\count278
-\c@savedlabelname=\count279
-\c@institution=\count280
-\c@savedinstitution=\count281
-\c@lista=\count282
-\c@savedlista=\count283
-\c@listb=\count284
-\c@savedlistb=\count285
-\c@listc=\count286
-\c@savedlistc=\count287
-\c@listd=\count288
-\c@savedlistd=\count289
-\c@liste=\count290
-\c@savedliste=\count291
-\c@listf=\count292
-\c@savedlistf=\count293
-\c@location=\count294
-\c@savedlocation=\count295
-\c@organization=\count296
-\c@savedorganization=\count297
-\c@origlocation=\count298
-\c@savedoriglocation=\count299
-\c@origpublisher=\count300
-\c@savedorigpublisher=\count301
-\c@publisher=\count302
-\c@savedpublisher=\count303
-\c@language=\count304
-\c@savedlanguage=\count305
-\c@origlanguage=\count306
-\c@savedoriglanguage=\count307
-\c@pageref=\count308
-\c@savedpageref=\count309
-\shorthandwidth=\skip54
-\shortjournalwidth=\skip55
-\shortserieswidth=\skip56
-\shorttitlewidth=\skip57
-\shortauthorwidth=\skip58
-\shorteditorwidth=\skip59
-\locallabelnumberwidth=\skip60
-\locallabelalphawidth=\skip61
-\localshorthandwidth=\skip62
-\localshortjournalwidth=\skip63
-\localshortserieswidth=\skip64
-\localshorttitlewidth=\skip65
-\localshortauthorwidth=\skip66
-\localshorteditorwidth=\skip67
+\c@afterword=\count184
+\c@savedafterword=\count185
+\c@annotator=\count186
+\c@savedannotator=\count187
+\c@author=\count188
+\c@savedauthor=\count189
+\c@bookauthor=\count190
+\c@savedbookauthor=\count191
+\c@commentator=\count192
+\c@savedcommentator=\count193
+\c@editor=\count194
+\c@savededitor=\count195
+\c@editora=\count196
+\c@savededitora=\count197
+\c@editorb=\count198
+\c@savededitorb=\count199
+\c@editorc=\count266
+\c@savededitorc=\count267
+\c@foreword=\count268
+\c@savedforeword=\count269
+\c@holder=\count270
+\c@savedholder=\count271
+\c@introduction=\count272
+\c@savedintroduction=\count273
+\c@namea=\count274
+\c@savednamea=\count275
+\c@nameb=\count276
+\c@savednameb=\count277
+\c@namec=\count278
+\c@savednamec=\count279
+\c@translator=\count280
+\c@savedtranslator=\count281
+\c@shortauthor=\count282
+\c@savedshortauthor=\count283
+\c@shorteditor=\count284
+\c@savedshorteditor=\count285
+\c@labelname=\count286
+\c@savedlabelname=\count287
+\c@institution=\count288
+\c@savedinstitution=\count289
+\c@lista=\count290
+\c@savedlista=\count291
+\c@listb=\count292
+\c@savedlistb=\count293
+\c@listc=\count294
+\c@savedlistc=\count295
+\c@listd=\count296
+\c@savedlistd=\count297
+\c@liste=\count298
+\c@savedliste=\count299
+\c@listf=\count300
+\c@savedlistf=\count301
+\c@location=\count302
+\c@savedlocation=\count303
+\c@organization=\count304
+\c@savedorganization=\count305
+\c@origlocation=\count306
+\c@savedoriglocation=\count307
+\c@origpublisher=\count308
+\c@savedorigpublisher=\count309
+\c@publisher=\count310
+\c@savedpublisher=\count311
+\c@language=\count312
+\c@savedlanguage=\count313
+\c@origlanguage=\count314
+\c@savedoriglanguage=\count315
+\c@pageref=\count316
+\c@savedpageref=\count317
+\shorthandwidth=\skip57
+\shortjournalwidth=\skip58
+\shortserieswidth=\skip59
+\shorttitlewidth=\skip60
+\shortauthorwidth=\skip61
+\shorteditorwidth=\skip62
+\locallabelnumberwidth=\skip63
+\locallabelalphawidth=\skip64
+\localshorthandwidth=\skip65
+\localshortjournalwidth=\skip66
+\localshortserieswidth=\skip67
+\localshorttitlewidth=\skip68
+\localshortauthorwidth=\skip69
+\localshorteditorwidth=\skip70
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -469,19 +510,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (C:\Users\Nathan\AppData\Roaming\MiKTeX\2.9\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-\c@textcitecount=\count310
-\c@textcitetotal=\count311
-\c@textcitemaxnames=\count312
-\c@biburlbigbreakpenalty=\count313
-\c@biburlbreakpenalty=\count314
-\c@biburlnumpenalty=\count315
-\c@biburlucpenalty=\count316
-\c@biburllcpenalty=\count317
+\c@textcitecount=\count318
+\c@textcitetotal=\count319
+\c@textcitemaxnames=\count320
+\c@biburlbigbreakpenalty=\count321
+\c@biburlbreakpenalty=\count322
+\c@biburlnumpenalty=\count323
+\c@biburlucpenalty=\count324
+\c@biburllcpenalty=\count325
 \biburlbigskip=\muskip11
 \biburlnumskip=\muskip12
 \biburlucskip=\muskip13
 \biburllcskip=\muskip14
-\c@smartand=\count318
+\c@smartand=\count326
 )
 Package biblatex Info: Trying to load bibliography style 'ieee'...
 Package biblatex Info: ... file 'ieee.bbx' found.
@@ -504,8 +545,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (C:\Users\Nathan\AppData\Roaming\MiKTeX\2.9\tex/latex/biblatex/bbx\standard.bbx
 File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count319
-\c@bbx:relatedtotal=\count320
+\c@bbx:relatedcount=\count327
+\c@bbx:relatedtotal=\count328
 ))))
 Package biblatex Info: Trying to load citation style 'ieee'...
 Package biblatex Info: ... file 'ieee.cbx' found.
@@ -518,8 +559,8 @@ Package biblatex Info: ... file 'numeric-comp.cbx' found.
 (C:\Users\Nathan\AppData\Roaming\MiKTeX\2.9\tex/latex/biblatex/cbx\numeric-comp
 .cbx
 File: numeric-comp.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count321
-\c@cbx@tempcntb=\count322
+\c@cbx@tempcnta=\count329
+\c@cbx@tempcntb=\count330
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -572,23 +613,23 @@ Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
 Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
 Package: xcolor-patch 2016/05/16 xcolor patch
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
-Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\auxhook.sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen146
-\Hy@linkcounter=\count323
-\Hy@pagecounter=\count324
+\@linkdim=\dimen150
+\Hy@linkcounter=\count331
+\Hy@pagecounter=\count332
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def"
 File: pd1enc.def 2019/09/28 v7.00a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count325
+\Hy@SavedSpaceFactor=\count333
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -600,12 +641,12 @@ Package hyperref Info: Plain pages OFF on input line 4555.
 Package hyperref Info: Backreferencing OFF on input line 4560.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4793.
-\c@Hy@tempcnt=\count326
+\c@Hy@tempcnt=\count334
 LaTeX Info: Redefining \url on input line 5152.
-\XeTeXLinkMargin=\dimen147
-\Fld@menulength=\count327
-\Field@Width=\dimen148
-\Fld@charsize=\dimen149
+\XeTeXLinkMargin=\dimen151
+\Fld@menulength=\count335
+\Field@Width=\dimen152
+\Fld@charsize=\dimen153
 Package hyperref Info: Hyper figures OFF on input line 6423.
 Package hyperref Info: Link nesting OFF on input line 6428.
 Package hyperref Info: Hyper index ON on input line 6431.
@@ -615,23 +656,23 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6448.
 Package hyperref Info: PDF/A mode OFF on input line 6453.
 LaTeX Info: Redefining \ref on input line 6493.
 LaTeX Info: Redefining \pageref on input line 6497.
-\Hy@abspage=\count328
-\c@Item=\count329
-\c@Hfootnote=\count330
+\Hy@abspage=\count336
+\c@Item=\count337
+\c@Hfootnote=\count338
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hpdftex.def"
 File: hpdftex.def 2019/09/28 v7.00a Hyperref driver for pdfTeX
-\Fld@listcount=\count331
-\c@bookmark@seq@number=\count332
+\Fld@listcount=\count339
+\c@bookmark@seq@number=\count340
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip68
+\Hy@SectionHShift=\skip71
 )
 (C:\Users\Nathan\AppData\Roaming\MiKTeX\2.9\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
@@ -652,24 +693,24 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 (C:\Users\Nathan\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\listings.sty
-\lst@mode=\count333
-\lst@gtempboxa=\box57
-\lst@token=\toks20
-\lst@length=\count334
-\lst@currlwidth=\dimen150
-\lst@column=\count335
-\lst@pos=\count336
-\lst@lostspace=\dimen151
-\lst@width=\dimen152
-\lst@newlines=\count337
-\lst@lineno=\count338
-\lst@maxwidth=\dimen153
+\lst@mode=\count341
+\lst@gtempboxa=\box59
+\lst@token=\toks22
+\lst@length=\count342
+\lst@currlwidth=\dimen154
+\lst@column=\count343
+\lst@pos=\count344
+\lst@lostspace=\dimen155
+\lst@width=\dimen156
+\lst@newlines=\count345
+\lst@lineno=\count346
+\lst@maxwidth=\dimen157
 
 (C:\Users\Nathan\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-\c@lstnumber=\count339
-\lst@skipnumbers=\count340
-\lst@framebox=\box58
+\c@lstnumber=\count347
+\lst@skipnumbers=\count348
+\lst@framebox=\box60
 )
 (C:\Users\Nathan\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\listings.cfg
 File: listings.cfg 2019/09/10 1.8c listings configuration
@@ -681,18 +722,18 @@ File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
 (C:\Users\Nathan\AppData\Roaming\MiKTeX\2.9\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2019/09/09 v2.12 Sectioning titles
-\ttl@box=\box59
-\beforetitleunit=\skip69
-\aftertitleunit=\skip70
-\ttl@plus=\dimen154
-\ttl@minus=\dimen155
-\ttl@toksa=\toks21
-\titlewidth=\dimen156
-\titlewidthlast=\dimen157
-\titlewidthfirst=\dimen158
+\ttl@box=\box61
+\beforetitleunit=\skip72
+\aftertitleunit=\skip73
+\ttl@plus=\dimen158
+\ttl@minus=\dimen159
+\ttl@toksa=\toks23
+\titlewidth=\dimen160
+\titlewidthlast=\dimen161
+\titlewidthfirst=\dimen162
 )
-\@quotelevel=\count341
-\@quotereset=\count342
+\@quotelevel=\count349
+\@quotereset=\count350
 
 
 LaTeX Warning: Unused global option(s):
@@ -701,34 +742,34 @@ LaTeX Warning: Unused global option(s):
 (ECE492_Report_Loucks_Kharka_Castillo_PRELIM.aux)
 \openout1 = `ECE492_Report_Loucks_Kharka_Castillo_PRELIM.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
 
 (C:\Users\Nathan\AppData\Roaming\MiKTeX\2.9\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count343
-\scratchdimen=\dimen159
-\scratchbox=\box60
-\nofMPsegments=\count344
-\nofMParguments=\count345
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count346
-\MPscratchDim=\dimen160
-\MPnumerator=\count347
-\makeMPintoPDFobject=\count348
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count351
+\scratchdimen=\dimen163
+\scratchbox=\box62
+\nofMPsegments=\count352
+\nofMParguments=\count353
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count354
+\MPscratchDim=\dimen164
+\MPnumerator=\count355
+\makeMPintoPDFobject=\count356
+\everyMPtoPDFconversion=\toks25
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -781,8 +822,18 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+\AtBeginShipoutBox=\box63
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\pdflscape.sty"
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
+
 (C:\Users\Nathan\AppData\Roaming\MiKTeX\2.9\tex/latex/biblatex/lbx\english.lbx
 File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
 )
@@ -804,33 +855,32 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 85.
-Package biblatex Info: Reference segment=0 on input line 85.
-\AtBeginShipoutBox=\box61
-Package hyperref Info: Link coloring OFF on input line 85.
+Package biblatex Info: Reference section=0 on input line 90.
+Package biblatex Info: Reference segment=0 on input line 90.
+Package hyperref Info: Link coloring OFF on input line 90.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count349
+\c@section@level=\count357
 )
-LaTeX Info: Redefining \ref on input line 85.
-LaTeX Info: Redefining \pageref on input line 85.
-LaTeX Info: Redefining \nameref on input line 85.
+LaTeX Info: Redefining \ref on input line 90.
+LaTeX Info: Redefining \pageref on input line 90.
+LaTeX Info: Redefining \nameref on input line 90.
 
 (ECE492_Report_Loucks_Kharka_Castillo_PRELIM.out)
 (ECE492_Report_Loucks_Kharka_Castillo_PRELIM.out)
 \@outlinefile=\write4
 \openout4 = `ECE492_Report_Loucks_Kharka_Castillo_PRELIM.out'.
 
-\c@lstlisting=\count350
+\c@lstlisting=\count358
  (title.tex) [1
 
 {C:/Users/Nathan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (abstract.
 tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
@@ -838,7 +888,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.92 	\section{Introduction}
+l.97 	\section{Introduction}
                              [1
 
 ] (intro.tex) [2
@@ -867,17 +917,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [6
 
 ] (xbeeS2C.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 5--107
+Underfull \hbox (badness 10000) in paragraph at lines 5--112
 
  []
 
 (raspberryPi.tex
-<rasPi.png, id=162, 211.5102pt x 197.538pt>
+<rasPi.png, id=168, 211.5102pt x 197.538pt>
 File: rasPi.png Graphic file (type png)
 <use rasPi.png>
 Package pdftex.def Info: rasPi.png  used on input line 4.
 (pdftex.def)             Requested size: 216.81pt x 202.49583pt.
-<picam.jpg, id=164, 207.02344pt x 137.7647pt>
+<picam.jpg, id=170, 207.02344pt x 137.7647pt>
 File: picam.jpg Graphic file (type jpg)
 <use picam.jpg>
 Package pdftex.def Info: picam.jpg  used on input line 11.
@@ -889,36 +939,36 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 14.
-<camcode1.jpg, id=172, 227.85126pt x 60.72687pt>
+<camcode1.jpg, id=178, 227.85126pt x 60.72687pt>
 File: camcode1.jpg Graphic file (type jpg)
 <use camcode1.jpg>
 Package pdftex.def Info: camcode1.jpg  used on input line 17.
 (pdftex.def)             Requested size: 166.2212pt x 44.30243pt.
-<camcode2.jpg, id=173, 500.36937pt x 156.585pt>
+<camcode2.jpg, id=179, 500.36937pt x 156.585pt>
 File: camcode2.jpg Graphic file (type jpg)
 <use camcode2.jpg>
 Package pdftex.def Info: camcode2.jpg  used on input line 18.
 (pdftex.def)             Requested size: 523.9575pt x 163.98424pt.
 ) (python.tex) (powerSupply.tex
-<lm317.jpg, id=174, 451.6875pt x 451.6875pt>
+<lm317.jpg, id=180, 451.6875pt x 451.6875pt>
 File: lm317.jpg Graphic file (type jpg)
 <use lm317.jpg>
 Package pdftex.def Info: lm317.jpg  used on input line 3.
 (pdftex.def)             Requested size: 144.54pt x 144.54294pt.
  [8 <./picam.jpg> <./camcode1.jpg> <./camcode2.jpg>]
-<33vsource.jpg, id=185, 329.73187pt x 295.1025pt>
+<33vsource.jpg, id=190, 329.73187pt x 295.1025pt>
 File: 33vsource.jpg Graphic file (type jpg)
 <use 33vsource.jpg>
 Package pdftex.def Info: 33vsource.jpg  used on input line 10.
 (pdftex.def)             Requested size: 216.81pt x 194.04327pt.
 ) [9 <./lm317.jpg> <./33vsource.jpg>]
 (sensingHardware.tex
-<mq6.png, id=191, 153.6942pt x 153.6942pt>
+<mq6.png, id=196, 153.6942pt x 153.6942pt>
 File: mq6.png Graphic file (type png)
 <use mq6.png>
 Package pdftex.def Info: mq6.png  used on input line 8.
 (pdftex.def)             Requested size: 144.54524pt x 144.54pt.
-<mq6diag.png, id=192, 265.9536pt x 119.0046pt>
+<mq6diag.png, id=197, 265.9536pt x 119.0046pt>
 File: mq6diag.png Graphic file (type png)
 <use mq6diag.png>
 Package pdftex.def Info: mq6diag.png  used on input line 13.
@@ -928,7 +978,7 @@ Overfull \hbox (6.49454pt too wide) in paragraph at lines 13--14
  [][] 
  []
 
-<pirDevice.jpg, id=195, 175.0905pt x 175.0905pt>
+<pirDevice.jpg, id=200, 175.0905pt x 175.0905pt>
 File: pirDevice.jpg Graphic file (type jpg)
 <use pirDevice.jpg>
 Package pdftex.def Info: pirDevice.jpg  used on input line 22.
@@ -936,12 +986,12 @@ Package pdftex.def Info: pirDevice.jpg  used on input line 22.
 [10
 
  <./mq6.png> <./mq6diag.png> <./pirDevice.jpg>]) [11] (hardwareTesting.tex
-<mq6Test.png, id=208, 330.5148pt x 295.8252pt>
+<mq6Test.png, id=213, 330.5148pt x 295.8252pt>
 File: mq6Test.png Graphic file (type png)
 <use mq6Test.png>
 Package pdftex.def Info: mq6Test.png  used on input line 7.
 (pdftex.def)             Requested size: 121.11852pt x 108.405pt.
-<mq6TestOn.png, id=209, 425.4294pt x 319.4334pt>
+<mq6TestOn.png, id=214, 425.4294pt x 319.4334pt>
 File: mq6TestOn.png Graphic file (type png)
 <use mq6TestOn.png>
 Package pdftex.def Info: mq6TestOn.png  used on input line 12.
@@ -954,55 +1004,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--23
 ) [12
 
  <./mq6Test.png> <./mq6TestOn.png>]
-<module_gas.jpg, id=220, 2615.7725pt x 2613.765pt>
+<module_gas.jpg, id=225, 2615.7725pt x 2613.765pt>
 File: module_gas.jpg Graphic file (type jpg)
 <use module_gas.jpg>
-Package pdftex.def Info: module_gas.jpg  used on input line 129.
+Package pdftex.def Info: module_gas.jpg  used on input line 134.
 (pdftex.def)             Requested size: 108.48468pt x 108.405pt.
-<module_motion.jpg, id=221, 2533.465pt x 2532.46124pt>
+<module_motion.jpg, id=226, 2533.465pt x 2532.46124pt>
 File: module_motion.jpg Graphic file (type jpg)
 <use module_motion.jpg>
-Package pdftex.def Info: module_motion.jpg  used on input line 134.
+Package pdftex.def Info: module_motion.jpg  used on input line 139.
 (pdftex.def)             Requested size: 108.43433pt x 108.405pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
-42.
+47.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 142.
-<xbeeMiniExplorer.png, id=222, 181.6386pt x 181.6386pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 147.
+<xbeeMiniExplorer.png, id=227, 181.6386pt x 181.6386pt>
 File: xbeeMiniExplorer.png Graphic file (type png)
 <use xbeeMiniExplorer.png>
-Package pdftex.def Info: xbeeMiniExplorer.png  used on input line 153.
+Package pdftex.def Info: xbeeMiniExplorer.png  used on input line 158.
 (pdftex.def)             Requested size: 157.18884pt x 157.19835pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<xbeeXctu1.png, id=223, 226.9278pt x 373.8768pt>
-File: xbeeXctu1.png Graphic file (type png)
-<use xbeeXctu1.png>
-Package pdftex.def Info: xbeeXctu1.png  used on input line 162.
-(pdftex.def)             Requested size: 175.45862pt x 289.07999pt.
+<xbeeXctu1.png, id=228, 226.9278pt x 373.8768pt>
 File: xbeeXctu1.png Graphic file (type png)
 <use xbeeXctu1.png>
 Package pdftex.def Info: xbeeXctu1.png  used on input line 167.
 (pdftex.def)             Requested size: 175.45862pt x 289.07999pt.
-<ledRemoteTest.png, id=224, 337.7418pt x 253.4268pt>
+File: xbeeXctu1.png Graphic file (type png)
+<use xbeeXctu1.png>
+Package pdftex.def Info: xbeeXctu1.png  used on input line 172.
+(pdftex.def)             Requested size: 175.45862pt x 289.07999pt.
+<ledRemoteTest.png, id=229, 337.7418pt x 253.4268pt>
 File: ledRemoteTest.png Graphic file (type png)
 <use ledRemoteTest.png>
-Package pdftex.def Info: ledRemoteTest.png  used on input line 176.
+Package pdftex.def Info: ledRemoteTest.png  used on input line 181.
 (pdftex.def)             Requested size: 144.47372pt x 108.405pt.
-<ledRemoteTestOFF.png, id=225, 334.3692pt x 233.673pt>
+<ledRemoteTestOFF.png, id=230, 334.3692pt x 233.673pt>
 File: ledRemoteTestOFF.png Graphic file (type png)
 <use ledRemoteTestOFF.png>
-Package pdftex.def Info: ledRemoteTestOFF.png  used on input line 181.
+Package pdftex.def Info: ledRemoteTestOFF.png  used on input line 186.
 (pdftex.def)             Requested size: 155.11781pt x 108.405pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1018,42 +1068,107 @@ LaTeX Warning: Text page 14 contains only floats.
 
 [14 <./xbeeMiniExplorer.png> <./xbeeXctu1.png> <./ledRemoteTest.png> <./ledRemo
 teTestOFF.png>]
-<xctuFrames1.png, id=238, 231.7458pt x 427.8384pt>
+<xctuFrames1.png, id=243, 231.7458pt x 427.8384pt>
 File: xctuFrames1.png Graphic file (type png)
 <use xctuFrames1.png>
-Package pdftex.def Info: xctuFrames1.png  used on input line 193.
+Package pdftex.def Info: xctuFrames1.png  used on input line 198.
 (pdftex.def)             Requested size: 156.59138pt x 289.07999pt.
-<xctuFrames2.png, id=239, 231.264pt x 428.3202pt>
+<xctuFrames2.png, id=244, 231.264pt x 428.3202pt>
 File: xctuFrames2.png Graphic file (type png)
 <use xctuFrames2.png>
-Package pdftex.def Info: xctuFrames2.png  used on input line 198.
+Package pdftex.def Info: xctuFrames2.png  used on input line 203.
 (pdftex.def)             Requested size: 156.08586pt x 289.07999pt.
- [15 <./xctuFrames1.png> <./xctuFrames2.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 236.
- [16
+ [15 <./xctuFrames1.png> <./xctuFrames2.png>] [16
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 236.
+] [17
+
+
+] [18]
+<MQ6.pdf, id=299, 597.23125pt x 844.15375pt>
+File: MQ6.pdf Graphic file (type pdf)
+<use MQ6.pdf>
+Package pdftex.def Info: MQ6.pdf  used on input line 247.
+(pdftex.def)             Requested size: 597.22978pt x 844.15169pt.
+File: MQ6.pdf Graphic file (type pdf)
+<use MQ6.pdf>
+Package pdftex.def Info: MQ6.pdf  used on input line 247.
+(pdftex.def)             Requested size: 597.22978pt x 844.15169pt.
+<MQ6.pdf, id=302, page=1, 597.23125pt x 844.15375pt>
+File: MQ6.pdf Graphic file (type pdf)
+<use MQ6.pdf, page 1>
+Package pdftex.def Info: MQ6.pdf , page1 used on input line 247.
+(pdftex.def)             Requested size: 597.22978pt x 844.15169pt.
+File: MQ6.pdf Graphic file (type pdf)
+<use MQ6.pdf, page 1>
+Package pdftex.def Info: MQ6.pdf , page1 used on input line 247.
+(pdftex.def)             Requested size: 562.52745pt x 795.10185pt.
+File: MQ6.pdf Graphic file (type pdf)
+<use MQ6.pdf, page 1>
+Package pdftex.def Info: MQ6.pdf , page1 used on input line 247.
+(pdftex.def)             Requested size: 562.52745pt x 795.10185pt.
+File: MQ6.pdf Graphic file (type pdf)
+<use MQ6.pdf, page 1>
+Package pdftex.def Info: MQ6.pdf , page1 used on input line 247.
+(pdftex.def)             Requested size: 562.52745pt x 795.10185pt.
+File: MQ6.pdf Graphic file (type pdf)
+<use MQ6.pdf, page 1>
+Package pdftex.def Info: MQ6.pdf , page1 used on input line 247.
+(pdftex.def)             Requested size: 562.52745pt x 795.10185pt.
+
+[19 <./MQ6.pdf>] [20]
+<PIRMDS.pdf, id=342, 614.295pt x 794.97pt>
+File: PIRMDS.pdf Graphic file (type pdf)
+<use PIRMDS.pdf>
+Package pdftex.def Info: PIRMDS.pdf  used on input line 253.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: PIRMDS.pdf Graphic file (type pdf)
+<use PIRMDS.pdf>
+Package pdftex.def Info: PIRMDS.pdf  used on input line 253.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<PIRMDS.pdf, id=345, page=1, 614.295pt x 794.97pt>
+File: PIRMDS.pdf Graphic file (type pdf)
+<use PIRMDS.pdf, page 1>
+Package pdftex.def Info: PIRMDS.pdf , page1 used on input line 253.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: PIRMDS.pdf Graphic file (type pdf)
+<use PIRMDS.pdf, page 1>
+Package pdftex.def Info: PIRMDS.pdf , page1 used on input line 253.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PIRMDS.pdf Graphic file (type pdf)
+<use PIRMDS.pdf, page 1>
+Package pdftex.def Info: PIRMDS.pdf , page1 used on input line 253.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PIRMDS.pdf Graphic file (type pdf)
+<use PIRMDS.pdf, page 1>
+Package pdftex.def Info: PIRMDS.pdf , page1 used on input line 253.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PIRMDS.pdf Graphic file (type pdf)
+<use PIRMDS.pdf, page 1>
+Package pdftex.def Info: PIRMDS.pdf , page1 used on input line 253.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [21 <./PIRMDS.pdf>] [22]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 260.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 260.
 
 (ECE492_Report_Loucks_Kharka_Castillo_PRELIM.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 236.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 236.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 260.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 260.
 Package rerunfilecheck Info: File `ECE492_Report_Loucks_Kharka_Castillo_PRELIM.
 out' has not changed.
-(rerunfilecheck)             Checksum: 1A826491F0C794B2F9D275862CE3B6A0;1429.
+(rerunfilecheck)             Checksum: 23720E9556B80C40A3229A999F0651D7;1477.
 Package logreq Info: Writing requests to 'ECE492_Report_Loucks_Kharka_Castillo_
 PRELIM.run.xml'.
 \openout1 = `ECE492_Report_Loucks_Kharka_Castillo_PRELIM.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18188 strings out of 492452
- 306397 string characters out of 3129805
- 801911 words of memory out of 3000000
- 22195 multiletter control sequences out of 15000+200000
+ 19032 strings out of 492452
+ 319946 string characters out of 3129805
+ 816047 words of memory out of 3000000
+ 23001 multiletter control sequences out of 15000+200000
  9870 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,9n,79p,918b,1249s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,18n,79p,918b,1249s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTe
@@ -1069,10 +1184,10 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2
 type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmtt8.pfb>
-Output written on ECE492_Report_Loucks_Kharka_Castillo_PRELIM.pdf (17 pages, 68
-91073 bytes).
+Output written on ECE492_Report_Loucks_Kharka_Castillo_PRELIM.pdf (23 pages, 70
+32176 bytes).
 PDF statistics:
- 356 PDF objects out of 1000 (max. 8388607)
- 87 named destinations out of 1000 (max. 500000)
- 248 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 460 PDF objects out of 1000 (max. 8388607)
+ 94 named destinations out of 1000 (max. 500000)
+ 296 words of extra memory for PDF output out of 10000 (max. 10000000)
 
