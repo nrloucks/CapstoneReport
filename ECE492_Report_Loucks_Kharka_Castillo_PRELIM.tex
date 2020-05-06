@@ -1,58 +1,71 @@
-\documentclass[a4paper,11pt]{report}
-\title{}
+\documentclass[letter]{report}
 \date{February 15, 2020}
 \author{Nathan Louck}
-\usepackage{hyperref}
+
+
+
+%Formatting Packages
 \usepackage{graphicx}
-\usepackage{geometry}
-\usepackage[export]{adjustbox}
 \usepackage{wrapfig}
 \usepackage{anyfontsize}
-\usepackage{titlesec}
 \usepackage{multicol}
-\usepackage{xcolor}
-\usepackage[shortlabels]{enumitem}
 \usepackage{blindtext}
-\usepackage{listings}
 \usepackage{color}
 \usepackage{subcaption}
-\usepackage[style=ieee]{biblatex}
+\usepackage[margin=0.625in]{geometry}
+\usepackage[export]{adjustbox}
+\usepackage[shortlabels]{enumitem}
 
-\definecolor{dkgreen}{rgb}{0,0.6,0}
-\definecolor{gray}{rgb}{0.5,0.5,0.5}
-\definecolor{mauve}{rgb}{0.58,0,0.82}
+%For bibliography 
+\usepackage[backend=bibtex,style=ieee]{biblatex}
+\addbibresource{refs.bib}
+\bibstyle{numeric}
 
+%For URLs
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{keyval}
+\usepackage{ifthen}
 
-% DEFINE LISTING STYLE FOR CODE BLOCKS
-\lstset{frame=tb,
-	language=Python,
-	aboveskip=3mm,
-	belowskip=3mm,
-	showstringspaces=false,
-	columns=flexible,
-	basicstyle={\scriptsize\ttfamily},
-	numbers=none,
-	numberstyle=\tiny\color{gray},
-	keywordstyle=\color{blue},
-	commentstyle=\color{dkgreen},
-	stringstyle=\color{mauve},
-	breaklines=true,
-	breakatwhitespace=true,
-	tabsize=3
-}
+% xColor - used for "listings" packagesadf
+\usepackage{xcolor}
+	\definecolor{dkgreen}{rgb}{0,0.6,0}
+	\definecolor{gray}{rgb}{0.5,0.5,0.5}
+	\definecolor{mauve}{rgb}{0.58,0,0.82}
 
-% DEFINE TITLE, SECTION & SUBSECTION STYLES
-\renewcommand\thepart{\Arabic{part}}
-\renewcommand\thesection{\Roman{section}}
-\titleclass{\section}{top}
-%\titleformat{command}[shape]{format}{label}{sep}{before-code}[after-code]
-\titleformat{\section}{\titlerule\centering\LARGE\bfseries}{\thesection{}}{5pt}{}
-\titleformat{\subsection}{\Large\bfseries}{}{0pt}{}
+% Listings Package for Code Block formatting
+\usepackage{listings}
+	% Define code block style
+	\lstset{frame=tb,
+		language=Python,
+		aboveskip=3mm,
+		belowskip=3mm,
+		showstringspaces=false,
+		columns=flexible,
+		basicstyle={\scriptsize\ttfamily},
+		numbers=none,
+		numberstyle=\tiny\color{gray},
+		keywordstyle=\color{blue},
+		commentstyle=\color{dkgreen},
+		stringstyle=\color{mauve},
+		breaklines=true,
+		breakatwhitespace=true,
+		tabsize=3
+	}
+
+% Titlesec - for formatting section and subsection headings
+\usepackage{titlesec}
+	% format title, section, subsection, etc.
+	\renewcommand\thepart{\Arabic{part}}
+	\renewcommand\thesection{\Roman{section}}
+	\titleclass{\section}{top}
+	\titleformat{\section}{\titlerule\centering\LARGE\bfseries}{\thesection{}}{5pt}{}
+	\titleformat{\subsection}{\Large\bfseries}{}{0pt}{}
 
 
 % 5/4/20 from Mario
 % Adding new sections:
-% 1- Add an "Introduction" section where you describe the general idea of the project and its objective. I think your Abstract section can be renamed as an Introduction section, and you can write a more concise Abstract at the % beginning. Abstract should be around 150-200 words at most.
+%*% 1- Add an "Introduction" section where you describe the general idea of the project and its objective. I think your Abstract section can be renamed as an Introduction section, and you can write a more concise Abstract at the beginning. Abstract should be around 150-200 words at most.
 % 2- You need to add a section on Performance Results, where you show the graphs of the gas sensor, light sensor and the measurement from the camera (or the audio measurements).
 % 3- You need to add a Conclusion and a Bibliography section. References should be listed in a Bibliography section at the end of the report (and not as Footnotes). You can use in-text citation to refer to each bibliography item in the text.
 
@@ -71,214 +84,44 @@
 
 \begin{document}
 	\begin{titlepage}
-		\begin{center}
-			\large
-			Oswego State University of New York \\ 
-			\vspace{2.5in}
-		
-			Automated Home Security [Preliminary Report v0503] \\ 
-			\tiny\textit{(THIS COVER WILL BE REPLACED WITH DEPARTMENT MANDATED VERSION)}\\
-			\vspace{2in}
-			\normalsize 
-			Ashish Kharka, Jonathan Castillo, Nathan Loucks \\
-			\vspace{0.5in}
-			\small\textit{
-				Submitted in Partial Fulfillment of the Requirement for the B.Sc. Degree, 	\\Electrical and Computer Engineering Department
-			}
-		\end{center}
+		\input{title.tex}
 	\end{titlepage}
 	\newpage
-	%########################################################################################################################################################################################################################
 	\section{Abstract}
-	{
-	\centering
-	**TODO**\\
-	Concise version of what now is the Introduction
-	}
+		\input{abstract.tex}
 	\section{Introduction}
-	\par Home security systems are becoming a staple for home owners in America. The expansion of the embedded systems market over the past few decades has made microprocessors and embedded RF communication commonplace in today's society. Most cell phones today contain several of these devices with WiFi, Bluetooth, GSM, and even satellite navigation right in your pocket. In the home, many people are using “Smart Home” devices such as voice assistants, automated thermostats and light switches. As these devices have gained a significant amount of popularity in recent years, “Smart” home security is also a rapidly growing trend. 
-	\par There are a plethora of viral videos out there showing footage of criminal activity occurring right outside someone's home, without their home security system they may have never been alerted to any potential danger. 
-	\par In a study released in 2010\footnote{
-		U.S. Department of Justice
-		Office of Justice Programs
-		Bureau of Justice Statistics, Special Report, National Crime Victimization Survey
-		Victimization During Household Burglary
-		September 2010   NCJ 227379
-		Shannan Catalano, Ph.D., 
-		BJS Statistician,
-		https://www.bjs.gov/content/pub/ascii/vdhb.txt
-	} by the U.S. Department of Justice, Bureau of Justice Statistics, an estimated 3.7 million burglaries occurred annually over preceding years. About 12\% of homes burglarized while the occupant was present resulted in the homeowner facing an offender armed with a firearm or other deadly weapon. 
-	\par A security system of any complexity is a good step in the pursuit of ensuring that you and your loved ones are protected home. The autonomous nature of our system has the added advantage of operating in a stand-alone fashion, sparing the homeowner the trouble of setting an alarm or monitoring the sensors them self. 
-	\par Most modern security systems have sensors that can detect carbon monoxide and motion or glass-break, and record and send live video for the user to view remotely. This provides a safer living environment for the occupants when they’re home or away, as well as peace of mind. Major security companies often require a service or subscription that a user pays periodically, as well as relatively complicated installation.  
-	\par An inexpensive and easy to use home security system would let the user take control of their own home security. Making erstwhile wired sensors operate over a wireless channel would allow for the greatest ease of use for a typical consumer. 
-	\par Using XBee RF modules and a Raspberry Pi, one can create their own automated home security system with the aforementioned functionalities. The XBee modules are used as communication devices that report sensor data back to a main unit, housing a system that processes the data and responds accordingly.The Raspberry Pi will serve as the main control unit to coordinate the signals coming from each sensor module, as well as transmit  or store video depending on user configuration.. The goal of this project is to create an automated home security system that is inexpensive yet delivers the user a range of  key capabilities to help protect their home and loved ones from preventable harm. 
-	%########################################################################################################################################################################################################################
+		\input{intro.tex}
+
 	\section{Acknowledgments}
-	\par We would like to express our gratitude to Mario Bkassiny, for his constant support and guidance.  \\
-	\par Our sincere thanks goes to Dennis Quill for all his help with parts as well as his expertise on working with Raspberry Pi devices. \\
-	\par Finally we would like to thank the ECE department as a whole for providing the resources necessary to make this research possible despite having to work remotely due to the unique circumstances of the spring 2020 semester. Without the planning and preparation made by the ECE department this project and many others would not have been possible. 
-	%########################################################################################################################################################################################################################
-	%############################################################################################################
-	\section{Student Statement}
-	As one of the final steps in the pursuit of our degrees, this project has been a long but rewarding process. The Spring 2020 semester was significantly impacted by the COVID-19 outbreak. 
-	\par All of us, students and staff, were required to come up contingencies on short notice to facilitate the completion of our projects. As a result we needed to find solutions not only to the problems initially proposed, but also to the new problems created by the aberrant situation. 
-	\par Our erstwhile well planned timeline was thrown entirely out the window. Luckily, we had been ahead of schedule prior to the transition to remote collaboration. Within a short time we had a tentative plan to bring our system to fruition. Ultimately our end product lacks some functionality that was initially proposed due to a variety of extenuating factors, beyond our control. 
-	%########################################################################################################################################################################################################################
-	%############################################################################################################
+		\input{acknowledgments.tex}	
 	
+	\section{Student Statement}
+		\input{studentStatement.tex}
+
 	\tableofcontents
 	\listoffigures
-	
-	%########################################################################################################################################################################################################################
-	%############################################################################################################
-	\section{Research and Design}
+
+	\section{Research and Design Planning}
 		\subsection{The XBee S2C Module}
-		\par For the heart of this wireless system we decided to use the XBee IEEE 802.15.4 RF modules manufactured by Digi International. These light weight, low-power modules are idea for this type of system given the desired ranges and performance characteristics we were looking for. To make a suitable home security system, the transfer of information from point A to B must be fast but reliable, and without errors or interference. \par IEEE 802.15.4 standard is a member of the 802.15 group if standards for wireless personal area networks (WPAN) and is used for a wide variety of applications. In our case, the implementation of this standard in the XBee modules provides an adequate range, about 200 ft (60 m) in an indoor environment, as well as an adequate data transfer speed of 250 Kbps over the 2.4 GHz RF channel.     
-		\par The nodes we designed around the XBee modules are battery operated and thus must have relatively low power consumption. The XBee modules themselves draw a maximum of 45 mA when transmitting, 31 mA when receiving, and sell than 1 $\mu$A when in the powered down state. 
-		\par The XBee modules come complete with 15 I/O pins and multiple analog to digital converters. This makes them the perfect choice for data acquisition of remote transducers. 
-		\par XBee modules are available in a variety of form factors. We chose the XB24CAPIT form factor for out designs. Its antenna is intained within the PCB, while this may have less range than a wire antenna or U.fl add-on type of antenna, it provides excellent range for our application with minimal complexity. This model XBee is through-hole mounted, making initial designs and testing much easier that with a surface mount variety, though these occupy a smaller rectangular footprint. 
-		\par All of these considerations taken into account we decided that the XBee-XB24CAPIT would be the ideal communication module for the system we we have designed. \\
-	%########################################################################################################################################################################################################################
-		
-	\subsection{Raspberry Pi}
-	\par The Raspberry Pi 3 Model A+ is the latest product in the Raspberry Pi 3 range, weighing in at just 29 g. Like the Raspberry Pi 3 Model B+, it boasts a 64-bit quad core processor running at 1.4?GHz, dual-band 2.4?GHz and 5?GHz wireless LAN, and Bluetooth 4.2/BLE. The dual-band wireless LAN comes with modular compliance certification, allowing the board to be designed into end products with significantly reduced wireless LAN compliance testing, improving both cost and time to market. The Raspberry Pi 3 Model A+ has the same mechanical footprint as the older Raspberry Pi 1 Model A+.
-	\begin{figure}
-		\centering
-		\includegraphics[width=3in]{rasPi.png}
-		\caption{Raspberry Pi 3 Model A+}
-	\end{figure}
-	%########################################################################################################################################################################################################################
+			\input{xbeeS2C.tex}
+		\subsection{Raspberry Pi}
+			\input{raspberryPi.tex}
+		\subsection{Python, Primary Programming Language}
+			\input{python.tex}
+		\subsection{Supplying Power}
+			\input{powerSupply.tex}
 	
-	\subsection{Raspberry Pi Camera (Hardware and Software)}
-	\par The Raspberry Pi Camera v2 is the new official camera board released by the Raspberry Pi Foundation. The Raspberry Pi Camera Module v2 is a high quality 8 megapixel Sony IMX219 imagesensor custom designed add-on board for Raspberry Pi, featuring a fixed focus lens. It's capable of 3280 x 2464 pixel static images, and also supports 1080p30, 720p60 and 640x480p90 video. It attaches to Pi by way of one of the small sockets on the board upper surface and uses the dedicated CSi interface, designed especially for interfacing to cameras.
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=2in]{picam.jpg}
-		\caption{PiCamera Python Module}
-	\end{figure}
-	\par This package provides a pure Python interface to the Raspberry Pi camera module for Python 2.7 (or above) or Python 3.2 (or above).
-	\footnote{PiCamera https://picamera.readthedocs.io/en/release-1.13/recipes1.html}
-	\par This package provides a pure Python interface to the Raspberry Pi camera module for Python 2.7 (or above) or Python 3.2 (or above).It can configure resolution and give different dimensions to the video or picture files. It can also take photos under varying conditions if given the right parameters for a camera to take a good picture under different conditions such as lighting conditions. 
-	The code for the camera is as follows
-	\begin{figure}
-		\includegraphics[width=2.3in]{camcode1.jpg}\\
-		\includegraphics[width=\textwidth]{camcode2.jpg}
-	\end{figure}
-	%########################################################################################################################################################################################################################
-	
-	\subsection{Python, Primary Programming Language}
-	Python is an interpreted, interactive, object-oriented programming language. It incorporates modules, exceptions, dynamic typing, very high-level dynamic data types, and classes. Python combines remarkable power with very clear syntax. It has interfaces to many system calls and libraries, as well as to various window systems, and is extensible in C or C++. It is also usable as an extension language for applications that need a programmable interface. Finally, Python is portable: it runs on many Unix variants, on the Mac, and on Windows 2000 and later.
-	%########################################################################################################################################################################################################################
-	
-	\subsection{Supplying Power}
-	\begin{wrapfigure}[]{l}{2.5in}
-		\includegraphics[width=2in]{lm317.jpg}
-		\caption{\small LM317 Linear Regulator (TH)}
-	\end{wrapfigure}
-	\paragraph{\normalsize LM317 Linear Voltage Regulator \hspace{1.5em}} 
-	The LM317 is an IC designed to maintain a constant voltage level. Voltage regulators usually have an input voltage range, but for the LM317 voltage regulator, the range is not specified because it has no ground connection. It has an output voltage range from 1.2 V to 37 V at 1.5 A. Since it is a linear regulator, the output voltage is always lower than input. The LM317 is used in our project to power the XBee modules which require a supply voltage between 2.1 V and 3.6 V. We designed a circuit incorporating the LM317 to output 3.3 V, which is ideal to power our devices. \\ 
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=3in]{33vsource.jpg}
-		\caption{Complete power supply circuit.}
-		\label{3v_circuit}
-	\end{figure}
-	\par As in figure \ref{3v_circuit}, the values we know are V\textsubscript{o} = 1.2 V, V\textsubscript{out} = 3.3 V and setting R1 = 330 $\Omega$.  The value of Iadj is very small hence it can have considered negligible. The value of R2 came to 550 $\Omega$. We then added the C1 = 100 $\mu$F, C2 = 0.1 $\mu$F and C3 = 10 $\mu$F for the improvement of transient response of a system to change from steady state. 
-	
-	\paragraph{\normalsize LM7805 5V Voltage Regulator}
-	To power our devices that require a 5 volt source such as the MQ-6 LP gas sensor, we chose to design a circuit around the LM7805 voltage regulator. This regulator has an input range of 5 to 18 volts, ideal for out 6 volt battery packs, and produces a constant 5 volt output. 
-
-
-%%%% REMOVED DETAILED LIST OF RASBERRY PI FEATURES	
-%	\begin{itemize}
-%		\item Processor 
-%		\begin{itemize}
-%			\item Broadcom BCM2837B0, Cortex-A53
-%			\item 64-bit SoC @ 1.4 GHz
-%		\end{itemize}
-%		\item Memory
-%		\begin{itemize}
-%			\item 512MB LPDDR2 SDRAM
-%		\end{itemize}
-%		\item Connectivity
-%		\begin{itemize}
-%			\item 2.4 GHz and 5 GHz IEEE 802.11.b/g/n/ac wireless LAN
-%			\item Bluetooth 4.2/BLE
-%		\end{itemize}
-%		\item Data and I/O interfacing
-%		\begin{itemize}
-%			\item Extended 40-pin GPIO header
-%		\end{itemize}
-%		\item Video and Sound
-%		\begin{itemize}
-%			\item 1x HDMI
-%			\item MIPI DSI display port
-%			\item MIPI CSI camera port
-%			\item 4 pole stereo output and composite video port
-%		\end{itemize}
-%		\item Multimedia 
-%		\begin{itemize}
-%			\item H.264, MPEG-4 decode (1080p30)
-%			\item H.264 encode (1080p30)
-%			\item OpenGL ES 1.1, 2.0 graphics
-%		\end{itemize}
-%		\item SD card Support
-%		\begin{itemize}
-%			\item Micro SD format for loading operating system and data storage
-%		\end{itemize}
-%		\item Input Power Specifications
-%		\begin{itemize}
-%			\item 5 V/2.5 A DC via micro USB connector
-%			\item 5 V DC via GPIO header
-%		\end{itemize}
-%	\end{itemize}
-
 	\section{Environment Monitoring Hardware}
-	\subsection{MQ6 LP Gas Sensor}
-	\par The MQ-6 gas sensor is a highly sensitive sensor designed to detect different atmospheric gases, such as propane, butane and other LPG (Liquid Petroleum Gas), also response to natural gas. It can also detect different some other combustible gases, notably methane. The sensor's conductivity changes proportional to the ambient gas concentration. The relatively low cost and wide range of detection make it an excellent choice for our system. The MQ-6 sensor operates at 5-volts.
-	\begin{figure}[h!]
-		\centering
-		\begin{subfigure}[t]{0.45\textwidth}
-			\centering
-			\includegraphics[height = 2in]{mq6.png}
-			\caption{MQ6 Liquid Petroleum Gas Sensor Package}
-		\end{subfigure}
-		\begin{subfigure}[t]{0.45\textwidth}
-			\centering
-			\includegraphics[height = 1.5in]{mq6diag.png}
-			\caption{MQ6 Liquid Petroleum Gas Sensor Diagram}
-		\end{subfigure}
-	\caption{MQ6 Gas Sensor}
-	\end{figure}
-	\newpage
-	\subsection{Testing the MQ6 gas sensor}
-	\par Next, we wanted to test this sensor independently. To do this we first started off with reading the datasheet to find out the appropriate voltage input and pin layout. We found out that it operates at 5 volts with a minimum of 0 volts. We supplied 5 volts from the power supply to our breadboard and we used an LED to our output pin to see if it detects any gas. 
-	\begin{figure}[h!]
-		\centering
-		\begin{subfigure}[t]{0.45\textwidth}
-			\centering
-			\includegraphics[height=1.5in]{mq6Test.png}
-			\caption{LED on via pin 18}
-		\end{subfigure}
-		\begin{subfigure}[t]{0.45\textwidth}
-			\centering
-			\includegraphics[height=1.5in]{mq6TestOn.png}
-			\caption{LED off via pin 18}
-		\end{subfigure}
-		\caption{Simple LED activation over 802.15.4 (2)}
-	\end{figure}
-	\par Properly connected, the gas sensor produced quantifiable results. Using a common butane lighter, we tested the sensors ability to detect ambient gases. The LED was able to indicate the presence of LPG, thus we now know our gas sensing components are functional.
-	\par Since the XBee modules analog to digital converter requires an input in the range of 1.2 volts, we must reduce the 5 volt output of the gas sensor down to this level to be quantified and processed. To do this a simple voltage divider was designed (1). With voltages constant and one resistor value constant we only need to solve for one unknown (2).
-	\begin{equation}
-	V\textsubscript{out}=\frac{R1}{R1+R2}*V\textsubscript{in}
-	\end{equation}
-	Solving for R1: \\
-	\begin{equation}
-	1.2 = \frac{5100}{R1+5100}*5
-	\end{equation}
-	\[R1 = 16150 \Omega\]
+		\input{sensingHardware.tex}
+		% CONTAINS:
+			%\subsection{MQ6 Liquid Petroleum Gas Sensor}
+			%\subsection{Parallax PIR Motion Sensor}
 	
-	\paragraph{\normalsize Physical Construction of Modules} The modules themselves will be constructed on 6x8 cm perf-board and will be contained in a housing. Each module will contain all circuitry necessary including power, data acquisition and transmission. 
+	\section{Hardware Testing}
+		\input{hardwareTesting.tex}
+
+	\section{Physical Construction of End-point Devices}
+	\par The modules themselves will be constructed on 6x8 cm perf-board and will be contained in a housing. Each module will contain all circuitry necessary including power, data acquisition and transmission. 
 	\begin{figure}[h!]
 		\centering
 		\begin{subfigure}[t]{0.45\textwidth}
@@ -388,7 +231,6 @@
 		ser.write(off)
 		count = count + 1
 	\end{lstlisting}
-
 	
-			
+	\printbibliography		
 \end{document}
