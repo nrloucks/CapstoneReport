@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.7)  5 MAY 2020 23:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.7)  6 MAY 2020 00:19
 entering extended mode
 **./ECE492_Report_Loucks_Kharka_Castillo_PRELIM.tex
 (ECE492_Report_Loucks_Kharka_Castillo_PRELIM.tex
@@ -828,98 +828,97 @@ LaTeX Info: Redefining \nameref on input line 85.
 \c@lstlisting=\count350
  (title.tex) [1
 
-{C:/Users/Nathan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 90.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 90.
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.92 	\section{Abstract}
-                         [1
-
-] (abstract.tex
+{C:/Users/Nathan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (abstract.
+tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-) [2
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.92 	\section{Introduction}
+                             [1
 
-] (intro.tex) [3
+] (intro.tex) [2
 
-] (acknowledgments.tex) [4
-
-] (studentStatement.tex) [5
+] (acknowledgments.tex) [3
 
 ]
-(ECE492_Report_Loucks_Kharka_Castillo_PRELIM.toc)
+(studentStatement.tex) [4
+
+] (ECE492_Report_Loucks_Kharka_Castillo_PRELIM.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+)
 \tf@toc=\write5
 \openout5 = `ECE492_Report_Loucks_Kharka_Castillo_PRELIM.toc'.
 
- [6
 
-]
-(ECE492_Report_Loucks_Kharka_Castillo_PRELIM.lof)
+[5
+
+] (ECE492_Report_Loucks_Kharka_Castillo_PRELIM.lof)
 \tf@lof=\write6
 \openout6 = `ECE492_Report_Loucks_Kharka_Castillo_PRELIM.lof'.
 
- [7
+ [6
 
 ] (xbeeS2C.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 5--109
+Underfull \hbox (badness 10000) in paragraph at lines 5--107
 
  []
 
 (raspberryPi.tex
-<rasPi.png, id=172, 211.5102pt x 197.538pt>
+<rasPi.png, id=162, 211.5102pt x 197.538pt>
 File: rasPi.png Graphic file (type png)
 <use rasPi.png>
 Package pdftex.def Info: rasPi.png  used on input line 4.
 (pdftex.def)             Requested size: 216.81pt x 202.49583pt.
-<picam.jpg, id=174, 207.02344pt x 137.7647pt>
+<picam.jpg, id=164, 207.02344pt x 137.7647pt>
 File: picam.jpg Graphic file (type jpg)
 <use picam.jpg>
 Package pdftex.def Info: picam.jpg  used on input line 11.
 (pdftex.def)             Requested size: 144.54pt x 96.18657pt.
- [8
+ [7
 
  <./rasPi.png>]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 14.
-<camcode1.jpg, id=182, 227.85126pt x 60.72687pt>
+<camcode1.jpg, id=172, 227.85126pt x 60.72687pt>
 File: camcode1.jpg Graphic file (type jpg)
 <use camcode1.jpg>
 Package pdftex.def Info: camcode1.jpg  used on input line 17.
 (pdftex.def)             Requested size: 166.2212pt x 44.30243pt.
-<camcode2.jpg, id=183, 500.36937pt x 156.585pt>
+<camcode2.jpg, id=173, 500.36937pt x 156.585pt>
 File: camcode2.jpg Graphic file (type jpg)
 <use camcode2.jpg>
 Package pdftex.def Info: camcode2.jpg  used on input line 18.
 (pdftex.def)             Requested size: 523.9575pt x 163.98424pt.
 ) (python.tex) (powerSupply.tex
-<lm317.jpg, id=184, 451.6875pt x 451.6875pt>
+<lm317.jpg, id=174, 451.6875pt x 451.6875pt>
 File: lm317.jpg Graphic file (type jpg)
 <use lm317.jpg>
 Package pdftex.def Info: lm317.jpg  used on input line 3.
 (pdftex.def)             Requested size: 144.54pt x 144.54294pt.
- [9 <./picam.jpg> <./camcode1.jpg> <./camcode2.jpg>]
-<33vsource.jpg, id=195, 329.73187pt x 295.1025pt>
+ [8 <./picam.jpg> <./camcode1.jpg> <./camcode2.jpg>]
+<33vsource.jpg, id=185, 329.73187pt x 295.1025pt>
 File: 33vsource.jpg Graphic file (type jpg)
 <use 33vsource.jpg>
 Package pdftex.def Info: 33vsource.jpg  used on input line 10.
 (pdftex.def)             Requested size: 216.81pt x 194.04327pt.
-) [10 <./lm317.jpg> <./33vsource.jpg>]
+) [9 <./lm317.jpg> <./33vsource.jpg>]
 (sensingHardware.tex
-<mq6.png, id=201, 153.6942pt x 153.6942pt>
+<mq6.png, id=191, 153.6942pt x 153.6942pt>
 File: mq6.png Graphic file (type png)
 <use mq6.png>
 Package pdftex.def Info: mq6.png  used on input line 8.
 (pdftex.def)             Requested size: 144.54524pt x 144.54pt.
-<mq6diag.png, id=202, 265.9536pt x 119.0046pt>
+<mq6diag.png, id=192, 265.9536pt x 119.0046pt>
 File: mq6diag.png Graphic file (type png)
 <use mq6diag.png>
 Package pdftex.def Info: mq6diag.png  used on input line 13.
@@ -929,20 +928,20 @@ Overfull \hbox (6.49454pt too wide) in paragraph at lines 13--14
  [][] 
  []
 
-<pirDevice.jpg, id=205, 175.0905pt x 175.0905pt>
+<pirDevice.jpg, id=195, 175.0905pt x 175.0905pt>
 File: pirDevice.jpg Graphic file (type jpg)
 <use pirDevice.jpg>
 Package pdftex.def Info: pirDevice.jpg  used on input line 22.
 (pdftex.def)             Requested size: 175.09006pt x 175.09006pt.
-[11
+[10
 
- <./mq6.png> <./mq6diag.png> <./pirDevice.jpg>]) [12] (hardwareTesting.tex
-<mq6Test.png, id=217, 330.5148pt x 295.8252pt>
+ <./mq6.png> <./mq6diag.png> <./pirDevice.jpg>]) [11] (hardwareTesting.tex
+<mq6Test.png, id=208, 330.5148pt x 295.8252pt>
 File: mq6Test.png Graphic file (type png)
 <use mq6Test.png>
 Package pdftex.def Info: mq6Test.png  used on input line 7.
 (pdftex.def)             Requested size: 121.11852pt x 108.405pt.
-<mq6TestOn.png, id=218, 425.4294pt x 319.4334pt>
+<mq6TestOn.png, id=209, 425.4294pt x 319.4334pt>
 File: mq6TestOn.png Graphic file (type png)
 <use mq6TestOn.png>
 Package pdftex.def Info: mq6TestOn.png  used on input line 12.
@@ -952,58 +951,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--23
 
  []
 
-) [13
+) [12
 
  <./mq6Test.png> <./mq6TestOn.png>]
-<module_gas.jpg, id=228, 2615.7725pt x 2613.765pt>
+<module_gas.jpg, id=220, 2615.7725pt x 2613.765pt>
 File: module_gas.jpg Graphic file (type jpg)
 <use module_gas.jpg>
-Package pdftex.def Info: module_gas.jpg  used on input line 131.
+Package pdftex.def Info: module_gas.jpg  used on input line 129.
 (pdftex.def)             Requested size: 108.48468pt x 108.405pt.
-<module_motion.jpg, id=229, 2533.465pt x 2532.46124pt>
+<module_motion.jpg, id=221, 2533.465pt x 2532.46124pt>
 File: module_motion.jpg Graphic file (type jpg)
 <use module_motion.jpg>
-Package pdftex.def Info: module_motion.jpg  used on input line 136.
+Package pdftex.def Info: module_motion.jpg  used on input line 134.
 (pdftex.def)             Requested size: 108.43433pt x 108.405pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
-44.
+42.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 144.
-<xbeeMiniExplorer.png, id=230, 181.6386pt x 181.6386pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 142.
+<xbeeMiniExplorer.png, id=222, 181.6386pt x 181.6386pt>
 File: xbeeMiniExplorer.png Graphic file (type png)
 <use xbeeMiniExplorer.png>
-Package pdftex.def Info: xbeeMiniExplorer.png  used on input line 155.
+Package pdftex.def Info: xbeeMiniExplorer.png  used on input line 153.
 (pdftex.def)             Requested size: 157.18884pt x 157.19835pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<xbeeXctu1.png, id=231, 226.9278pt x 373.8768pt>
+<xbeeXctu1.png, id=223, 226.9278pt x 373.8768pt>
 File: xbeeXctu1.png Graphic file (type png)
 <use xbeeXctu1.png>
-Package pdftex.def Info: xbeeXctu1.png  used on input line 164.
+Package pdftex.def Info: xbeeXctu1.png  used on input line 162.
 (pdftex.def)             Requested size: 175.45862pt x 289.07999pt.
 File: xbeeXctu1.png Graphic file (type png)
 <use xbeeXctu1.png>
-Package pdftex.def Info: xbeeXctu1.png  used on input line 169.
+Package pdftex.def Info: xbeeXctu1.png  used on input line 167.
 (pdftex.def)             Requested size: 175.45862pt x 289.07999pt.
-<ledRemoteTest.png, id=232, 337.7418pt x 253.4268pt>
+<ledRemoteTest.png, id=224, 337.7418pt x 253.4268pt>
 File: ledRemoteTest.png Graphic file (type png)
 <use ledRemoteTest.png>
-Package pdftex.def Info: ledRemoteTest.png  used on input line 178.
+Package pdftex.def Info: ledRemoteTest.png  used on input line 176.
 (pdftex.def)             Requested size: 144.47372pt x 108.405pt.
-<ledRemoteTestOFF.png, id=233, 334.3692pt x 233.673pt>
+<ledRemoteTestOFF.png, id=225, 334.3692pt x 233.673pt>
 File: ledRemoteTestOFF.png Graphic file (type png)
 <use ledRemoteTestOFF.png>
-Package pdftex.def Info: ledRemoteTestOFF.png  used on input line 183.
+Package pdftex.def Info: ledRemoteTestOFF.png  used on input line 181.
 (pdftex.def)             Requested size: 155.11781pt x 108.405pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1011,31 +1010,34 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[14
+[13
 
  <./module_gas.jpg> <./module_motion.jpg>]
 
-LaTeX Warning: Text page 15 contains only floats.
+LaTeX Warning: Text page 14 contains only floats.
 
-[15 <./xbeeMiniExplorer.png> <./xbeeXctu1.png> <./ledRemoteTest.png> <./ledRemo
+[14 <./xbeeMiniExplorer.png> <./xbeeXctu1.png> <./ledRemoteTest.png> <./ledRemo
 teTestOFF.png>]
-<xctuFrames1.png, id=246, 231.7458pt x 427.8384pt>
+<xctuFrames1.png, id=238, 231.7458pt x 427.8384pt>
 File: xctuFrames1.png Graphic file (type png)
 <use xctuFrames1.png>
-Package pdftex.def Info: xctuFrames1.png  used on input line 195.
+Package pdftex.def Info: xctuFrames1.png  used on input line 193.
 (pdftex.def)             Requested size: 156.59138pt x 289.07999pt.
-<xctuFrames2.png, id=247, 231.264pt x 428.3202pt>
+<xctuFrames2.png, id=239, 231.264pt x 428.3202pt>
 File: xctuFrames2.png Graphic file (type png)
 <use xctuFrames2.png>
-Package pdftex.def Info: xctuFrames2.png  used on input line 200.
+Package pdftex.def Info: xctuFrames2.png  used on input line 198.
 (pdftex.def)             Requested size: 156.08586pt x 289.07999pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 240.
- [16 <./xctuFrames1.png> <./xctuFrames2.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 240.
+ [15 <./xctuFrames1.png> <./xctuFrames2.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 236.
+ [16
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 236.
 
 (ECE492_Report_Loucks_Kharka_Castillo_PRELIM.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 240.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 240.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 236.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 236.
 Package rerunfilecheck Info: File `ECE492_Report_Loucks_Kharka_Castillo_PRELIM.
 out' has not changed.
 (rerunfilecheck)             Checksum: 1A826491F0C794B2F9D275862CE3B6A0;1429.
@@ -1047,11 +1049,11 @@ PRELIM.run.xml'.
 Here is how much of TeX's memory you used:
  18188 strings out of 492452
  306397 string characters out of 3129805
- 801912 words of memory out of 3000000
+ 801911 words of memory out of 3000000
  22195 multiletter control sequences out of 15000+200000
  9870 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,9n,79p,918b,1265s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,9n,79p,918b,1249s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTe
@@ -1068,7 +1070,7 @@ type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmtt8.pfb>
 Output written on ECE492_Report_Loucks_Kharka_Castillo_PRELIM.pdf (17 pages, 68
-91074 bytes).
+91073 bytes).
 PDF statistics:
  356 PDF objects out of 1000 (max. 8388607)
  87 named destinations out of 1000 (max. 500000)
