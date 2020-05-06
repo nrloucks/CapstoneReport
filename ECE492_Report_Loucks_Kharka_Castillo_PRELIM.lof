@@ -4,38 +4,26 @@
 \defcounter {refsection}{0}\relax 
 \ttl@tocsep 
 \defcounter {refsection}{0}\relax 
-\ttl@tocsep 
+\contentsline {figure}{\numberline {1}{\ignorespaces Raspberry Pi 3 Model A+\relax }}{4}{figure.caption.3}% 
 \defcounter {refsection}{0}\relax 
-\ttl@tocsep 
+\contentsline {figure}{\numberline {2}{\ignorespaces PiCamera Python Module\relax }}{5}{figure.caption.4}% 
 \defcounter {refsection}{0}\relax 
-\ttl@tocsep 
+\contentsline {figure}{\numberline {3}{\ignorespaces \small LM317 Linear Regulator (TH)\relax }}{5}{figure.caption.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Raspberry Pi 3 Model A+\relax }}{7}{figure.caption.3}% 
+\contentsline {figure}{\numberline {4}{\ignorespaces Complete power supply circuit.\relax }}{6}{figure.caption.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2}{\ignorespaces PiCamera Python Module\relax }}{8}{figure.caption.4}% 
+\contentsline {figure}{\numberline {5}{\ignorespaces MQ6 Gas Sensor\relax }}{6}{figure.caption.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3}{\ignorespaces \small LM317 Linear Regulator (TH)\relax }}{9}{figure.caption.6}% 
+\contentsline {figure}{\numberline {6}{\ignorespaces PIR Motion Sensing Module\relax }}{6}{figure.caption.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4}{\ignorespaces Complete power supply circuit.\relax }}{9}{figure.caption.7}% 
+\contentsline {figure}{\numberline {7}{\ignorespaces Simple LED activation over 802.15.4 (2)\relax }}{7}{figure.caption.10}% 
 \defcounter {refsection}{0}\relax 
-\ttl@tocsep 
+\contentsline {figure}{\numberline {8}{\ignorespaces Internals of Gas (a), and Motion (b) sensing units\relax }}{8}{figure.caption.11}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5}{\ignorespaces MQ6 Gas Sensor\relax }}{10}{figure.caption.8}% 
+\contentsline {figure}{\numberline {9}{\ignorespaces Small XBee interface to be used in each module\relax }}{8}{figure.caption.12}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6}{\ignorespaces PIR Motion Sensing Module\relax }}{10}{figure.caption.9}% 
+\contentsline {figure}{\numberline {10}{\ignorespaces Simple LED activation over 802.15.4\relax }}{9}{figure.caption.13}% 
 \defcounter {refsection}{0}\relax 
-\ttl@tocsep 
+\contentsline {figure}{\numberline {11}{\ignorespaces Simple LED activation over 802.15.4 (2)\relax }}{9}{figure.caption.14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7}{\ignorespaces Simple LED activation over 802.15.4 (2)\relax }}{12}{figure.caption.10}% 
-\defcounter {refsection}{0}\relax 
-\ttl@tocsep 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8}{\ignorespaces Internals of Gas (a), and Motion (b) sensing units\relax }}{13}{figure.caption.11}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9}{\ignorespaces Small XBee interface to be used in each module\relax }}{14}{figure.caption.12}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10}{\ignorespaces Simple LED activation over 802.15.4\relax }}{14}{figure.caption.13}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11}{\ignorespaces Simple LED activation over 802.15.4 (2)\relax }}{14}{figure.caption.14}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {12}{\ignorespaces API Frames created in XCTU\relax }}{15}{figure.caption.15}% 
+\contentsline {figure}{\numberline {12}{\ignorespaces API Frames created in XCTU\relax }}{9}{figure.caption.15}% 

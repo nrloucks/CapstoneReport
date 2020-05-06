@@ -1,21 +1,21 @@
 % sensingHardware.tex
-\subsection{MQ6 Liquid Petroleum Gas Sensor}
-\par The MQ-6 LPG Sensor is a highly sensitive, metal oxide based detector, designed to detect different petroleum derived gases, such as propane, butane and other flammable gasses including natural gas and methane. The sensor's conductivity changes proportional to the gas concentration in contact with the Tin Dioxide (SnO\textsubscript{2}) sensing material within the shroud of the unit. The relatively low cost and wide range of detection make it an excellent choice for our system. The MQ-6 sensor operates at 5-volts.
+\subsubsection{MQ6 Liquid Petroleum Gas Sensor}
+\par The MQ-6 LPG Sensor is a highly sensitive, metal oxide based detector\cite{Dey}, designed to detect different petroleum derived gases, such as propane, butane and other flammable gasses including natural gas and methane. The sensor's conductivity changes proportional to the gas concentration in contact with the Tin Dioxide (SnO\textsubscript{2}) sensing material within the shroud of the unit. The relatively low cost and wide range of detection make it an excellent choice for our system. The MQ-6 sensor operates at 5-volts.
 \begin{figure}[h!]
 	\centering
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.22\textwidth}
 		\centering
-		\includegraphics[height = 2in]{mq6.png}
+		\includegraphics[width=.8\textwidth]{mq6.png}
 		\caption{MQ6 Liquid Petroleum Gas Sensor Package}
 	\end{subfigure}
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.22\textwidth}
 		\centering
-		\includegraphics[height = 1.5in]{mq6diag.png}
+		\includegraphics[width=\textwidth]{mq6diag.png}
 		\caption{MQ6 Liquid Petroleum Gas Sensor Diagram}
 	\end{subfigure}
 	\caption{MQ6 Gas Sensor}
 \end{figure}
-\subsection{Parallax Passive Infra-red Motion Sensor}\cite{Webster}
+\subsubsection{Parallax Passive Infra-red Motion Sensor}
 \par To trigger subsequent elements of the proposed system we needed a motion detecting sensor. An infra red motion sensor works through applying the concept of pyroelectricity, a characteristic of materials that will generate a potential difference when heated. In this case the heat source is reflected infra red light. When there is no movement, current through a resistor in series with the pyroelectric material's electrodes will be constant. When movement occurs in the field of view of the infra red source, the amount of reflected light will change causing a change in the pyroelectric voltage. This change in voltage causes the current through the circuit to change, this is measured triggers the output accordingly.\cite{Webster}
 \begin{figure}[h]
 	\centering

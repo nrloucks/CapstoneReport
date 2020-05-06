@@ -1,4 +1,4 @@
-\documentclass[letter]{report}
+\documentclass[letter,twocolumn]{report}
 \date{February 15, 2020}
 \author{Nathan Louck}
 
@@ -88,25 +88,29 @@
 % Please try to make these changes and send me your final report by May 8th.
 
 \begin{document}
+	\large
 	\begin{titlepage}
 		\input{title.tex}
-	\end{titlepage}
+	
 	\newpage
-	\section{Abstract}
+		\section{Acknowledgments}
+		\input{acknowledgments.tex}
+	\end{titlepage}
+		
+	\subsection{Abstract}
 		\input{abstract.tex}
-	\section{Introduction}
+	\subsection{Introduction}
 		\input{intro.tex}
 
-	\section{Acknowledgments}
-		\input{acknowledgments.tex}	
 	
-	\section{Student Statement}
+	
+	\subsection{Student Statement}
 		\input{studentStatement.tex}
 
 	\tableofcontents
 	\listoffigures
 
-	\section{Research and Design Planning}
+	\section{Research and Design}
 		\subsection{The XBee S2C Module}
 			\input{xbeeS2C.tex}
 		\subsection{Raspberry Pi}
@@ -116,16 +120,16 @@
 		\subsection{Supplying Power}
 			\input{powerSupply.tex}
 	
-	\section{Environment Monitoring Hardware}
+	\subsection{Environment Monitoring Hardware}
 		\input{sensingHardware.tex}
 		% CONTAINS:
 			%\subsection{MQ6 Liquid Petroleum Gas Sensor}
 			%\subsection{Parallax PIR Motion Sensor}
 	
-	\section{Hardware Testing}
+	\subsection{Hardware Testing}
 		\input{hardwareTesting.tex}
 
-	\section{Physical Construction of End-point Devices}
+	\subsection{Physical Construction of End-point Devices}
 	\par The modules themselves will be constructed on 6x8 cm perf-board and will be contained in a housing. Each module will contain all circuitry necessary including power, data acquisition and transmission. 
 	\begin{figure}[h!]
 		\centering
@@ -162,14 +166,14 @@
 	\par We decided to test our router XBee remotely by sending some AT Commands. We used the XCTU application to first create the Remote AT Command to turn on and off pin 18 of the router XBee. To see if we receive any output, we put an LED to see if the pin was turned on or not. In the figure below you can see the LED turning on and off via Pin 18 of the XBee device. The pictures help visualize what the pin is doing corresponding to the LED.
 	\begin{figure}[h!]
 		\centering
-		\begin{subfigure}[t]{0.45\textwidth}
+		\begin{subfigure}[t]{0.22\textwidth}
 			\centering
-			\includegraphics[height=4in]{xbeeXctu1.png}
+			\includegraphics[width=\textwidth]{xbeeXctu1.png}
 			\caption{Turn On Pin 18}
 		\end{subfigure}
-		\begin{subfigure}[t]{0.45\textwidth}
+		\begin{subfigure}[t]{0.22\textwidth}
 			\centering
-			\includegraphics[height=4in]{xbeeXctu1.png}
+			\includegraphics[width=\textwidth]{xbeeXctu1.png}
 			\caption{Turn Off Pin 18}
 		\end{subfigure}
 		\caption{Simple LED activation over 802.15.4}
@@ -193,14 +197,14 @@
 	\par Since we now know that remote router XBee can be controlled by the coordinator XBee wirelessly, we decided to use python program for the same task. First, we connected our coordinator Xbee module to the computer and set it to API mode. Then we powered up the router module and now we know that it has been connected in a wireless mesh network. We used the XCTU application to generate the same Remote AT Command frame to control the pin 18 of the router module. Then opened the python program to start writing our program in a new script file. API frame generated to Turn on \& Off pin 18: 
 	\begin{figure}[h!]
 		\centering
-		\begin{subfigure}[t]{0.45\textwidth}
+		\begin{subfigure}[t]{0.22\textwidth}
 			\centering
-			\includegraphics[height=4in]{xctuFrames1.png}
+			\includegraphics[width=\textwidth]{xctuFrames1.png}
 			\caption{Turn On Pin 18}
 		\end{subfigure}
-		\begin{subfigure}[t]{0.45\textwidth}
+		\begin{subfigure}[t]{0.22\textwidth}
 			\centering
-			\includegraphics[height=4in]{xctuFrames2.png}
+			\includegraphics[width=\textwidth]{xctuFrames2.png}
 			\caption{Turn Off Pin 18}
 		\end{subfigure}
 		\caption{API Frames created in XCTU}
@@ -236,14 +240,15 @@
 		ser.write(off)
 		count = count + 1
 	\end{lstlisting}
-	
+	\onecolumn
 	\printbibliography		
 
 	\begin{appendices}
 		\begin{center}
-			\textbf{\vspace{0.35\textheight}\Huge Appendix A\label{mq6:MDS} \\MQ-6 LPG Sensor Data-sheet}
-			\newpage
+			\textbf{\Huge Appendix A\label{mq6:MDS} \vfill MQ-6 LPG Sensor Data-sheet}
+			
 		\end{center}
+
 		\includepdf{MQ6.pdf}
 		
 		\begin{center}

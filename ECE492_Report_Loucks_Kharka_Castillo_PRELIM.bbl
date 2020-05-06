@@ -46,6 +46,27 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Dey}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DA}{%
+         family={Dey},
+         familyi={D\bibinitperiod},
+         given={Ananya},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DA1}
+    \strng{fullhash}{DA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Semiconductor metal oxide gas sensors: A review}
+    \list{location}{1}{%
+      {NMIMS Mukesh Patel School of Technology Management & Engineering,
+  Mumbai, India}%
+    }
+    \field{year}{2018}
+  \endentry
+
   \entry{Webster}{book}{}
     \name{author}{1}{}{%
       {{hash=WJG}{%

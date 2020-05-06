@@ -1,20 +1,16 @@
-\BOOKMARK [1][-]{section.0.1}{Abstract}{}% 1
-\BOOKMARK [1][-]{section.0.2}{Introduction}{}% 2
-\BOOKMARK [1][-]{section.0.3}{Acknowledgments}{}% 3
-\BOOKMARK [1][-]{section.0.4}{Student Statement}{}% 4
-\BOOKMARK [1][-]{section.0.5}{Research and Design Planning}{}% 5
-\BOOKMARK [2][-]{subsection.0.5.1}{The XBee S2C Module}{section.0.5}% 6
-\BOOKMARK [2][-]{subsection.0.5.2}{Raspberry Pi}{section.0.5}% 7
-\BOOKMARK [2][-]{subsection.0.5.3}{Python, Primary Programming Language}{section.0.5}% 8
-\BOOKMARK [2][-]{subsection.0.5.4}{Supplying Power}{section.0.5}% 9
-\BOOKMARK [1][-]{section.0.6}{Environment Monitoring Hardware}{}% 10
-\BOOKMARK [2][-]{subsection.0.6.1}{MQ6 Liquid Petroleum Gas Sensor}{section.0.6}% 11
-\BOOKMARK [2][-]{subsection.0.6.2}{Parallax Passive Infra-red Motion Sensor}{section.0.6}% 12
-\BOOKMARK [1][-]{section.0.7}{Hardware Testing}{}% 13
-\BOOKMARK [2][-]{subsection.0.7.1}{Testing the MQ6 gas sensor}{section.0.7}% 14
-\BOOKMARK [2][-]{subsection.0.7.2}{Testing the PIR Motion Sensor}{section.0.7}% 15
-\BOOKMARK [1][-]{section.0.8}{Physical Construction of End-point Devices}{}% 16
-\BOOKMARK [2][-]{subsection.0.8.1}{Creating the Wireless Network between the Coordinator and Router modules}{section.0.8}% 17
-\BOOKMARK [2][-]{subsection.0.8.2}{Controlling the Router XBee with XCTU Remote AT Command}{section.0.8}% 18
-\BOOKMARK [2][-]{subsection.0.8.3}{Controlling XBee module using Python}{section.0.8}% 19
-\BOOKMARK [0][-]{section*.17}{Appendices}{}% 20
+\BOOKMARK [1][-]{section.0.1}{Acknowledgments}{}% 1
+\BOOKMARK [2][-]{subsection.0.1.1}{Abstract}{section.0.1}% 2
+\BOOKMARK [2][-]{subsection.0.1.2}{Introduction}{section.0.1}% 3
+\BOOKMARK [2][-]{subsection.0.1.3}{Student Statement}{section.0.1}% 4
+\BOOKMARK [1][-]{section.0.2}{Research and Design}{}% 5
+\BOOKMARK [2][-]{subsection.0.2.1}{The XBee S2C Module}{section.0.2}% 6
+\BOOKMARK [2][-]{subsection.0.2.2}{Raspberry Pi}{section.0.2}% 7
+\BOOKMARK [2][-]{subsection.0.2.3}{Python, Primary Programming Language}{section.0.2}% 8
+\BOOKMARK [2][-]{subsection.0.2.4}{Supplying Power}{section.0.2}% 9
+\BOOKMARK [2][-]{subsection.0.2.5}{Environment Monitoring Hardware}{section.0.2}% 10
+\BOOKMARK [2][-]{subsection.0.2.6}{Hardware Testing}{section.0.2}% 11
+\BOOKMARK [2][-]{subsection.0.2.7}{Physical Construction of End-point Devices}{section.0.2}% 12
+\BOOKMARK [2][-]{subsection.0.2.8}{Creating the Wireless Network between the Coordinator and Router modules}{section.0.2}% 13
+\BOOKMARK [2][-]{subsection.0.2.9}{Controlling the Router XBee with XCTU Remote AT Command}{section.0.2}% 14
+\BOOKMARK [2][-]{subsection.0.2.10}{Controlling XBee module using Python}{section.0.2}% 15
+\BOOKMARK [0][-]{section*.17}{Appendices}{}% 16
