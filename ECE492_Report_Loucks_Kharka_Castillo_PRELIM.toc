@@ -16,36 +16,42 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Raspberry Pi Camera (Hardware and Software)}{4}{figure.caption.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{PiCamera difficulties}{5}{figure.caption.5}% 
+\contentsline {subsection}{\numberline {II.3}Supplying Power}{5}{subsection.0.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {II.3}Python, Primary Programming Language}{5}{subsection.0.2.3}% 
+\contentsline {paragraph}{\normalsize LM317 Linear Voltage Regulator \hspace {1.5em}}{5}{figure.caption.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {II.4}Supplying Power}{5}{subsection.0.2.4}% 
+\contentsline {paragraph}{\normalsize LM7805 5V Voltage Regulator}{5}{figure.caption.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\normalsize LM317 Linear Voltage Regulator \hspace {1.5em}}{5}{figure.caption.7}% 
+\contentsline {subsection}{\numberline {II.4}Environment Monitoring Hardware}{6}{subsection.0.2.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\normalsize LM7805 5V Voltage Regulator}{6}{figure.caption.8}% 
+\contentsline {subsubsection}{MQ6 Liquid Petroleum Gas Sensor}{6}{subsection.0.2.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {II.5}Environment Monitoring Hardware}{6}{subsection.0.2.5}% 
+\contentsline {subsubsection}{Parallax Passive Infra-red Motion Sensor}{6}{figure.caption.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{MQ6 Liquid Petroleum Gas Sensor}{6}{subsection.0.2.5}% 
+\contentsline {section}{\numberline {III}Hardware Testing}{7}{section.0.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Parallax Passive Infra-red Motion Sensor}{6}{figure.caption.9}% 
+\contentsline {subsubsection}{Testing the MQ6 gas sensor}{7}{section.0.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {II.6}Hardware Testing}{7}{subsection.0.2.6}% 
+\contentsline {subsubsection}{Testing the PIR Motion Sensor}{7}{equation.0.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Testing the MQ6 gas sensor}{7}{subsection.0.2.6}% 
+\contentsline {subsubsection}{Testing Raspberry Pi \& Camera}{7}{equation.0.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Testing the PIR Motion Sensor}{7}{equation.0.2.2}% 
+\contentsline {paragraph}{Camera difficulties}{7}{equation.0.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {II.7}Physical Construction of End-point Devices}{8}{subsection.0.2.7}% 
+\contentsline {section}{\numberline {IV}Software Testing}{9}{section.0.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {II.8}Creating the Wireless Network between the Coordinator and Router modules}{8}{subsection.0.2.8}% 
+\contentsline {subsection}{\numberline {IV.1}Python, Primary Programming Language}{9}{subsection.0.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {II.9}Controlling the Router XBee with XCTU Remote AT Command}{9}{subsection.0.2.9}% 
+\contentsline {subsection}{\numberline {IV.2}Creating the Wireless Network between the Coordinator and Router modules}{9}{subsection.0.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {II.10}Controlling XBee module using Python}{9}{subsection.0.2.10}% 
+\contentsline {subsection}{\numberline {IV.3}Controlling the Router XBee with XCTU Remote AT Command}{9}{subsection.0.4.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {III}Cost Analysis and Bill of Materials}{11}{section.0.3}% 
+\contentsline {subsection}{\numberline {IV.4}XBee Digital In/Out setup \textit {(DIO)}}{10}{subsection.0.4.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendices}{13}{section*.19}% 
+\contentsline {subsection}{\numberline {IV.5}Controlling XBee module using Python}{10}{subsection.0.4.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {IV.6}Physical Construction of End-point Devices}{11}{subsection.0.4.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {V}Cost Analysis and Bill of Materials}{12}{section.0.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Appendices}{14}{section*.21}% 
