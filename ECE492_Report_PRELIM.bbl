@@ -1,0 +1,94 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{Catalano}{book}{}
+    \name{author}{1}{}{%
+      {{hash=CS}{%
+         family={Catalano},
+         familyi={C\bibinitperiod},
+         given={Shannan},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {U.S. Department of Justice Office of Justice Programs}%
+    }
+    \strng{namehash}{CS1}
+    \strng{fullhash}{CS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{subtitle}{Victimization During Household Burglary\, NCJ 227379}
+    \field{title}{Bureau of Justice Statistics\, Special Report\, National
+  Crime Victimization Survey}
+    \verb{url}
+    \verb https://www.bjs.gov/content/pub/ascii/vdhb.txt
+    \endverb
+    \list{location}{1}{%
+      {810 Seventh Street NW\, 2nd Floor\, Washington DC 20531}%
+    }
+    \field{year}{2010}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Dey}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DA}{%
+         family={Dey},
+         familyi={D\bibinitperiod},
+         given={Ananya},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DA1}
+    \strng{fullhash}{DA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Semiconductor metal oxide gas sensors: A review}
+    \list{location}{1}{%
+      {NMIMS Mukesh Patel School of Technology Management & Engineering,
+  Mumbai, India}%
+    }
+    \field{year}{2018}
+  \endentry
+
+  \entry{Webster}{book}{}
+    \name{author}{1}{}{%
+      {{hash=WJG}{%
+         family={Webster},
+         familyi={W\bibinitperiod},
+         given={John\bibnamedelima G.},
+         giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {CRC Press LLC}%
+    }
+    \strng{namehash}{WJG1}
+    \strng{fullhash}{WJG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{32\bibrangedash 116}
+    \field{title}{The Measurement, Instrumentation and Sensors Handbook}
+    \list{location}{1}{%
+      {2000 Corporate Blvd.\, N.W. Boca Raton\, Florida 33431}%
+    }
+    \field{year}{1999}
+  \endentry
+\enddatalist
+\endinput
