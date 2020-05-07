@@ -15,6 +15,7 @@
 \usepackage[margin=0.625in]{geometry}
 \usepackage[export]{adjustbox}
 \usepackage[shortlabels]{enumitem}
+\usepackage{lscape}
 
 %For adding PDF final cover & datasheets
 \usepackage{pdfpages}
@@ -240,13 +241,52 @@
 		ser.write(off)
 		count = count + 1
 	\end{lstlisting}
+	
+	%\begin{landscape}
+	\onecolumn
+	\section{Cost Analysis and Bill of Materials}
+	\begin{table}[h]
+		\centering
+		\tiny
+		\begin{tabular}{lllllll}
+			RefDes&Name/PN&Description&Value&Quantity&UNIT PRICE&EXT PRICE \\
+			\hline \\C1&UVZ1H101MPD&CAPACITOR RADIAL 100U 50V +/-20\%&100u&4&\$0.31 &\$1.24 \\
+			C2&EEUFR1H100&CAPACITOR RADIAL 10U 50V +/-20\%&10u&4&\$0.29 &\$1.16 \\
+			C3&C315C104M5U5TA7301&CAPACITOR RADIAL 100N 50V +/-20\%&100n&4&\$0.24 &\$0.96 \\
+			C4&EEUFR1H100&CAPACITOR RADIAL 10U 50V +/-20\%&10u&4&\$0.29 &\$1.16 \\
+			C5&C315C104M5U5TA7301&CAPACITOR RADIAL 100N 50V +/-20\%&100n&4&\$0.24 &\$0.96 \\
+			J1&644456-2&CONN HEADER MALE 1X2&&4&\$0.77 &\$3.08 \\
+			J2&644456-2&CONN HEADER MALE 1X2&&4&\$0.77 &\$3.08 \\
+			J3&644456-2&CONN HEADER MALE 1X2&&4&\$0.77 &\$3.08 \\
+			R1&RES330&RES330 330OHM 1/4W 5\% AXIAL&330 Ohm&4&\$0.10 &\$0.40 \\
+			R2&RES220&RES220 220 OHM 1/4W 5\% AXIAL&220 Ohm&4&\$0.10 &\$0.40 \\
+			R3&RES330&RES330330 OHM 1/4W 5\% AXIAL&330 Ohm&4&\$0.10 &\$0.40 \\
+			U1&LM317T&IC REG LIN POS ADJ 1.5A TO220AB&&4&\$0.71 &\$2.84 \\
+			U2&LM7805CT&PMIC REG LINEAR 5V 1A TO220-3&&1&\$1.54 &\$1.54 \\
+			RF1&XB24CDMPIT-001&XBEE/XBEE-PRO S2C ZIGBEE RF MODULE&&1&\$24.99 &\$24.99 \\
+			RF2&XB24CDMPIT-001&XBEE/XBEE-PRO S2C ZIGBEE RF MODULE&&1&\$24.99 &\$24.99 \\
+			RF3&XB24CDMPIT-001&XBEE/XBEE-PRO S2C ZIGBEE RF MODULE&&1&\$24.99 &\$24.99 \\
+			RF4&XB24CDMPIT-001&XBEE/XBEE-PRO S2C ZIGBEE RF MODULE&&1&\$24.99 &\$24.99 \\
+			 &1568-1075-ND&Board Xbee Explorer &&4&\$10.95 &\$43.80 \\
+			U3&555-28027-ND&Parallax PIR motion&&1&\$15.00 &\$15.00 \\
+			U4&SEN-09405/1568-1411-ND&LPG Sensor - MQ-6&&1&\$4.95 &\$4.95 \\
+			 &RASPBERRY PI 3 A+&Raspberry Pi 3 Model A+ &&1&\$37.44 &\$37.44 \\
+			 &913-2664&PiCamera Module&&1&\$29.90 &\$29.90 \\
+			U5&CST-931AP/102-1458-ND&"Buzzer magnetic 2-4v"&&1&\$1.06 &\$1.06 \\
+			\hline \\&&&&TOTAL PRICE&&\$252.41 
+		\end{tabular}
+	\label{tab:costAnalysis}
+	\caption{Cost analysis and bill of materials.}
+	\end{table}
+	%\end{landscape}
+	
 	\onecolumn
 	\printbibliography		
 
 	\begin{appendices}
 		\begin{center}
-			\textbf{\Huge Appendix A\label{mq6:MDS} \vfill MQ-6 LPG Sensor Data-sheet}
-			
+			\textbf{\vspace{0.35\textheight}\Huge Appendix A\label{mq6:MDS} \\MQ-6 LPG Sensor Data-sheet}
+			\newpage	
 		\end{center}
 
 		\includepdf{MQ6.pdf}
@@ -261,5 +301,6 @@
 			\textbf{\vspace{0.35\textheight}\Huge Appendix C\label{refs} \\Included Reference}
 			\newpage
 		\end{center}
+	\includepdf{Dey.pdf}
 	\end{appendices}	
 \end{document}

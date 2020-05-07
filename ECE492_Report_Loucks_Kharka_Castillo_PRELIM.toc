@@ -16,19 +16,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Raspberry Pi Camera (Hardware and Software)}{4}{figure.caption.3}% 
 \defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{PiCamera difficulties}{5}{figure.caption.5}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {II.3}Python, Primary Programming Language}{5}{subsection.0.2.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {II.4}Supplying Power}{5}{subsection.0.2.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\normalsize LM317 Linear Voltage Regulator \hspace {1.5em}}{5}{figure.caption.6}% 
+\contentsline {paragraph}{\normalsize LM317 Linear Voltage Regulator \hspace {1.5em}}{5}{figure.caption.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\normalsize LM7805 5V Voltage Regulator}{5}{figure.caption.7}% 
+\contentsline {paragraph}{\normalsize LM7805 5V Voltage Regulator}{6}{figure.caption.8}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {II.5}Environment Monitoring Hardware}{6}{subsection.0.2.5}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{MQ6 Liquid Petroleum Gas Sensor}{6}{subsection.0.2.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Parallax Passive Infra-red Motion Sensor}{6}{figure.caption.8}% 
+\contentsline {subsubsection}{Parallax Passive Infra-red Motion Sensor}{6}{figure.caption.9}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {II.6}Hardware Testing}{7}{subsection.0.2.6}% 
 \defcounter {refsection}{0}\relax 
@@ -36,12 +38,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Testing the PIR Motion Sensor}{7}{equation.0.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {II.7}Physical Construction of End-point Devices}{7}{subsection.0.2.7}% 
+\contentsline {subsection}{\numberline {II.7}Physical Construction of End-point Devices}{8}{subsection.0.2.7}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {II.8}Creating the Wireless Network between the Coordinator and Router modules}{8}{subsection.0.2.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {II.9}Controlling the Router XBee with XCTU Remote AT Command}{8}{subsection.0.2.9}% 
+\contentsline {subsection}{\numberline {II.9}Controlling the Router XBee with XCTU Remote AT Command}{9}{subsection.0.2.9}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {II.10}Controlling XBee module using Python}{9}{subsection.0.2.10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendices}{11}{section*.17}% 
+\contentsline {section}{\numberline {III}Cost Analysis and Bill of Materials}{11}{section.0.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Appendices}{13}{section*.19}% 
