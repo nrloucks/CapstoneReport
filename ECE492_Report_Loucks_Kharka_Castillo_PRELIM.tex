@@ -2,8 +2,6 @@
 \date{February 15, 2020}
 \author{Nathan Louck}
 
-
-
 %Formatting Packages
 \usepackage{graphicx}
 \usepackage{wrapfig}
@@ -69,25 +67,6 @@
 	\appendicestocpagenum
 
 
-% 5/4/20 from Mario
-% Adding new sections:
-%*% 1- Add an "Introduction" section where you describe the general idea of the project and its objective. I think your Abstract section can be renamed as an Introduction section, and you can write a more concise Abstract at the beginning. Abstract should be around 150-200 words at most.
-% 2- You need to add a section on Performance Results, where you show the graphs of the gas sensor, light sensor and the measurement from the camera (or the audio measurements).
-% 3- You need to add a Conclusion and a Bibliography section. References should be listed in a Bibliography section at the end of the report (and not as Footnotes). You can use in-text citation to refer to each bibliography item in the text.
-
-% Missing parts:
-% 1- There was no discussion about the motion sensor. This section should be added, in addition to the code that was used to read digital data.
-% 2- You need to add the detailed computation of the gas sensor and PPM measurements (from Ashish's report).
-% 3- You need to add a section including the Python codes that were used to read both analog and digital data, explaining briefly the function of each code.
-% 4- Include a block diagram showing the connection among the different system components (Raspberry Pi to sensors, etc.)
-
-% Report structure:
-% 1- You need to add references for the Zigbee protocol in section IV
-% 2- In page 6 (Raspberry Pi), remove the question mark before GHz
-% 3- List of figures, page 15, should be moved after the table of content.
-
-% Please try to make these changes and send me your final report by May 8th.
-
 \begin{document}
 	\large
 	\begin{titlepage}
@@ -110,6 +89,7 @@
 	\tableofcontents
 	\listoffigures
 	\onecolumn
+	
 	\section{Research and Design}
 
 	\begin{figure}[h]
@@ -118,14 +98,18 @@
 		\caption{Basic Functional Diagram of System}
 		\label{fig:blkDiag}
 	\end{figure}
+
 	\twocolumn
-		\subsection{The XBee S2C Module}
-			\input{xbeeS2C.tex}
-		\subsection{Raspberry Pi}
-			\input{raspberryPi.tex}
-		\subsection{Supplying Power}
-			\input{powerSupply.tex}
 	
+	\subsection{The XBee S2C Module}
+		\input{xbeeS2C.tex}
+		
+	\subsection{Raspberry Pi}
+		\input{raspberryPi.tex}
+		
+	\subsection{Supplying Power}
+		\input{powerSupply.tex}
+
 	\subsection{Environment Monitoring Hardware}
 		\input{sensingHardware.tex}
 	
@@ -141,61 +125,67 @@
 	\section{Design Difficulties}
 		\input{difficulties.tex}
 		
-	%\begin{landscape}
-	\onecolumn
-	\section{Cost Analysis and Bill of Materials}
-	\begin{table}[h]
-		\centering
-		\tiny
-		\begin{tabular}{lllllll}
-			RefDes&Name/PN&Description&Value&Quantity&UNIT PRICE&EXT PRICE \\
-			\hline \\C1&UVZ1H101MPD&CAPACITOR RADIAL 100U 50V +/-20\%&100u&4&\$0.31 &\$1.24 \\
-			C2&EEUFR1H100&CAPACITOR RADIAL 10U 50V +/-20\%&10u&4&\$0.29 &\$1.16 \\
-			C3&C315C104M5U5TA7301&CAPACITOR RADIAL 100N 50V +/-20\%&100n&4&\$0.24 &\$0.96 \\
-			C4&EEUFR1H100&CAPACITOR RADIAL 10U 50V +/-20\%&10u&4&\$0.29 &\$1.16 \\
-			C5&C315C104M5U5TA7301&CAPACITOR RADIAL 100N 50V +/-20\%&100n&4&\$0.24 &\$0.96 \\
-			J1&644456-2&CONN HEADER MALE 1X2&&4&\$0.77 &\$3.08 \\
-			J2&644456-2&CONN HEADER MALE 1X2&&4&\$0.77 &\$3.08 \\
-			J3&644456-2&CONN HEADER MALE 1X2&&4&\$0.77 &\$3.08 \\
-			R1&RES330&RES330 330OHM 1/4W 5\% AXIAL&330 Ohm&4&\$0.10 &\$0.40 \\
-			R2&RES220&RES220 220 OHM 1/4W 5\% AXIAL&220 Ohm&4&\$0.10 &\$0.40 \\
-			R3&RES330&RES330330 OHM 1/4W 5\% AXIAL&330 Ohm&4&\$0.10 &\$0.40 \\
-			U1&LM317T&IC REG LIN POS ADJ 1.5A TO220AB&&4&\$0.71 &\$2.84 \\
-			U2&LM7805CT&PMIC REG LINEAR 5V 1A TO220-3&&1&\$1.54 &\$1.54 \\
-			RF1&XB24CDMPIT-001&XBEE/XBEE-PRO S2C ZIGBEE RF MODULE&&1&\$24.99 &\$24.99 \\
-			RF2&XB24CDMPIT-001&XBEE/XBEE-PRO S2C ZIGBEE RF MODULE&&1&\$24.99 &\$24.99 \\
-			RF3&XB24CDMPIT-001&XBEE/XBEE-PRO S2C ZIGBEE RF MODULE&&1&\$24.99 &\$24.99 \\
-			RF4&XB24CDMPIT-001&XBEE/XBEE-PRO S2C ZIGBEE RF MODULE&&1&\$24.99 &\$24.99 \\
-			 &1568-1075-ND&Board Xbee Explorer &&4&\$10.95 &\$43.80 \\
-			U3&555-28027-ND&Parallax PIR motion&&1&\$15.00 &\$15.00 \\
-			U4&SEN-09405/1568-1411-ND&LPG Sensor - MQ-6&&1&\$4.95 &\$4.95 \\
-			 &RASPBERRY PI 3 A+&Raspberry Pi 3 Model A+ &&1&\$37.44 &\$37.44 \\
-			 &913-2664&PiCamera Module&&1&\$29.90 &\$29.90 \\
-			U5&CST-931AP/102-1458-ND&"Buzzer magnetic 2-4v"&&1&\$1.06 &\$1.06 \\
-			\hline \\&&&&TOTAL PRICE&&\$252.41 
-		\end{tabular}
-	\label{tab:costAnalysis}
-	\caption{Cost analysis and bill of materials.}
-	\end{table}
-	%\end{landscape}
+	\subsection{Performance Results \& Conclusion}
+		\input{performanceAndConclusion.tex}
 	
 	\onecolumn
+	
+	\section{Cost Analysis and Bill of Materials}
+		\begin{table}[h]
+			\centering
+			\tiny
+			\begin{tabular}{lllllll}
+				RefDes&Name/PN&Description&Value&Quantity&UNIT PRICE&EXT PRICE \\
+				\hline \\C1&UVZ1H101MPD&CAPACITOR RADIAL 100U 50V +/-20\%&100u&4&\$0.31 &\$1.24 \\
+				C2&EEUFR1H100&CAPACITOR RADIAL 10U 50V +/-20\%&10u&4&\$0.29 &\$1.16 \\
+				C3&C315C104M5U5TA7301&CAPACITOR RADIAL 100N 50V +/-20\%&100n&4&\$0.24 &\$0.96 \\
+				C4&EEUFR1H100&CAPACITOR RADIAL 10U 50V +/-20\%&10u&4&\$0.29 &\$1.16 \\
+				C5&C315C104M5U5TA7301&CAPACITOR RADIAL 100N 50V +/-20\%&100n&4&\$0.24 &\$0.96 \\
+				J1&644456-2&CONN HEADER MALE 1X2&&4&\$0.77 &\$3.08 \\
+				J2&644456-2&CONN HEADER MALE 1X2&&4&\$0.77 &\$3.08 \\
+				J3&644456-2&CONN HEADER MALE 1X2&&4&\$0.77 &\$3.08 \\
+				R1&RES330&RES330 330OHM 1/4W 5\% AXIAL&330 Ohm&4&\$0.10 &\$0.40 \\
+				R2&RES220&RES220 220 OHM 1/4W 5\% AXIAL&220 Ohm&4&\$0.10 &\$0.40 \\
+				R3&RES330&RES330330 OHM 1/4W 5\% AXIAL&330 Ohm&4&\$0.10 &\$0.40 \\
+				U1&LM317T&IC REG LIN POS ADJ 1.5A TO220AB&&4&\$0.71 &\$2.84 \\
+				U2&LM7805CT&PMIC REG LINEAR 5V 1A TO220-3&&1&\$1.54 &\$1.54 \\
+				RF1&XB24CDMPIT-001&XBEE/XBEE-PRO S2C ZIGBEE RF MODULE&&1&\$24.99 &\$24.99 \\
+				RF2&XB24CDMPIT-001&XBEE/XBEE-PRO S2C ZIGBEE RF MODULE&&1&\$24.99 &\$24.99 \\
+				RF3&XB24CDMPIT-001&XBEE/XBEE-PRO S2C ZIGBEE RF MODULE&&1&\$24.99 &\$24.99 \\
+				RF4&XB24CDMPIT-001&XBEE/XBEE-PRO S2C ZIGBEE RF MODULE&&1&\$24.99 &\$24.99 \\
+				 &1568-1075-ND&Board Xbee Explorer &&4&\$10.95 &\$43.80 \\
+				U3&555-28027-ND&Parallax PIR motion&&1&\$15.00 &\$15.00 \\
+				U4&SEN-09405/1568-1411-ND&LPG Sensor - MQ-6&&1&\$4.95 &\$4.95 \\
+				 &RASPBERRY PI 3 A+&Raspberry Pi 3 Model A+ &&1&\$37.44 &\$37.44 \\
+				 &913-2664&PiCamera Module&&1&\$29.90 &\$29.90 \\
+				U5&CST-931AP/102-1458-ND&"Buzzer magnetic 2-4v"&&1&\$1.06 &\$1.06 \\
+				\hline \\&&&&TOTAL PRICE&&\$252.41 
+			\end{tabular}
+		\label{tab:costAnalysis}
+		\caption{Cost analysis and bill of materials.}
+		\end{table}
+			
+	
 	\printbibliography		
-
+	
+	\section{Complete Source Code}
+		\input{sourceCode.tex}
+	
 	\begin{appendices}
 		\begin{center}
-			\textbf{\vspace{0.35\textheight}\Huge Appendix A\label{mq6:MDS} \\MQ-6 LPG Sensor Data-sheet}
+			\textbf{\vspace{0.35\textheight}\Huge Appendix A\label{app:mq6} \\Manufacturer Data Sheets}
 			\newpage	
 		\end{center}
-
-		\includepdf{MQ6.pdf}
 		
-		\begin{center}
-			\textbf{\vspace{0.35\textheight}\Huge Appendix B\label{PIR:MDS} \\Parallax PIR Motion Sensor Data-sheet}
-			\newpage
-		\end{center}
+		\includepdf{MQ6.pdf} 
+		\newpage
 		\includepdf{PIRMDS.pdf}
-
+		\newpage
+		\includepdf{lm317.pdf}
+		\newpage
+		\includepdf{LM7805.pdf}
+		
+		
 		\begin{center}
 			\textbf{\vspace{0.35\textheight}\Huge Appendix C\label{refs} \\Included Reference}
 			\newpage

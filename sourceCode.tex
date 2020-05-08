@@ -1,0 +1,400 @@
+\subsection{Main GUI Code \& Gas Sensor Code}
+	\begin{lstlisting}		
+		Part 1:		
+		#The Following code is to read extract right voltages from the sensor and compute its mean,average, and variance				
+		#Importing the modules		
+		import serial		
+		import binascii		
+		import time		
+		import numpy as np
+				
+		#initializing the function to open the XBee Coordinator		
+		ser1=serial.Serial()		
+		ser1.baudrate=9600   #speed		
+		ser1.port='COM3'     #port address		
+		ser1.open()          #open port		
+		
+		#For Loop to keep reading data		
+		for i in range(15):		
+		data=ser1.read(14)		
+		v=binascii.hexlify(data).decode('utf-8') #decode the data to Hexadecimal		
+		print(v)
+				
+		D2=v[22:26]  #Select the Voltage range from the Hexadecimal		
+		Dec2=int(D2,16) #covert the Hexadecimal to Decimal value 		
+		print(D2)
+				
+		Voltage=1.2*Dec2/1023  # formula to finally to convert decimal to voltage reading						
+		print(volt)
+				
+		average=np.average(volt)  #compute the average of the voltages		
+		mean=np.mean(volt)        #compute the mean of the voltages		
+		vari=np.var(volt)         #compute the variance of the voltages
+				
+		print('The Average of the Sensor is:')		
+		print(average)		
+		print('The Mean of the Sensor is:')		
+		print(mean)		
+		print('The Variance of the Sensor is')		
+		print(vari)		
+		ser1.close()         #close port
+		
+		Part 2:		
+		#This program is to read right voltages from the sensor and plot it in real time (Voltage VS Time)		
+		
+		#Importing the Modules		
+		import serial		
+		import binascii		
+		import datetime as dt		
+		import numpy as np		
+		import matplotlib.pyplot as plt		
+		import matplotlib.animation as animation	
+		from matplotlib import style
+			
+		#initializing the function to open the XBee Coordinator		
+		ser1=serial.Serial()		
+		ser1.baudrate=9600  #speed		
+		ser1.port='COM3'    #port address
+				
+		#figure for plotting the Time Vs Votlage
+		fig = plt.figure()		
+		ax=fig.add_subplot(1,1,1)
+				
+		time=[]		
+		volt=[]		
+		
+		#open the serial port of the coordinator for incomming signal from the gas sensor		
+		ser1.open()
+			
+		#Periodically from funcAnimation	
+		def animate(i,time,volt):	
+		data=ser1.read(14)		
+		v=binascii.hexlify(data).decode('utf-8') #decode the data to Hexadecimal	
+		D2=v[22:26]                              #select the Voltage range from the Hexadecimal	
+		Dec2=int(D2,16)                          #covert the Hexadecimal to Decimal value		
+		Voltage=1.2*Dec2/1023                    #formula to finally to convert decimal to voltage reading
+						
+		time.append(dt.datetime.now().strftime('%H:%M:%S')) #Display current time 		
+		volt.append(Voltage)
+				
+		time=time[-20:] #Trim and updated the 20 cureent incoming data 		
+		volt=volt[-20:] #Trim and updated the 20 cureent incoming data 
+			
+		#Below is the style, axis label, and intervals for the graph		
+		ax.clear()		
+		ax.plot(time,volt) 		
+		plt.plot()		
+		plt.xticks(rotation=45, ha='right')		
+		plt.subplots_adjust(bottom=0.30)		
+		plt.title('Voltage over Time')		
+		plt.ylabel('Voltage(V)')		
+		plt.xlabel('Time')		
+		plt.ylim(0,1.3)		
+		plt.grid(color='black',linestyle='dotted')		
+		plt.axhline(0.35)
+			
+		ani=animation.FuncAnimation(fig,animate,fargs=(time,volt), interval=1000)		
+		plt.show()		
+		ser1.close()
+						
+		Part 3:		
+		#This program is to read right voltages from the sensor and plot it in real time (PPM VS Time)		
+		#Importing the Modules
+		import serial		
+		import binascii		
+		import datetime as dt		
+		import numpy as np		
+		import matplotlib.pyplot as plt		
+		import matplotlib.animation as animation		
+		from matplotlib import style		
+		import math		
+		import csv
+				
+		#initializing the function to open the XBee Coordinator		
+		ser1=serial.Serial()
+		ser1.baudrate=9600 #speed		
+		ser1.port='COM3'   #port address		
+		ser1.open()
+				
+		#figure for plotting Time VS PPM		
+		fig = plt.figure()		
+		ax=fig.add_subplot(1,1,1)
+				
+		#array for storing data		
+		time = []
+		ppm=[]
+				
+		#defining constants		
+		Ro=99996.85		
+		b=1.23		
+		m=-0.41
+				
+		#Periodically from funcAnimation		
+		def animate(i,time,ppm):	
+		data=ser1.read(14)		
+		v=binascii.hexlify(data).decode('utf-8') #decode the data to Hexadecimal	
+		D2=v[22:26]                              #select the Voltage range from the Hexadecimal		
+		Dec2=int(D2,16)                          #covert the Hexadecimal to Decimal value		
+		Voltage=1.2*Dec2/1023                    #formula to finally to convert decimal to voltage reading
+						
+		#v1 for changing Vout		
+		v1=4.167*Voltage		
+				
+		Rs=(1615000000-(v1*323000000))/((v1*16150)+(v1*20000)-(Voltage*20000)) #changing Rs		
+		x=math.log10(Rs/Ro)                                                 #logarthimc conputation		
+		PPM = 1000*(10**((x-b)/m))                                          #Formula to find PPM		
+		ppm.append(PPM)
+				
+		time.append(dt.datetime.now().strftime('%H:%M:%S')) #Display current time 		
+		time=time[-20:] #Trim and updated the 20 cureent incoming data 
+		volt=volt[-20:] #Trim and updated the 20 cureent incoming data 
+				
+		#Below is the style, axis label, and intervals for the graph		
+		ax.clear()		
+		ax.plot(time,ppm)	
+		plt.plot()		
+		plt.xticks(rotation=45, ha='right')		
+		plt.subplots_adjust(bottom=0.30)		
+		plt.title('PPM over Time')		
+		plt.ylabel('PPM')		
+		plt.xlabel('Time')		
+		plt.axhline(y=1000, color='r', linestyle='-')		
+		plt.ylim([0,4000])
+		plt.grid(color='black',linestyle='dotted')
+				
+		ani=animation.FuncAnimation(fig,animate,fargs=(time,ppm), interval=1000)		
+		plt.show()		
+		ser1.close()				
+	\end{lstlisting}
+\subsection{RaspberryPi Source Code}
+	\begin{lstlisting}
+	from time import sleep
+	from picamera import PiCamera
+	
+	camera = PiCamera()
+	camera.capture('/home/pi/Desktop/test.jpg')  #saves camera picture to file location specified
+	
+	import RPi.GPIO as GPIO
+	from picamera import PiCamera
+	from time import sleep
+	GPIO.setmode(GPIO.BOARD)
+	GPIO.setup(16, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #Pull down to make pin read active high
+	GPIO.input(16) #pin 16 being read
+	if GPIO.input(16):
+	camera = PiCamera()
+	camera.capture('/home/pi/Desktop/test.jpg')
+	print('input high/camera on')
+	else:
+	camera = PiCamera()
+	camera.capture('/home/pi/Desktop/testfail.jpg')
+	print('input low/camera off')
+	GPIO.cleanup()
+	
+	####################################################################################################
+
+	import pyaudio
+	p = pyaudio.PyAudio()
+	for ii in range(p.get_device_count()):
+	print(p.get_device_info_by_index(ii).get('name')) #test for device connection
+	
+	####################################################################################################
+	
+	option batch abort
+	option confirm off
+	open sftp://pi:poop@192.168.0.9 -hostkey="ssh-ed25519 255 47:19:56:74:72:d0:4f:5a:aa:76:8a:57:4b:09:af:d6"
+	synchronize local C:\FileTransferTesting /home/pi/file
+	exit
+	
+	winscp.com /script=syncscript.txt
+	pause
+	
+	####################################################################################################
+	
+	import pyaudio
+	import wave
+	
+	form_1 = pyaudio.paInt16 # 16-bit resolution
+	chans = 1 # 1 channel
+	samp_rate = 44100 # 44.1kHz sampling rate
+	chunk = 4096 # 2^12 samples for buffer
+	record_secs = 30 # seconds to record
+	dev_index = 2 # device index found by p.get_device_info_by_index(ii)
+	wav_output_filename = 'test1.wav' # name of .wav file
+	
+	audio = pyaudio.PyAudio() # create pyaudio instantiation
+	
+	# create pyaudio stream
+	stream = audio.open(format = form_1,rate = samp_rate,channels = chans, \
+	input_device_index = dev_index,input = True, \
+	frames_per_buffer=chunk)
+	print("recording")
+	frames = []
+	
+	# loop through stream and append audio chunks to frame array
+	for ii in range(0,int((samp_rate/chunk)*record_secs)):
+	data = stream.read(chunk)
+	frames.append(data)
+	
+	print("finished recording")
+	
+	# stop the stream, close it, and terminate the pyaudio instantiation
+	stream.stop_stream()
+	stream.close()
+	audio.terminate()
+	
+	# save the audio frames as .wav file
+	wavefile = wave.open(wav_output_filename,'wb')
+	wavefile.setnchannels(chans)
+	wavefile.setsampwidth(audio.get_sample_size(form_1))
+	wavefile.setframerate(samp_rate)
+	wavefile.writeframes(b''.join(frames))
+	wavefile.close()
+	
+	####################################################################################################
+	
+	import RPi.GPIO as GPIO   #imports GPIO module to interface with general purpose input and output pins
+	import pyaudio            #imports pyaduio python interface to interact with audio stream
+	import wave				  #imports 
+	
+	GPIO.setmode(GPIO.BOARD)
+	GPIO.setup(16, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) #Pull down to make pin read active high
+	GPIO.input(16)
+	
+	form_1 = pyaudio.paInt16 # 16-bit resolution
+	chans = 1 # channel 1
+	samp_rate = 44100 # 44.1kHz sampling rate
+	chunk = 4096 # 2^12 samples for buffer
+	record_secs = 5 # seconds to record
+	dev_index = 2 # device index found by p.get_device_info_by_index(ii)
+	wav_output_filename = '/home/pi/file/audioexample.wav' # name of .wav file and saves to specific file location
+	if GPIO.input(16):
+	audio = pyaudio.PyAudio() # create pyaudio instantiation
+	
+	# create pyaudio stream
+	stream = audio.open(format = form_1,rate = samp_rate,channels = chans, \
+	input_device_index = dev_index,input = True, \
+	frames_per_buffer=chunk)
+	print("recording")
+	frames = []
+	
+	# loop through stream and append audio chunks to frame array
+	for ii in range(0,int((samp_rate/chunk)*record_secs)):
+	data = stream.read(chunk)
+	frames.append(data)
+	
+	print("Done recording")
+	
+	# stop the stream, close it, and terminate the pyaudio instantiation
+	stream.stop_stream()
+	stream.close()
+	audio.terminate()
+	
+	# save the audio frames as .wav file
+	wavefile = wave.open(wav_output_filename,'wb')
+	wavefile.setnchannels(chans)
+	wavefile.setsampwidth(audio.get_sample_size(form_1))
+	wavefile.setframerate(samp_rate)
+	wavefile.writeframes(b''.join(frames))
+	wavefile.close()
+	
+	else:
+	print ('failed')
+	GPIO.cleanup()
+	
+	####################################################################################################
+	
+	
+	\end{lstlisting}
+\subsection{Motion Sensor Control \& Data Acquisition}
+	\begin{lstlisting}
+	import serial
+	import binascii
+	import tkinter as tk
+	from digi import *
+		
+	# variables ---	
+	state = 0
+	is_tripped = 0	
+		
+	# setup gui elements ---------
+	
+	window = tk.Tk(screenName="Test Name", baseName=None, className='Tk', useTk=1)
+	window.title("Motion Sensor Console")
+	motion_canvas = tk.Canvas(window, bg="green", width=50, height=50)
+	btn_ON_OFF = tk.Button(window,
+							activebackground="grey",
+							text="Off",
+							fg='white',
+							bg='red'
+							)
+	# window title banner
+	window_banner = tk.Label(window,
+							text="Motion Sensor Console",
+							fg='grey',
+							bg='black',
+							relief="solid",
+							font=("Arial", 30, "normal")
+							)
+	
+	
+	# function definitions -------
+	
+	
+	def set_disabled():
+	window.config(motion_canvas, bg="grey")
+	
+	
+	def get_motion_status():
+	data_raw = ''
+	# print("enter get motion status")
+	ser1 = serial.Serial('COM3', 9600, timeout=1.25)
+	# print("serial opened, waiting for data")
+	data_raw = ser1.read(14)
+	if data_raw == '':
+		ser1.close()
+		window.after(0, get_motion_status())
+		window.update()
+	else:
+		try:
+			data_hex = binascii.hexlify(data_raw).decode('utf-8')
+			D2 = data_hex[22:26]  # extract desired bits
+			base_ten_val =int(D2, 16)
+			# print("this sample:")
+			print(base_ten_val)  # view data
+		
+		except ValueError:
+			# print("caught valueError")
+			ser1.close()
+			# print("re-paint")
+			window.update()
+		
+		else:
+			print("Data received")
+			if base_ten_val == 4:
+				print("set indicator: red")
+				motion_canvas.config(bg="red")
+				print("re-paint")
+				window.update()
+			elif base_ten_val == 0 or '':
+				print("set indicator: green")
+				motion_canvas.config(bg="green")
+				print("re-paint")
+				window.update()
+		finally:
+			ser1.close()
+			# print("re-paint")
+			window.update()
+			# print("set window interrupt")
+			window.after(0, get_motion_status())
+	
+	# runs once -> calls recursive "get_motion_status"
+	
+	
+	btn_ON_OFF.pack()
+	window_banner.pack()
+	motion_canvas.pack()
+	print("re-paint")
+	window.update()
+	print("set window interrupt")
+	window.after(0, get_motion_status())
+	\end{lstlisting}
