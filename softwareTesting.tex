@@ -57,7 +57,7 @@
 	\par There are three types of node in a mesh network. The coordinator who creates a network. Once the network is created other nodes can join in. Then there is a router node which routes the data sent by the end device. Then the information is sent over to the destination which is the coordinator. This coordinator node receives all the data send by the router node which is connected to the end device which are mainly sensor. Advantage of using a mesh network is to messages can be received more quickly if the route is short. It can also manage high traffic, as multiple nodes can transmit data between one another. 
 	\begin{figure}
 		\centering
-		\includegraphics[width=\linewidth]{mesh.jpg}
+		\includegraphics[width=0.5\linewidth]{mesh.jpg}
 		\caption{Mesh Network Visualized}
 		\label{fig:mesh}
 	\end{figure}
@@ -103,14 +103,14 @@
 	\par To enable the change detection feature on DIO3, we need to set the hexadecimal value in the setting DIO change detect to 0x4. As seen on the right side of Figure \ref{fig:changeDet} this will enable the change detection on bit 2 only, which corresponds to DIO3. 
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=\linewidth]{changeDetect.JPG}
+		\includegraphics[width=0.8\linewidth]{changeDetect.JPG}
 		\caption{Change detection parameters in XCTU}
 		\label{fig:changeDet}
 	\end{figure}
 	\par When initially attempting to read data from the XBee's DIO pin, the value read would always read high. This reading was verified with a multimeter as well as on the scope. After some trouble shooting it was discovered that the issue lie in the I/O settings of the XBee, which has the ability to pull its digital inputs or outputs high or low based on a bit mask. 
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=\linewidth]{bitMask.JPG}
+		\includegraphics[width=0.8\linewidth]{bitMask.JPG}
 		\caption{Bit masking settings for pull-up/pull-down resistors.}
 		\label{fig:bitMask}
 	\end{figure}
@@ -119,7 +119,8 @@
 	\subsection{Digital I/O Interfacing with Python}
 	The next step was to interact with the system through via python. After some initial testing of functions and learning the syntax a small GUI (Figure \ref{fig:motGui}) was created to display red when tripped and green when no movement was present. 
 	\begin{figure}[h]
-		\includegraphics[width=\linewidth]{motionGui.jpg}
+		\centering
+		\includegraphics[width=0.5\linewidth]{motionGui.jpg}
 		\caption{Motion Sensor Interface}
 		\label{fig:motGui}
 	\end{figure}

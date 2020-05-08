@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.7)  8 MAY 2020 10:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.7)  8 MAY 2020 11:07
 entering extended mode
 **./ECE492_Report_Loucks_Kharka_Castillo_PRELIM.tex
 (ECE492_Report_Loucks_Kharka_Castillo_PRELIM.tex
@@ -59,11 +59,6 @@ Package: anyfontsize 2007/11/22 anyfontsize.sty by pts
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\multicol.sty"
 Package: multicol 2019/03/01 v1.8w multicolumn formatting (FMi)
 \c@tracingmulticols=\count90
-
-
-Package multicol Warning: May not work with the twocolumn option on input line 
-141.
-
 \mult@box=\box28
 \multicol@leftmargin=\dimen107
 \c@unbalance=\count91
@@ -110,8 +105,10 @@ Package multicol Warning: May not work with the twocolumn option on input line
 \mult@nat@firstbox=\box52
 \colbreak@box=\box53
 \mc@col@check@num=\count99
-) (C:\Users\Nathan\AppData\Roaming\MiKTeX\2.9\tex/latex/blindtext\blindtext.sty
+)
+(C:\Users\Nathan\AppData\Roaming\MiKTeX\2.9\tex/latex/blindtext\blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
@@ -815,14 +812,14 @@ Package caption Info: End \AtBeginDocument code.
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=4.0pt
-* \marginparsep=10.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
-* \@twocolumntrue
+* \@twocolumnfalse
 * \@twosidefalse
 * \@mparswitchfalse
 * \@reversemarginfalse
@@ -891,7 +888,6 @@ Package pdftex.def Info: power supply pcb w xbee.JPG  used on input line 13.
 (pdftex.def)             Requested size: 216.81pt x 114.45572pt.
 ) [1
 
-
 {C:/Users/Nathan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./oswegoHe
 ad.png> <./power supply pcb w xbee.JPG>] (acknowledgments.tex) [2
 
@@ -900,10 +896,13 @@ ad.png> <./power supply pcb w xbee.JPG>] (acknowledgments.tex) [2
 er (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
+l.88 
+      [1]pdfTeX warning (ext4): destination with the same identifier (name{page
+.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
 l.89 	\tableofcontents
-                       [1
-
-] (ECE492_Report_Loucks_Kharka_Castillo_PRELIM.toc
+                       [2] (ECE492_Report_Loucks_Kharka_Castillo_PRELIM.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -914,94 +913,78 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write5
 \openout5 = `ECE492_Report_Loucks_Kharka_Castillo_PRELIM.toc'.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.89 	\tableofcontents
-                       [2
 
+[3
 
 ] (ECE492_Report_Loucks_Kharka_Castillo_PRELIM.lof)
 \tf@lof=\write6
 \openout6 = `ECE492_Report_Loucks_Kharka_Castillo_PRELIM.lof'.
 
-
-[3
-
-
-
-]
-<blkDiag.png, id=230, 1084.05pt x 903.375pt>
-File: blkDiag.png Graphic file (type png)
-<use blkDiag.png>
-Package pdftex.def Info: blkDiag.png  used on input line 97.
-(pdftex.def)             Requested size: 471.55855pt x 392.96495pt.
  [4
 
+]
+<blkDiag.png, id=234, 1084.05pt x 903.375pt>
+File: blkDiag.png Graphic file (type png)
+<use blkDiag.png>
+Package pdftex.def Info: blkDiag.png  used on input line 96.
+(pdftex.def)             Requested size: 471.55855pt x 392.96495pt.
+ (xbeeS2C.tex [5
 
-
- <./blkDiag.png>] (xbeeS2C.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 6--106
+ <./blkDiag.png>])
+Underfull \hbox (badness 10000) in paragraph at lines 6--104
 
  []
 
 (raspberryPi.tex
-<rasPi.png, id=237, 211.5102pt x 197.538pt>
+<rasPi.png, id=243, 211.5102pt x 197.538pt>
 File: rasPi.png Graphic file (type png)
 <use rasPi.png>
 Package pdftex.def Info: rasPi.png  used on input line 4.
 (pdftex.def)             Requested size: 216.81pt x 202.49583pt.
-<picam.jpg, id=238, 207.02344pt x 137.7647pt>
+<picam.jpg, id=244, 207.02344pt x 137.7647pt>
 File: picam.jpg Graphic file (type jpg)
 <use picam.jpg>
 Package pdftex.def Info: picam.jpg  used on input line 10.
 (pdftex.def)             Requested size: 144.54pt x 96.18657pt.
- [5
-
- <./rasPi.png> <./picam.jpg>]) (powerSupply.tex
-<lm317.jpg, id=247, 451.6875pt x 451.6875pt>
+ [6 <./rasPi.png> <./picam.jpg>]) (powerSupply.tex
+<lm317.jpg, id=251, 451.6875pt x 451.6875pt>
 File: lm317.jpg Graphic file (type jpg)
 <use lm317.jpg>
 Package pdftex.def Info: lm317.jpg  used on input line 3.
 (pdftex.def)             Requested size: 144.54pt x 144.54294pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<33vsource.jpg, id=248, 329.73187pt x 295.1025pt>
+<33vsource.jpg, id=252, 329.73187pt x 295.1025pt>
 File: 33vsource.jpg Graphic file (type jpg)
 <use 33vsource.jpg>
 Package pdftex.def Info: 33vsource.jpg  used on input line 10.
 (pdftex.def)             Requested size: 216.81pt x 194.04327pt.
-) (sensingHardware.tex
-<mq6.png, id=251, 153.6942pt x 153.6942pt>
-File: mq6.png Graphic file (type png)
-<use mq6.png>
-Package pdftex.def Info: mq6.png  used on input line 8.
-(pdftex.def)             Requested size: 92.21738pt x 92.21956pt.
-<mq6diag.png, id=252, 265.9536pt x 119.0046pt>
-File: mq6diag.png Graphic file (type png)
-<use mq6diag.png>
-Package pdftex.def Info: mq6diag.png  used on input line 13.
-(pdftex.def)             Requested size: 115.27129pt x 51.57953pt.
- [6 <./lm317.jpg> <./33vsource.jpg>]
-<pirDevice.jpg, id=259, 175.0905pt x 175.0905pt>
-File: pirDevice.jpg Graphic file (type jpg)
-<use pirDevice.jpg>
-Package pdftex.def Info: pirDevice.jpg  used on input line 22.
-(pdftex.def)             Requested size: 175.09006pt x 175.09006pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [7 <./mq6.png> <./mq6diag.png> <./pirDevice.jpg>] (hardwareTesting.tex
-<mq6Test.png, id=268, 330.5148pt x 295.8252pt>
+[7 <./lm317.jpg>]) (sensingHardware.tex
+<mq6.png, id=260, 153.6942pt x 153.6942pt>
+File: mq6.png Graphic file (type png)
+<use mq6.png>
+Package pdftex.def Info: mq6.png  used on input line 8.
+(pdftex.def)             Requested size: 92.21738pt x 92.21956pt.
+<mq6diag.png, id=261, 265.9536pt x 119.0046pt>
+File: mq6diag.png Graphic file (type png)
+<use mq6diag.png>
+Package pdftex.def Info: mq6diag.png  used on input line 13.
+(pdftex.def)             Requested size: 115.27129pt x 51.57953pt.
+<pirDevice.jpg, id=263, 175.0905pt x 175.0905pt>
+File: pirDevice.jpg Graphic file (type jpg)
+<use pirDevice.jpg>
+Package pdftex.def Info: pirDevice.jpg  used on input line 22.
+(pdftex.def)             Requested size: 175.09006pt x 175.09006pt.
+ [8 <./33vsource.jpg> <./mq6.png> <./mq6diag.png>] [9 <./pirDevice.jpg>]) [10] 
+(hardwareTesting.tex
+<mq6Test.png, id=280, 330.5148pt x 295.8252pt>
 File: mq6Test.png Graphic file (type png)
 <use mq6Test.png>
 Package pdftex.def Info: mq6Test.png  used on input line 7.
 (pdftex.def)             Requested size: 121.11852pt x 108.405pt.
-<mq6TestOn.png, id=269, 425.4294pt x 319.4334pt>
+<mq6TestOn.png, id=281, 425.4294pt x 319.4334pt>
 File: mq6TestOn.png Graphic file (type png)
 <use mq6TestOn.png>
 Package pdftex.def Info: mq6TestOn.png  used on input line 12.
@@ -1011,26 +994,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--23
 
  []
 
-) [8
+) [11
 
  <./mq6Test.png> <./mq6TestOn.png>] (softwareTesting.tex
-Underfull \hbox (badness 1565) in paragraph at lines 2--3
-\OT1/cmr/m/n/12 Python is an in-ter-preted, in-ter-ac-tive, object-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
- []
-
-
-Underfull \hbox (badness 1565) in paragraph at lines 37--38
-\OT1/cmr/m/n/12 de-vices are con-nected and rec-og-nized by the
- []
-
-
-Underfull \hbox (badness 1275) in paragraph at lines 37--38
-\OT1/cmr/m/n/12 de-vice name and what chan-nel it is oc-cu-py-
  []
 
 
@@ -1043,7 +1011,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
+[12
 
+]
 Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
@@ -1063,24 +1033,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
-<mesh.jpg, id=279, 544.28343pt x 265.74281pt>
+<mesh.jpg, id=322, 544.28343pt x 265.74281pt>
 File: mesh.jpg Graphic file (type jpg)
 <use mesh.jpg>
 Package pdftex.def Info: mesh.jpg  used on input line 60.
-(pdftex.def)             Requested size: 256.97874pt x 125.46681pt.
-[9
-
-]
-<xbeeMiniExplorer.png, id=310, 181.6386pt x 181.6386pt>
+(pdftex.def)             Requested size: 261.97874pt x 127.90787pt.
+<xbeeMiniExplorer.png, id=323, 181.6386pt x 181.6386pt>
 File: xbeeMiniExplorer.png Graphic file (type png)
 <use xbeeMiniExplorer.png>
 Package pdftex.def Info: xbeeMiniExplorer.png  used on input line 68.
 (pdftex.def)             Requested size: 157.18884pt x 157.19835pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<xbeeXctu1.png, id=311, 226.9278pt x 373.8768pt>
+[13 <./mesh.jpg>]
+<xbeeXctu1.png, id=328, 226.9278pt x 373.8768pt>
 File: xbeeXctu1.png Graphic file (type png)
 <use xbeeXctu1.png>
 Package pdftex.def Info: xbeeXctu1.png  used on input line 77.
@@ -1089,162 +1053,147 @@ File: xbeeXctu1.png Graphic file (type png)
 <use xbeeXctu1.png>
 Package pdftex.def Info: xbeeXctu1.png  used on input line 82.
 (pdftex.def)             Requested size: 115.27129pt x 189.9159pt.
-<ledRemoteTest.png, id=312, 337.7418pt x 253.4268pt>
+<ledRemoteTest.png, id=329, 337.7418pt x 253.4268pt>
 File: ledRemoteTest.png Graphic file (type png)
 <use ledRemoteTest.png>
 Package pdftex.def Info: ledRemoteTest.png  used on input line 91.
 (pdftex.def)             Requested size: 144.47372pt x 108.405pt.
-<ledRemoteTestOFF.png, id=313, 334.3692pt x 233.673pt>
+<ledRemoteTestOFF.png, id=330, 334.3692pt x 233.673pt>
 File: ledRemoteTestOFF.png Graphic file (type png)
 <use ledRemoteTestOFF.png>
 Package pdftex.def Info: ledRemoteTestOFF.png  used on input line 96.
 (pdftex.def)             Requested size: 155.11781pt x 108.405pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10 <./mesh.jpg> <./xbeeMiniExplorer.png> <./xbeeXctu1.png>]
-<changeDetect.JPG, id=322, 614.295pt x 102.3825pt>
+[14 <./xbeeMiniExplorer.png> <./xbeeXctu1.png>]
+<changeDetect.JPG, id=339, 614.295pt x 102.3825pt>
 File: changeDetect.JPG Graphic file (type jpg)
 <use changeDetect.JPG>
 Package pdftex.def Info: changeDetect.JPG  used on input line 106.
-(pdftex.def)             Requested size: 256.97874pt x 42.83006pt.
-<bitMask.JPG, id=323, 462.22687pt x 47.42719pt>
+(pdftex.def)             Requested size: 419.16759pt x 69.86131pt.
+<bitMask.JPG, id=340, 462.22687pt x 47.42719pt>
 File: bitMask.JPG Graphic file (type jpg)
 <use bitMask.JPG>
 Package pdftex.def Info: bitMask.JPG  used on input line 113.
-(pdftex.def)             Requested size: 256.97874pt x 26.36726pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<motionGui.jpg, id=325, 310.15875pt x 127.97812pt>
+(pdftex.def)             Requested size: 419.16759pt x 43.00899pt.
+<motionGui.jpg, id=342, 310.15875pt x 127.97812pt>
 File: motionGui.jpg Graphic file (type jpg)
 <use motionGui.jpg>
-Package pdftex.def Info: motionGui.jpg  used on input line 122.
-(pdftex.def)             Requested size: 256.97874pt x 106.03433pt.
-[11 <./ledRemoteTest.png> <./ledRemoteTestOFF.png> <./changeDetect.JPG> <./bitM
-ask.JPG> <./motionGui.jpg>]
-<gui.png, id=333, 596.2275pt x 402.50375pt>
+Package pdftex.def Info: motionGui.jpg  used on input line 123.
+(pdftex.def)             Requested size: 261.97874pt x 108.09843pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15 <./ledRemoteTest.png> <./ledRemoteTestOFF.png> <./changeDetect.JPG> <./bitM
+ask.JPG>] [16 <./motionGui.jpg>]
+<gui.png, id=400, 596.2275pt x 402.50375pt>
 File: gui.png Graphic file (type png)
 <use gui.png>
-Package pdftex.def Info: gui.png  used on input line 192.
-(pdftex.def)             Requested size: 192.73405pt x 130.11201pt.
- [12 <./gui.png>]
-<motionOff.JPG, id=404, 389.20406pt x 391.4625pt>
+Package pdftex.def Info: gui.png  used on input line 193.
+(pdftex.def)             Requested size: 392.96812pt x 265.28479pt.
+ [17 <./gui.png>]
+<motionOff.JPG, id=426, 389.20406pt x 391.4625pt>
 File: motionOff.JPG Graphic file (type jpg)
 <use motionOff.JPG>
-Package pdftex.def Info: motionOff.JPG  used on input line 258.
+Package pdftex.def Info: motionOff.JPG  used on input line 259.
 (pdftex.def)             Requested size: 209.5798pt x 210.80121pt.
-<motionOn.JPG, id=405, 392.96812pt x 400.49625pt>
+<motionOn.JPG, id=427, 392.96812pt x 400.49625pt>
 File: motionOn.JPG Graphic file (type jpg)
 <use motionOn.JPG>
-Package pdftex.def Info: motionOn.JPG  used on input line 262.
+Package pdftex.def Info: motionOn.JPG  used on input line 263.
 (pdftex.def)             Requested size: 209.5798pt x 213.60033pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 6961) in paragraph at lines 285--285
-|[]\OT1/cmr/bx/n/14.4 Controlling XBee mod-ule us-ing
- []
-
-<xctuFrames1.png, id=406, 231.7458pt x 427.8384pt>
+ [18 <./motionOff.JPG> <./motionOn.JPG>]
+<xctuFrames1.png, id=476, 231.7458pt x 427.8384pt>
 File: xctuFrames1.png Graphic file (type png)
 <use xctuFrames1.png>
-Package pdftex.def Info: xctuFrames1.png  used on input line 291.
+Package pdftex.def Info: xctuFrames1.png  used on input line 292.
 (pdftex.def)             Requested size: 115.27129pt x 212.80885pt.
-<xctuFrames2.png, id=407, 231.264pt x 428.3202pt>
+<xctuFrames2.png, id=477, 231.264pt x 428.3202pt>
 File: xctuFrames2.png Graphic file (type png)
 <use xctuFrames2.png>
-Package pdftex.def Info: xctuFrames2.png  used on input line 296.
+Package pdftex.def Info: xctuFrames2.png  used on input line 297.
 (pdftex.def)             Requested size: 115.27129pt x 213.49294pt.
-[13 <./motionOff.JPG> <./motionOn.JPG>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (2.59293pt too wide) in paragraph at lines 380--381
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 385--387
+ [19 <./xctuFrames1.png> <./xctuFrames2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 386--388
 
  []
 
-[14 <./xctuFrames1.png> <./xctuFrames2.png>]
+[20]
 
-LaTeX Warning: Reference `fig:angGraph' on page 15 undefined on input line 437.
+LaTeX Warning: Reference `fig:angGraph' on page 21 undefined on input line 438.
 
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--438
+Underfull \hbox (badness 10000) in paragraph at lines 438--439
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 445.
+(Font)              <7> on input line 446.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 445.
-
-Underfull \hbox (badness 10000) in paragraph at lines 455--456
-
- []
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 459.
-<resistCirc.JPG, id=558, 587.19376pt x 406.51875pt>
-File: resistCirc.JPG Graphic file (type jpg)
-<use resistCirc.JPG>
-Package pdftex.def Info: resistCirc.JPG  used on input line 473.
-(pdftex.def)             Requested size: 256.97874pt x 177.90733pt.
+(Font)              <5> on input line 446.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 494--495
+
+Underfull \hbox (badness 10000) in paragraph at lines 456--457
+
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 460.
+[21]
+<resistCirc.JPG, id=637, 587.19376pt x 406.51875pt>
+File: resistCirc.JPG Graphic file (type jpg)
+<use resistCirc.JPG>
+Package pdftex.def Info: resistCirc.JPG  used on input line 474.
+(pdftex.def)             Requested size: 523.9575pt x 362.73718pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 495--496
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 496--498
+Underfull \hbox (badness 10000) in paragraph at lines 497--499
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--502
+Underfull \hbox (badness 10000) in paragraph at lines 501--503
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 507--509
 
  []
 
 
-Overfull \hbox (19.10684pt too wide) detected at line 502
-\OML/cmm/m/it/12 Rs \OT1/cmr/m/n/12 = []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 506--508
+Underfull \hbox (badness 10000) in paragraph at lines 513--515
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 512--514
+[23 <./resistCirc.JPG>]
+Underfull \hbox (badness 10000) in paragraph at lines 515--517
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 514--516
+LaTeX Font Warning: Command \small invalid in math mode on input line 518.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 523--524
 
  []
 
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 517.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 522--523
-
- []
-
-) [16 <./resistCirc.JPG>] (physicalContrtuction.tex
+) [24] (physicalContrtuction.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -1256,194 +1205,179 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
-<module_gas.jpg, id=627, 2615.7725pt x 2613.765pt>
+<module_gas.jpg, id=661, 2615.7725pt x 2613.765pt>
 File: module_gas.jpg Graphic file (type jpg)
 <use module_gas.jpg>
 Package pdftex.def Info: module_gas.jpg  used on input line 16.
 (pdftex.def)             Requested size: 235.77927pt x 235.58765pt.
-<module_motion.jpg, id=628, 2533.465pt x 2532.46124pt>
+<module_motion.jpg, id=662, 2533.465pt x 2532.46124pt>
 File: module_motion.jpg Graphic file (type jpg)
 <use module_motion.jpg>
 Package pdftex.def Info: module_motion.jpg  used on input line 21.
 (pdftex.def)             Requested size: 235.77927pt x 235.67876pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[17
-
- <./module_gas.jpg> <./module_motion.jpg>]
 File: power supply pcb w xbee.JPG Graphic file (type jpg)
 <use power supply pcb w xbee.JPG>
 Package pdftex.def Info: power supply pcb w xbee.JPG  used on input line 30.
 (pdftex.def)             Requested size: 392.96812pt x 207.45796pt.
-<3dmodel.JPG, id=636, 758.08218pt x 356.0803pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<3dmodel.JPG, id=665, 758.08218pt x 356.0803pt>
 File: 3dmodel.JPG Graphic file (type jpg)
 <use 3dmodel.JPG>
 Package pdftex.def Info: 3dmodel.JPG  used on input line 36.
 (pdftex.def)             Requested size: 392.96812pt x 184.58145pt.
- [18
 
- <./3dmodel.JPG>])
-(difficulties.tex
-Underfull \hbox (badness 1082) in paragraph at lines 20--21
-\OT1/cmr/m/n/12 The sud-den dis-rup-tion of the project by the
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19
+[25
 
+ <./module_gas.jpg> <./module_motion.jpg>]) [26 <./3dmodel.JPG>]
+(difficulties.tex [27
 
-])
-Underfull \hbox (badness 10000) in paragraph at lines 23--127
-[]$\OT1/cmtt/m/n/12 https : / / github . com / nrloucks /
- []
+] [28]) (performanceAndConclusion.tex) [29] [30
 
-(performanceAndConclusion.tex) [20] [21
-
-
-] [22
-
-] (sourceCode.tex [23
+] [31
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+(sourceCode.tex [32
 
- [24]
-[25] [26]) [27] [28
+] [33] [34] [35]) [36] [37
 
 
-] [29]
-<MQ6.pdf, id=1090, 597.23125pt x 844.15375pt>
+] [38]
+<MQ6.pdf, id=1126, 597.23125pt x 844.15375pt>
 File: MQ6.pdf Graphic file (type pdf)
 <use MQ6.pdf>
-Package pdftex.def Info: MQ6.pdf  used on input line 180.
+Package pdftex.def Info: MQ6.pdf  used on input line 177.
 (pdftex.def)             Requested size: 597.22978pt x 844.15169pt.
 File: MQ6.pdf Graphic file (type pdf)
 <use MQ6.pdf>
-Package pdftex.def Info: MQ6.pdf  used on input line 180.
+Package pdftex.def Info: MQ6.pdf  used on input line 177.
 (pdftex.def)             Requested size: 597.22978pt x 844.15169pt.
-<MQ6.pdf, id=1093, page=1, 597.23125pt x 844.15375pt>
+<MQ6.pdf, id=1129, page=1, 597.23125pt x 844.15375pt>
 File: MQ6.pdf Graphic file (type pdf)
 <use MQ6.pdf, page 1>
-Package pdftex.def Info: MQ6.pdf , page1 used on input line 180.
+Package pdftex.def Info: MQ6.pdf , page1 used on input line 177.
 (pdftex.def)             Requested size: 597.22978pt x 844.15169pt.
 File: MQ6.pdf Graphic file (type pdf)
 <use MQ6.pdf, page 1>
-Package pdftex.def Info: MQ6.pdf , page1 used on input line 180.
+Package pdftex.def Info: MQ6.pdf , page1 used on input line 177.
 (pdftex.def)             Requested size: 562.52745pt x 795.10185pt.
 File: MQ6.pdf Graphic file (type pdf)
 <use MQ6.pdf, page 1>
-Package pdftex.def Info: MQ6.pdf , page1 used on input line 180.
+Package pdftex.def Info: MQ6.pdf , page1 used on input line 177.
 (pdftex.def)             Requested size: 562.52745pt x 795.10185pt.
 File: MQ6.pdf Graphic file (type pdf)
 <use MQ6.pdf, page 1>
-Package pdftex.def Info: MQ6.pdf , page1 used on input line 180.
+Package pdftex.def Info: MQ6.pdf , page1 used on input line 177.
 (pdftex.def)             Requested size: 562.52745pt x 795.10185pt.
 File: MQ6.pdf Graphic file (type pdf)
 <use MQ6.pdf, page 1>
-Package pdftex.def Info: MQ6.pdf , page1 used on input line 180.
+Package pdftex.def Info: MQ6.pdf , page1 used on input line 177.
 (pdftex.def)             Requested size: 562.52745pt x 795.10185pt.
- [30 <./MQ6.pdf>]
-<PIRMDS.pdf, id=1129, 614.295pt x 794.97pt>
+ [39 <./MQ6.pdf>]
+<PIRMDS.pdf, id=1165, 614.295pt x 794.97pt>
 File: PIRMDS.pdf Graphic file (type pdf)
 <use PIRMDS.pdf>
-Package pdftex.def Info: PIRMDS.pdf  used on input line 182.
+Package pdftex.def Info: PIRMDS.pdf  used on input line 179.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: PIRMDS.pdf Graphic file (type pdf)
 <use PIRMDS.pdf>
-Package pdftex.def Info: PIRMDS.pdf  used on input line 182.
+Package pdftex.def Info: PIRMDS.pdf  used on input line 179.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<PIRMDS.pdf, id=1132, page=1, 614.295pt x 794.97pt>
+<PIRMDS.pdf, id=1168, page=1, 614.295pt x 794.97pt>
 File: PIRMDS.pdf Graphic file (type pdf)
 <use PIRMDS.pdf, page 1>
-Package pdftex.def Info: PIRMDS.pdf , page1 used on input line 182.
+Package pdftex.def Info: PIRMDS.pdf , page1 used on input line 179.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: PIRMDS.pdf Graphic file (type pdf)
 <use PIRMDS.pdf, page 1>
-Package pdftex.def Info: PIRMDS.pdf , page1 used on input line 182.
+Package pdftex.def Info: PIRMDS.pdf , page1 used on input line 179.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: PIRMDS.pdf Graphic file (type pdf)
 <use PIRMDS.pdf, page 1>
-Package pdftex.def Info: PIRMDS.pdf , page1 used on input line 182.
+Package pdftex.def Info: PIRMDS.pdf , page1 used on input line 179.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: PIRMDS.pdf Graphic file (type pdf)
 <use PIRMDS.pdf, page 1>
-Package pdftex.def Info: PIRMDS.pdf , page1 used on input line 182.
+Package pdftex.def Info: PIRMDS.pdf , page1 used on input line 179.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: PIRMDS.pdf Graphic file (type pdf)
 <use PIRMDS.pdf, page 1>
-Package pdftex.def Info: PIRMDS.pdf , page1 used on input line 182.
+Package pdftex.def Info: PIRMDS.pdf , page1 used on input line 179.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [31 <./PIRMDS.pdf>]
-<lm317.pdf, id=1171, 614.295pt x 794.97pt>
+ [40 <./PIRMDS.pdf>]
+<lm317.pdf, id=1207, 614.295pt x 794.97pt>
 File: lm317.pdf Graphic file (type pdf)
 <use lm317.pdf>
-Package pdftex.def Info: lm317.pdf  used on input line 184.
+Package pdftex.def Info: lm317.pdf  used on input line 181.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: lm317.pdf Graphic file (type pdf)
 <use lm317.pdf>
-Package pdftex.def Info: lm317.pdf  used on input line 184.
+Package pdftex.def Info: lm317.pdf  used on input line 181.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<lm317.pdf, id=1174, page=1, 614.295pt x 794.97pt>
+<lm317.pdf, id=1210, page=1, 614.295pt x 794.97pt>
 File: lm317.pdf Graphic file (type pdf)
 <use lm317.pdf, page 1>
-Package pdftex.def Info: lm317.pdf , page1 used on input line 184.
+Package pdftex.def Info: lm317.pdf , page1 used on input line 181.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: lm317.pdf Graphic file (type pdf)
 <use lm317.pdf, page 1>
-Package pdftex.def Info: lm317.pdf , page1 used on input line 184.
+Package pdftex.def Info: lm317.pdf , page1 used on input line 181.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: lm317.pdf Graphic file (type pdf)
 <use lm317.pdf, page 1>
-Package pdftex.def Info: lm317.pdf , page1 used on input line 184.
+Package pdftex.def Info: lm317.pdf , page1 used on input line 181.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: lm317.pdf Graphic file (type pdf)
 <use lm317.pdf, page 1>
-Package pdftex.def Info: lm317.pdf , page1 used on input line 184.
+Package pdftex.def Info: lm317.pdf , page1 used on input line 181.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: lm317.pdf Graphic file (type pdf)
 <use lm317.pdf, page 1>
-Package pdftex.def Info: lm317.pdf , page1 used on input line 184.
+Package pdftex.def Info: lm317.pdf , page1 used on input line 181.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [32 <./lm317.pdf>]
-<LM7805.pdf, id=1259, 614.295pt x 794.97pt>
+ [41 <./lm317.pdf>]
+<LM7805.pdf, id=1296, 614.295pt x 794.97pt>
 File: LM7805.pdf Graphic file (type pdf)
 <use LM7805.pdf>
-Package pdftex.def Info: LM7805.pdf  used on input line 186.
+Package pdftex.def Info: LM7805.pdf  used on input line 183.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: LM7805.pdf Graphic file (type pdf)
 <use LM7805.pdf>
-Package pdftex.def Info: LM7805.pdf  used on input line 186.
+Package pdftex.def Info: LM7805.pdf  used on input line 183.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<LM7805.pdf, id=1262, page=1, 614.295pt x 794.97pt>
+<LM7805.pdf, id=1299, page=1, 614.295pt x 794.97pt>
 File: LM7805.pdf Graphic file (type pdf)
 <use LM7805.pdf, page 1>
-Package pdftex.def Info: LM7805.pdf , page1 used on input line 186.
+Package pdftex.def Info: LM7805.pdf , page1 used on input line 183.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: LM7805.pdf Graphic file (type pdf)
 <use LM7805.pdf, page 1>
-Package pdftex.def Info: LM7805.pdf , page1 used on input line 186.
+Package pdftex.def Info: LM7805.pdf , page1 used on input line 183.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: LM7805.pdf Graphic file (type pdf)
 <use LM7805.pdf, page 1>
-Package pdftex.def Info: LM7805.pdf , page1 used on input line 186.
+Package pdftex.def Info: LM7805.pdf , page1 used on input line 183.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: LM7805.pdf Graphic file (type pdf)
 <use LM7805.pdf, page 1>
-Package pdftex.def Info: LM7805.pdf , page1 used on input line 186.
+Package pdftex.def Info: LM7805.pdf , page1 used on input line 183.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: LM7805.pdf Graphic file (type pdf)
 <use LM7805.pdf, page 1>
-Package pdftex.def Info: LM7805.pdf , page1 used on input line 186.
+Package pdftex.def Info: LM7805.pdf , page1 used on input line 183.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [33 <./LM7805.pdf>] [34]
+ [42 <./LM7805.pdf>] [43]
 
 pdfTeX warning: pdflatex.exe (file ./Dey.pdf): PDF inclusion: found PDF version
  <1.7>, but at most version <1.5> allowed
-<Dey.pdf, id=1289, 597.50829pt x 796.67737pt>
+<Dey.pdf, id=1326, 597.50829pt x 796.67737pt>
 File: Dey.pdf Graphic file (type pdf)
 <use Dey.pdf>
-Package pdftex.def Info: Dey.pdf  used on input line 193.
+Package pdftex.def Info: Dey.pdf  used on input line 190.
 (pdftex.def)             Requested size: 597.50682pt x 796.67543pt.
 
 
@@ -1451,7 +1385,7 @@ pdfTeX warning: pdflatex.exe (file ./Dey.pdf): PDF inclusion: found PDF version
  <1.7>, but at most version <1.5> allowed
 File: Dey.pdf Graphic file (type pdf)
 <use Dey.pdf>
-Package pdftex.def Info: Dey.pdf  used on input line 193.
+Package pdftex.def Info: Dey.pdf  used on input line 190.
 (pdftex.def)             Requested size: 597.50682pt x 796.67543pt.
 
 
@@ -1461,33 +1395,33 @@ pdfTeX warning: pdflatex.exe (file ./Dey.pdf): PDF inclusion: found PDF version
 
 pdfTeX warning: pdflatex.exe (file ./Dey.pdf): PDF inclusion: found PDF version
  <1.7>, but at most version <1.5> allowed
-<Dey.pdf, id=1292, page=1, 597.50829pt x 796.67737pt>
+<Dey.pdf, id=1329, page=1, 597.50829pt x 796.67737pt>
 File: Dey.pdf Graphic file (type pdf)
 <use Dey.pdf, page 1>
-Package pdftex.def Info: Dey.pdf , page1 used on input line 193.
+Package pdftex.def Info: Dey.pdf , page1 used on input line 190.
 (pdftex.def)             Requested size: 597.50682pt x 796.67543pt.
 File: Dey.pdf Graphic file (type pdf)
 <use Dey.pdf, page 1>
-Package pdftex.def Info: Dey.pdf , page1 used on input line 193.
+Package pdftex.def Info: Dey.pdf , page1 used on input line 190.
 (pdftex.def)             Requested size: 596.73184pt x 795.64214pt.
 File: Dey.pdf Graphic file (type pdf)
 <use Dey.pdf, page 1>
-Package pdftex.def Info: Dey.pdf , page1 used on input line 193.
+Package pdftex.def Info: Dey.pdf , page1 used on input line 190.
 (pdftex.def)             Requested size: 596.73184pt x 795.64214pt.
 File: Dey.pdf Graphic file (type pdf)
 <use Dey.pdf, page 1>
-Package pdftex.def Info: Dey.pdf , page1 used on input line 193.
+Package pdftex.def Info: Dey.pdf , page1 used on input line 190.
 (pdftex.def)             Requested size: 596.73184pt x 795.64214pt.
 File: Dey.pdf Graphic file (type pdf)
 <use Dey.pdf, page 1>
-Package pdftex.def Info: Dey.pdf , page1 used on input line 193.
+Package pdftex.def Info: Dey.pdf , page1 used on input line 190.
 (pdftex.def)             Requested size: 596.73184pt x 795.64214pt.
-[35 <./Dey.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
+[44 <./Dey.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 192.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
  (ECE492_Report_Loucks_Kharka_Castillo_PRELIM.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 195.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 192.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 192.
 Package rerunfilecheck Info: File `ECE492_Report_Loucks_Kharka_Castillo_PRELIM.
 out' has not changed.
 (rerunfilecheck)             Checksum: 69C4E36A73AD7024FFA9065B72B22702;2195.
@@ -1501,13 +1435,13 @@ PRELIM.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20067 strings out of 492452
- 335871 string characters out of 3129805
- 907248 words of memory out of 3000000
+ 20076 strings out of 492452
+ 335934 string characters out of 3129805
+ 889232 words of memory out of 3000000
  23332 multiletter control sequences out of 15000+200000
  11944 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,18n,79p,1031b,1847s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,18n,79p,1031b,1849s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTe
@@ -1531,10 +1465,10 @@ ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files
 s/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmtt8.pfb>
-Output written on ECE492_Report_Loucks_Kharka_Castillo_PRELIM.pdf (37 pages, 13
-066082 bytes).
+Output written on ECE492_Report_Loucks_Kharka_Castillo_PRELIM.pdf (46 pages, 13
+070193 bytes).
 PDF statistics:
- 1577 PDF objects out of 1728 (max. 8388607)
- 766 named destinations out of 1000 (max. 500000)
+ 1615 PDF objects out of 1728 (max. 8388607)
+ 775 named destinations out of 1000 (max. 500000)
  478 words of extra memory for PDF output out of 10000 (max. 10000000)
 
