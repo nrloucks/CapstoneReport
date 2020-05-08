@@ -46,6 +46,22 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Digi}{article}{}
+    \name{author}{1}{}{%
+      {{hash=ID}{%
+         family={International},
+         familyi={I\bibinitperiod},
+         given={Digi},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ID1}
+    \strng{fullhash}{ID1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{XBee S2C/S2c-PRO manufacturer data sheet}
+  \endentry
+
   \entry{Dey}{article}{}
     \name{author}{1}{}{%
       {{hash=DA}{%

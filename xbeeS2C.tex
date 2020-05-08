@@ -4,3 +4,14 @@
 \par The XBee modules come complete with 15 I/O pins and multiple analog to digital converters. This makes them the perfect choice for data acquisition of remote sensors. 
 \par XBee modules are available in a variety of form factors. We chose the XB24CAPIT form factor for our designs. Its antenna is contained within the PCB, while this may have less range than a wire antenna or U.fl add-on type of antenna, it provides excellent range for our application with minimal complexity. This model XBee is through-hole mounted, making initial designs and testing much easier that with a surface mount variety, though these occupy a smaller rectangular footprint. 
 \par All of these considerations taken into account we decided that the XBee-XB24CAPIT would be the ideal communication module for the system we have designed. \\
+
+\subsubsection{API vs Transparent Mode}
+\begin{table}[h]\cite{Digi}
+	\begin{tabular}[width=0.5\linewidth]{p{0.5\linewidth}p{0.5\linewidth}}
+		API & Transparent \\
+		\hline
+			 Sends wireless data to multiple destinations. &Provides a simple interface that makes it easy to get started with XBee devices. \\
+			Can set or read the configuration of remote XBee devices in the network.&what you send is exactly what other modules get, and vice versa.\\
+			Can transmit data to one or multiple destinations&Works very well for two-way communication between XBee devices.
+	\end{tabular}
+\end{table}

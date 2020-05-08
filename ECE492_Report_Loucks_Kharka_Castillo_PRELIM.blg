@@ -2,4 +2,10 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: ECE492_Report_Loucks_
 The style file: biblatex.bst
 Database file #1: ECE492_Report_Loucks_Kharka_Castillo_PRELIM-blx.bib
 Database file #2: refs.bib
+I was expecting a `,' or a `}'---line 43 of file refs.bib
+ :  
+ :  url = {https://www.digi.com/pdf/ds_xbee-s2c-802-15-4.pdf}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Biblatex version: 3.13
+(There was 1 error message)

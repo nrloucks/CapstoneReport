@@ -12,86 +12,88 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {II.1}The XBee S2C Module}{5}{subsection.0.2.1}% 
 \defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{API vs Transparent Mode}{6}{subsection.0.2.1}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {II.2}Raspberry Pi}{6}{subsection.0.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Raspberry Pi Camera (Hardware and Software)}{6}{figure.caption.6}% 
+\contentsline {subsubsection}{Raspberry Pi Camera (Hardware and Software)}{6}{figure.caption.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{PyAudio}{7}{figure.caption.7}% 
+\contentsline {subsubsection}{PyAudio}{7}{figure.caption.8}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {II.3}Supplying Power}{7}{subsection.0.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\normalsize LM317 Linear Voltage Regulator \hspace {1.5em}}{7}{figure.caption.8}% 
+\contentsline {paragraph}{\normalsize LM317 Linear Voltage Regulator \hspace {1.5em}}{8}{figure.caption.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\normalsize LM7805 5V Voltage Regulator}{8}{figure.caption.9}% 
+\contentsline {paragraph}{\normalsize LM7805 5V Voltage Regulator}{8}{figure.caption.10}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {II.4}Environment Monitoring Hardware}{8}{subsection.0.2.4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{MQ6 Liquid Petroleum Gas Sensor}{8}{subsection.0.2.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Parallax Passive Infra-red Motion Sensor}{8}{figure.caption.10}% 
+\contentsline {subsubsection}{Parallax Passive Infra-red Motion Sensor}{8}{figure.caption.11}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {III}Hardware Testing}{11}{section.0.3}% 
+\contentsline {section}{\numberline {III}Hardware Testing}{10}{section.0.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Testing the MQ6 gas sensor}{11}{section.0.3}% 
+\contentsline {subsubsection}{Testing the MQ6 gas sensor}{10}{section.0.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Testing the PIR Motion Sensor}{11}{equation.0.3.2}% 
+\contentsline {subsubsection}{Testing the PIR Motion Sensor}{10}{equation.0.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {IV}Software Testing}{12}{section.0.4}% 
+\contentsline {section}{\numberline {IV}Software Testing}{11}{section.0.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {IV.1}Python, Primary Programming Language}{12}{subsection.0.4.1}% 
+\contentsline {subsection}{\numberline {IV.1}Python, Primary Programming Language}{11}{subsection.0.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Explanation of Raspberry Pi Code Functions}{12}{lstnumber.-1.24}% 
+\contentsline {subsubsection}{Explanation of Raspberry Pi Code Functions}{11}{lstnumber.-1.24}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {IV.2}ZigBee Mesh Protocol}{13}{subsection.0.4.2}% 
+\contentsline {subsection}{\numberline {IV.2}ZigBee Mesh Protocol}{12}{subsection.0.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {IV.3}Creating the Wireless Network between the Coordinator and Router modules}{13}{subsection.0.4.3}% 
+\contentsline {subsection}{\numberline {IV.3}Creating the Wireless Network between the Coordinator and Router modules}{12}{subsection.0.4.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {IV.4}Controlling the Router XBee with XCTU Remote AT Command}{14}{subsection.0.4.4}% 
+\contentsline {subsection}{\numberline {IV.4}Controlling the Router XBee with XCTU Remote AT Command}{13}{subsection.0.4.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {IV.5}XBee Digital In/Out setup \textit {(DIO)}}{15}{subsection.0.4.5}% 
+\contentsline {subsection}{\numberline {IV.5}XBee Digital In/Out setup \textit {(DIO)}}{14}{subsection.0.4.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {IV.6}Digital I/O Interfacing with Python}{15}{subsection.0.4.6}% 
+\contentsline {subsection}{\numberline {IV.6}Digital I/O Interfacing with Python}{14}{subsection.0.4.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {IV.7}Primary GUI}{16}{subsection.0.4.7}% 
+\contentsline {subsection}{\numberline {IV.7}Primary GUI}{15}{subsection.0.4.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {IV.8}Controlling XBee module using Python}{19}{subsection.0.4.8}% 
+\contentsline {subsection}{\numberline {IV.8}Controlling XBee module using Python}{18}{subsection.0.4.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {IV.9}Gas Sensor Interfacing \& Data Processing}{20}{subsection.0.4.9}% 
+\contentsline {subsection}{\numberline {IV.9}Gas Sensor Interfacing \& Data Processing}{19}{subsection.0.4.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Threshold Detection}{20}{subsection.0.4.9}% 
+\contentsline {subsubsection}{Threshold Detection}{19}{subsection.0.4.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Finding the Average, Mean, and Variance of sampled voltages}{20}{lstnumber.-8.45}% 
+\contentsline {subsubsection}{Finding the Average, Mean, and Variance of sampled voltages}{19}{lstnumber.-8.45}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Calculating True Parts-Per-Million \textit {(PPM)}}{21}{lstnumber.-9.45}% 
+\contentsline {subsubsection}{Calculating True Parts-Per-Million \textit {(PPM)}}{20}{lstnumber.-10.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {V}Physical Construction of End-point Devices}{25}{section.0.5}% 
+\contentsline {section}{\numberline {V}Physical Construction of End-point Devices}{24}{section.0.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {VI}Design Difficulties}{27}{section.0.6}% 
+\contentsline {section}{\numberline {VI}Design Difficulties}{26}{section.0.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Testing Raspberry Pi \& Camera}{27}{section.0.6}% 
+\contentsline {subsubsection}{Testing Raspberry Pi \& Camera}{26}{section.0.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Camera difficulties}{27}{section.0.6}% 
+\contentsline {paragraph}{Camera difficulties}{26}{section.0.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{PyAudio}{27}{figure.caption.29}% 
+\contentsline {subsubsection}{PyAudio}{26}{figure.caption.31}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{PIR Motion Sensor}{27}{figure.caption.29}% 
+\contentsline {subsubsection}{PIR Motion Sensor}{26}{figure.caption.31}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Remote Collaboration / COVID-19 Disruption}{28}{figure.caption.29}% 
+\contentsline {subsubsection}{Remote Collaboration / COVID-19 Disruption}{27}{figure.caption.31}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {VI.1}Performance Results \& Conclusion}{28}{subsection.0.6.1}% 
+\contentsline {subsection}{\numberline {VI.1}Performance Results \& Conclusion}{27}{subsection.0.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Performance Results}{28}{subsection.0.6.1}% 
+\contentsline {subsubsection}{Performance Results}{27}{subsection.0.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Conclusion}{28}{subsection.0.6.1}% 
+\contentsline {subsubsection}{Conclusion}{27}{subsection.0.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {VII}Cost Analysis and Bill of Materials}{29}{section.0.7}% 
+\contentsline {section}{\numberline {VII}Cost Analysis and Bill of Materials}{28}{section.0.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {VIII}Complete Source Code}{31}{section.0.8}% 
+\contentsline {section}{\numberline {VIII}Complete Source Code}{30}{section.0.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {VIII.1}Main GUI Code \& Gas Sensor Code}{31}{subsection.0.8.1}% 
+\contentsline {subsection}{\numberline {VIII.1}Main GUI Code \& Gas Sensor Code}{30}{subsection.0.8.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {VIII.2}RaspberryPi Source Code}{33}{subsection.0.8.2}% 
+\contentsline {subsection}{\numberline {VIII.2}RaspberryPi Source Code}{32}{subsection.0.8.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {VIII.3}Motion Sensor Control \& Data Acquisition}{34}{subsection.0.8.3}% 
+\contentsline {subsection}{\numberline {VIII.3}Motion Sensor Control \& Data Acquisition}{33}{subsection.0.8.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendices}{36}{section*.32}% 
+\contentsline {chapter}{Appendices}{35}{section*.34}% 

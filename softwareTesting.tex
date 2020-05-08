@@ -425,7 +425,8 @@
 				print(vari)
 				
 				ser1.close()         #close port
-				########################################
+			\end{lstlisting}
+			\begin{lstlisting}
 				Output:
 					The Average of the Sensor is:
 					0.255
@@ -531,6 +532,18 @@
 				\end{center}
 				Therefore the PPM Equation will be,\\
 				\[PPM = 10^\frac{Log_10(\frac{R_s}{R_o})-b}{m}\]
+				
+				\begin{figure}[h]
+					\centering
+				\begin{subfigure}[t]{0.5\linewidth}
+						\includegraphics[width=\linewidth]{ppmlow.png}
+						\caption{PPM below critical threshold}
+				\end{subfigure}
+				\begin{subfigure}[t]{0.5\linewidth}
+					\includegraphics[width=\linewidth]{ppmhigh.png}
+					\caption{PPM above critical threshold}
+				\end{subfigure}
+				\end{figure}
 			
 				
 		
