@@ -1,0 +1,17 @@
+\subsubsection{Testing Raspberry Pi \& Camera}
+		\paragraph{Camera difficulties}Camera Component sends a camera control callback error and does not take and save pictures anymore. The OS of the raspberry pi has been reset and re-downloaded to the raspberry pi. There is a visible trigger to the camera activating when using the Pi NOIR camera board. There is a red light on the board of the camera that signifies when it is turned on or activated. The camera when activated through the command window will sometimes create the file but have no data inside of it. Upon receiving this error it seems to slow down the raspberry pi board significantly that it requires a restart. The raspberry pi has been test with three different camera modules and all of them give back the same callback control error.  Raspberry Pi has configuration settings to activate and recognize when a camera is connected, however the issues may seem to arise with a faulty port on the raspberry pi itself.
+		\begin{figure}[h]
+			\begin{lstlisting}
+			mmal: Received unexpected camera control callback event, 0x4f525245
+			\end{lstlisting}
+			\label{fig:camErr}
+			\caption{Error from camera module}
+		\end{figure}
+		\par When attempting to switch to audio recording instead of using the camera the only devices available were 3.5mm jack from a headset with built in microphone. The assumption was to connect to the audio jack output of the raspberry pi, and record and listen through the headset itself. However, this is impossible due to the specifications of the raspberry pi the audio jack is meant for output only. The only way to record audio was using a USB microphone connected to the Raspberry Pi device itself. The other problem was unfortunately due to limitations the GUI was not implemented due to not having components being able to come together, so manual transfer of file is required but is shown that it can be implemented to work automatically as a python script.
+		
+		\subsubsection{PyAudio}
+		\par To begin the raspberry pi will receive a trigger from the Xbee to activate the camera. The camera would then take several pictures or a video file. The goal was to take a video of whoever approached the front door sensed by the motion sensor. The motion sensor would then communicate in tandem with the Xbee device and send a signal to the other Xbee device on the Raspberry Pi. The Xbee is connected to pin 16 on the Raspberry Pi and that will then start the camera to record the person at the door. Once the camera has captured enough video or pictures, the raspberry pi will then send the files to the main computer for viewing through the GUI. 
+		\par Since the camera component does not work, we are replacing with recording audio whenever pin 16 is activated the code to record the audio via the microphone for whenever a person is at the door will be the main process instead. Through the implementation of python code and the triggers from the Xbee the raspberry pi will record audio of whenever motion is detected at the door and then save an audio file of the encounter which will then be automatically transferred over to the main computer over the network via WinSCP and the use of the planned GUI.
+		
+		\subsubsection{PIR Motion Sensor}
+		\par In initial testing of the sensor, the output received at the XBee itself was subject to some instability. This was solved by adding an RC filter between the digital input of the XBee and the output of the sensor module. This eliminated a DC component that would sometimes be present in the signal. 
