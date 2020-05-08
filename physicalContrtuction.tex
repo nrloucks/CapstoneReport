@@ -4,22 +4,30 @@
 	\par Our system consists of 4 separate modules:
 	\begin{itemize}
 		\item Coordinator Module - Connects directly to the PC, connects to user interface and controls messages between subsequent end point modules. 
-		\item LP Gas Module - A liquid petroleum gas sensor to detect gas leaks in the home. Can detect a wide range of flammable gasses commonly found a typical home.
-		\item Motion Sensing Module - The motion sensing module will detect movement and trigger a system response to suit. The Motion module is stand alone to allow the as much freedom of placement as possible.
+		\item LP Gas Module - A liquid petroleum gas sensor to detect gas leaks in the home. Can detect a wide range of flammable gasses commonly found a typical home. (Figure \ref{fig:gasCirc} \& \ref{fig:gasUnit})
+		\item Motion Sensing Module - The motion sensing module will detect movement and trigger a system response to suit. The Motion module is stand alone to allow the as much freedom of placement as possible. (Figure \ref{fig:motionUnit})
 		\item Door Camera/Lock Module - This module, when directed to do so, can take an image of the area as well as lock the door automatically. This is the most complicated module in the system and includes a Raspberry Pi to transfer frames over the local area network.
 	\end{itemize}
+	\begin{figure}[h]
+		\centering 
+		\includegraphics[width=0.65\linewidth]{gasCircuit.JPG}
+		\caption{Complete gas Sensing unit circuitry.}
+		\label{fig:gasCirc}
+	\end{figure}
 	\par The completed modules are fully independent and occupy a small footprint, despite being assembled on prototyping board. 
-	\begin{figure}[h!]
+	\begin{figure}[h]
 		\centering
 		\begin{subfigure}[t]{0.45\textwidth}
 			\centering
 			\includegraphics[width=\linewidth]{module_gas.jpg}
 			\caption{Gas Module}
+			\label{fig:gasUnit}
 		\end{subfigure}
 		\begin{subfigure}[t]{0.45\textwidth}
 			\centering
 			\includegraphics[width=\linewidth]{module_motion.jpg}
 			\caption{Motion Module}
+			\label{fig:motionUnit}
 		\end{subfigure}
 		\caption{Internals of Gas (a), and Motion (b) sensing units}
 	\end{figure}

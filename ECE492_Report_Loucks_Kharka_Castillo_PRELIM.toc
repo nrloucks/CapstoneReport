@@ -42,58 +42,60 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {IV.1}Python, Primary Programming Language}{11}{subsection.0.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Explanation of Raspberry Pi Code Functions}{11}{lstnumber.-1.24}% 
+\contentsline {subsubsection}{Setting up Python to Interface with XBee over Serial Port}{11}{subsection.0.4.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Explanation of Raspberry Pi Code Functions}{12}{lstnumber.-2.24}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {IV.2}ZigBee Mesh Protocol}{12}{subsection.0.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {IV.3}Creating the Wireless Network between the Coordinator and Router modules}{12}{subsection.0.4.3}% 
+\contentsline {subsection}{\numberline {IV.3}Creating the Wireless Network between the Coordinator and Router modules}{13}{subsection.0.4.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {IV.4}Controlling the Router XBee with XCTU Remote AT Command}{13}{subsection.0.4.4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {IV.5}XBee Digital In/Out setup \textit {(DIO)}}{14}{subsection.0.4.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {IV.6}Digital I/O Interfacing with Python}{14}{subsection.0.4.6}% 
+\contentsline {subsection}{\numberline {IV.6}Digital I/O Interfacing with Python}{15}{subsection.0.4.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {IV.7}Primary GUI}{15}{subsection.0.4.7}% 
+\contentsline {subsection}{\numberline {IV.7}Primary GUI}{16}{subsection.0.4.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {IV.8}Controlling XBee module using Python}{18}{subsection.0.4.8}% 
+\contentsline {subsection}{\numberline {IV.8}Controlling XBee module using Python}{19}{subsection.0.4.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {IV.9}Gas Sensor Interfacing \& Data Processing}{19}{subsection.0.4.9}% 
+\contentsline {subsection}{\numberline {IV.9}Gas Sensor Interfacing \& Data Processing}{20}{subsection.0.4.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Threshold Detection}{19}{subsection.0.4.9}% 
+\contentsline {subsubsection}{Threshold Detection}{20}{subsection.0.4.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Finding the Average, Mean, and Variance of sampled voltages}{19}{lstnumber.-8.45}% 
+\contentsline {subsubsection}{Finding the Average, Mean, and Variance of sampled voltages}{20}{lstnumber.-9.45}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Calculating True Parts-Per-Million \textit {(PPM)}}{20}{lstnumber.-10.7}% 
+\contentsline {subsubsection}{Calculating True Parts-Per-Million \textit {(PPM)}}{21}{lstnumber.-11.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {V}Physical Construction of End-point Devices}{24}{section.0.5}% 
+\contentsline {section}{\numberline {V}Physical Construction of End-point Devices}{26}{section.0.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {VI}Design Difficulties}{26}{section.0.6}% 
+\contentsline {section}{\numberline {VI}Design Difficulties}{30}{section.0.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Testing Raspberry Pi \& Camera}{26}{section.0.6}% 
+\contentsline {subsubsection}{Testing Raspberry Pi \& Camera}{30}{section.0.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Camera difficulties}{26}{section.0.6}% 
+\contentsline {paragraph}{Camera difficulties}{30}{section.0.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{PyAudio}{26}{figure.caption.31}% 
+\contentsline {subsubsection}{PyAudio}{30}{figure.caption.32}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{PIR Motion Sensor}{26}{figure.caption.31}% 
+\contentsline {subsubsection}{PIR Motion Sensor}{30}{figure.caption.32}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Remote Collaboration / COVID-19 Disruption}{27}{figure.caption.31}% 
+\contentsline {subsubsection}{Remote Collaboration / COVID-19 Disruption}{31}{figure.caption.32}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {VI.1}Performance Results \& Conclusion}{27}{subsection.0.6.1}% 
+\contentsline {subsection}{\numberline {VI.1}Performance Results \& Conclusion}{31}{subsection.0.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Performance Results}{27}{subsection.0.6.1}% 
+\contentsline {subsubsection}{Performance Results}{31}{subsection.0.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Conclusion}{27}{subsection.0.6.1}% 
+\contentsline {subsubsection}{Conclusion}{31}{subsection.0.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {VII}Cost Analysis and Bill of Materials}{28}{section.0.7}% 
+\contentsline {section}{\numberline {VII}Cost Analysis and Bill of Materials}{32}{section.0.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {VIII}Complete Source Code}{30}{section.0.8}% 
+\contentsline {section}{\numberline {VIII}Complete Source Code}{34}{section.0.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {VIII.1}Main GUI Code \& Gas Sensor Code}{30}{subsection.0.8.1}% 
+\contentsline {subsection}{\numberline {VIII.1}Main GUI Code \& Gas Sensor Code}{34}{subsection.0.8.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {VIII.2}RaspberryPi Source Code}{32}{subsection.0.8.2}% 
+\contentsline {subsection}{\numberline {VIII.2}RaspberryPi Source Code}{36}{subsection.0.8.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {VIII.3}Motion Sensor Control \& Data Acquisition}{33}{subsection.0.8.3}% 
+\contentsline {subsection}{\numberline {VIII.3}Motion Sensor Control \& Data Acquisition}{37}{subsection.0.8.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendices}{35}{section*.34}% 
+\contentsline {chapter}{Appendices}{39}{section*.35}% 
