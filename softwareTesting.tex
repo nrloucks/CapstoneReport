@@ -1,4 +1,6 @@
+	\textit{\small Note: full source code is at the end of this document.}
 	\subsection{Python, Primary Programming Language}
+	
 	\par Python is an interpreted, interactive, object-oriented programming language. It incorporates modules, exceptions, dynamic typing, very high-level dynamic data types, and classes. Python combines remarkable power with very clear syntax. It has interfaces to many system calls and libraries, as well as to various window systems, and is extensible in C or C++. It is also usable as an extension language for applications that need a programmable interface. Finally, Python is portable: it runs on many Unix variants, on the Mac, and on Windows 2000 and later.
 	\par We will use Python to control each module via the coordinator XBee module that will be attached to a PC. Its versatility provides the ability to interface lower level controls on the XBee with a high level graphical interface all in one language. 
 	\par A readily available python package allows for easy interfacing with the camera unit. This package provides a pure Python interface to the Raspberry Pi camera module for Python 2.7 (or above) or Python 3.2 (or above). It can configure resolution and give different dimensions to the video or picture files. It can also take photos under varying conditions if given the right parameters for a camera to take a good picture in a variety of different conditions including poor lighting. 
@@ -435,6 +437,12 @@
 			\subsubsection{Calculating True Parts-Per-Million \textit{(PPM)}}
 				\par Parts per million is very useful way of describing small amounts of concentration compared to the larger amount of concentration. In our project we will be using PPM to compare our concentration of any type of gas from our MQ-6 sensor. We are mainly targeting LPG.
 				\par Using documentation provided in the manufacturer data sheet (MDS) for the MQ-6 (Appendix \ref{app:mq6}) the system can be calibrated to read a very accurate PPM of select ambient gasses.
+				\begin{figure}[h]
+					\centering
+					\includegraphics[width=\linewidth]{thdDetect.png}
+					\caption{One of several sets of data, Live python plot}
+					\label{fig:angGraph}
+				\end{figure}
 				\par The ordinate is resistance ratio of the sensor (Rs/Ro)  the abscissa is concentration of gases. Rs means resistance in target gas with different concentration, R0 means resistance of sensor in clean air. All tests are finished under standard test conditions. The x axis is in ppm while y axis is $\frac{R_s}{R_o}$. This ratio can be calculated using Equation \ref{eqn:ratio1}, where m is the slope and b is the y- intercept which can be solved using any two points from the graph in Figure \ref{fig:angGraph}, see Table \ref{tab:ppmEx}. \\
 				\begin{equation}
 				Log_10(\frac{R_s}{R_o}) = m\times Log_10(PPM) + b
@@ -471,7 +479,8 @@
 				\par Our main objective is to find a relation between the output sensor voltage $V_{out}$ and $\frac{R_s}{R_o}$. We start by assuming  that the circuit is made up of series resistance Rs and RL voltage divider of R1 and R2 as seen in Figure \ref{fig:resCirc} giving us equation \ref{eqn:resistance}. 
 				\begin{center}
 					\begin{figure}[h]
-						\includegraphics[width=\linewidth]{resistCirc.JPG}
+						\centering
+						\includegraphics[width=0.5\linewidth]{resistCirc.JPG}
 						\caption{Restive Circuit}
 						\label{fig:resCirc}
 					\end{figure}

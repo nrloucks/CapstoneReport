@@ -48,7 +48,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {IV.4}Controlling the Router XBee with XCTU Remote AT Command}{14}{subsection.0.4.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {IV.5}XBee Digital In/Out setup \textit {(DIO)}}{14}{subsection.0.4.5}% 
+\contentsline {subsection}{\numberline {IV.5}XBee Digital In/Out setup \textit {(DIO)}}{15}{subsection.0.4.5}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {IV.6}Digital I/O Interfacing with Python}{15}{subsection.0.4.6}% 
 \defcounter {refsection}{0}\relax 
@@ -72,26 +72,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Camera difficulties}{27}{section.0.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{PyAudio}{27}{figure.caption.28}% 
+\contentsline {subsubsection}{PyAudio}{27}{figure.caption.29}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{PIR Motion Sensor}{27}{figure.caption.28}% 
+\contentsline {subsubsection}{PIR Motion Sensor}{27}{figure.caption.29}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Remote Collaboration / COVID-19 Disruption}{28}{figure.caption.28}% 
+\contentsline {subsubsection}{Remote Collaboration / COVID-19 Disruption}{28}{figure.caption.29}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {VI.1}Performance Results \& Conclusion}{29}{subsection.0.6.1}% 
+\contentsline {subsection}{\numberline {VI.1}Performance Results \& Conclusion}{28}{subsection.0.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Performance Results}{29}{subsection.0.6.1}% 
+\contentsline {subsubsection}{Performance Results}{28}{subsection.0.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Conclusion}{29}{subsection.0.6.1}% 
+\contentsline {subsubsection}{Conclusion}{28}{subsection.0.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {VII}Cost Analysis and Bill of Materials}{30}{section.0.7}% 
+\contentsline {section}{\numberline {VII}Cost Analysis and Bill of Materials}{29}{section.0.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {VIII}Complete Source Code}{32}{section.0.8}% 
+\contentsline {section}{\numberline {VIII}Complete Source Code}{31}{section.0.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {VIII.1}Main GUI Code \& Gas Sensor Code}{32}{subsection.0.8.1}% 
+\contentsline {subsection}{\numberline {VIII.1}Main GUI Code \& Gas Sensor Code}{31}{subsection.0.8.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {VIII.2}RaspberryPi Source Code}{34}{subsection.0.8.2}% 
+\contentsline {subsection}{\numberline {VIII.2}RaspberryPi Source Code}{33}{subsection.0.8.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {VIII.3}Motion Sensor Control \& Data Acquisition}{35}{subsection.0.8.3}% 
+\contentsline {subsection}{\numberline {VIII.3}Motion Sensor Control \& Data Acquisition}{34}{subsection.0.8.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendices}{37}{section*.31}% 
+\contentsline {chapter}{Appendices}{36}{section*.32}% 
