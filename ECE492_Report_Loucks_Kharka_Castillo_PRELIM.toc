@@ -60,7 +60,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Threshold Detection}{14}{subsection.0.4.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Finding the Average, Mean, and Variance of sampled voltages}{14}{lstnumber.-8.45}% 
+\contentsline {subsubsection}{Finding the Average, Mean, and Variance of sampled voltages}{15}{lstnumber.-8.45}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Calculating True Parts-Per-Million \textit {(PPM)}}{15}{lstnumber.-9.45}% 
 \defcounter {refsection}{0}\relax 
@@ -72,11 +72,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Camera difficulties}{19}{section.0.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{PyAudio}{19}{figure.caption.26}% 
+\contentsline {subsubsection}{PyAudio}{19}{figure.caption.28}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{PIR Motion Sensor}{19}{figure.caption.26}% 
+\contentsline {subsubsection}{PIR Motion Sensor}{19}{figure.caption.28}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Remote Collaboration / COVID-19 Disruption}{19}{figure.caption.26}% 
+\contentsline {subsubsection}{Remote Collaboration / COVID-19 Disruption}{19}{figure.caption.28}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {VI.1}Performance Results \& Conclusion}{20}{subsection.0.6.1}% 
 \defcounter {refsection}{0}\relax 
@@ -94,4 +94,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {VIII.3}Motion Sensor Control \& Data Acquisition}{26}{subsection.0.8.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendices}{28}{section*.29}% 
+\contentsline {chapter}{Appendices}{28}{section*.31}% 

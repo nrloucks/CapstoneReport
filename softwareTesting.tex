@@ -187,7 +187,13 @@
 			
 			window.mainloop()
 			\end{lstlisting}
-		
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.75\linewidth]{gui.png}
+				\caption{Main System GUI}
+				\label{fig:maingui}
+			\end{figure}
+					
 		\par When using a GUI in python the window runs in an infinite loop, constantly updating. This prevents the program from executing anything while the \textit{"mainloop()"} is running. To avoid this issue. The gui will setup the window environment and then enter a recursive function that reads and interpenetrates the digital data being received and updates the window elements accordingly. 
 		\begin{lstlisting}
 			window_banner.pack()
@@ -428,7 +434,7 @@
 			\subsubsection{Calculating True Parts-Per-Million \textit{(PPM)}}
 				\par Parts per million is very useful way of describing small amounts of concentration compared to the larger amount of concentration. In our project we will be using PPM to compare our concentration of any type of gas from our MQ-6 sensor. We are mainly targeting LPG.
 				\par Using documentation provided in the manufacturer data sheet (MDS) for the MQ-6 (Appendix \ref{app:mq6}) the system can be calibrated to read a very accurate PPM of select ambient gasses.
-				\par The ordinate is resistance ratio of the sensor (Rs/Ro)  the abscissa is concentration of gases. Rs means resistance in target gas with different concentration, R0 means resistance of sensor in clean air. All tests are finished under standard test conditions. The x axis is in ppm while y axis is $\frac{R_s}{R_o}$. This ratio can be calculated using Equation \ref{eqn:ratio1}, where m is the slope and b is the y- intercept which can be solved using any two points from the graph, see Table \ref{tab:ppmEx}. \\
+				\par The ordinate is resistance ratio of the sensor (Rs/Ro)  the abscissa is concentration of gases. Rs means resistance in target gas with different concentration, R0 means resistance of sensor in clean air. All tests are finished under standard test conditions. The x axis is in ppm while y axis is $\frac{R_s}{R_o}$. This ratio can be calculated using Equation \ref{eqn:ratio1}, where m is the slope and b is the y- intercept which can be solved using any two points from the graph in Figure \ref{fig:angGraph}, see Table \ref{tab:ppmEx}. \\
 				\begin{equation}
 				Log_10(\frac{R_s}{R_o}) = m\times Log_10(PPM) + b
 				\label{eqn:ratio1}
@@ -453,14 +459,21 @@
 						\[Log(1) = m \times Log(1000) + b  \]
 						\[Log(0.39) = m \times Log(10,000) + b \]
 						\[Solve:  \]
+						\[m=-0.41,b=1.23\]
+						Now we can solve for the PPM: \\
 						\[Log(\frac{R_s}{R_o}) = m \times Log(PPM) + b \]
 						\[\frac{R_s}{R_o} = 10^-0.41\times log(10) \times PPM + 1.23\]
 						\[\frac{R_s}{R_o} = 10^1.23 \times 10^-0.41 \times log(10) \times PPM \]
 						\[\frac{R_s}{R_o} = 16.982 \times PPM^-0.41 \]
 
 				\end{center}
-				\par With this we can calculate the relationship between $\frac{R_s}{R_o}$. We start by assuming  that the circuit is made up of series resistance Rs and RL voltage divider of R1 and R2 giving us equation \ref{eqn:resistance}. 
+				\par Our main objective is to find a relation between the output sensor voltage $V_{out}$ and $\frac{R_s}{R_o}$. We start by assuming  that the circuit is made up of series resistance Rs and RL voltage divider of R1 and R2 as seen in Figure \ref{fig:resCirc} giving us equation \ref{eqn:resistance}. 
 				\begin{center}
+					\begin{figure}[h]
+						\includegraphics[width=\linewidth]{resistCirc.JPG}
+						\caption{Restive Circuit}
+						\label{fig:resCirc}
+					\end{figure}
 					\small
 					\begin{equation}
 					\frac{V_1-V_s}{R_s}+\frac{V_1}{RL}+\frac{V_1-V_out}{R_1}=0
