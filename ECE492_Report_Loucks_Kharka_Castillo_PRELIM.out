@@ -13,7 +13,9 @@
 \BOOKMARK [2][-]{subsection.0.4.2}{Creating the Wireless Network between the Coordinator and Router modules}{section.0.4}% 13
 \BOOKMARK [2][-]{subsection.0.4.3}{Controlling the Router XBee with XCTU Remote AT Command}{section.0.4}% 14
 \BOOKMARK [2][-]{subsection.0.4.4}{XBee Digital In/Out setup \(DIO\)}{section.0.4}% 15
-\BOOKMARK [2][-]{subsection.0.4.5}{Controlling XBee module using Python}{section.0.4}% 16
-\BOOKMARK [2][-]{subsection.0.4.6}{Physical Construction of End-point Devices}{section.0.4}% 17
-\BOOKMARK [1][-]{section.0.5}{Cost Analysis and Bill of Materials}{}% 18
-\BOOKMARK [0][-]{section*.21}{Appendices}{}% 19
+\BOOKMARK [2][-]{subsection.0.4.5}{Digital I/O Interfacing with Python}{section.0.4}% 16
+\BOOKMARK [2][-]{subsection.0.4.6}{Controlling XBee module using Python}{section.0.4}% 17
+\BOOKMARK [1][-]{section.0.5}{Physical Construction of End-point Devices}{}% 18
+\BOOKMARK [1][-]{section.0.6}{Design Difficulties}{}% 19
+\BOOKMARK [1][-]{section.0.7}{Cost Analysis and Bill of Materials}{}% 20
+\BOOKMARK [0][-]{section*.23}{Appendices}{}% 21

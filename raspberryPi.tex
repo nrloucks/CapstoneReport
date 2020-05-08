@@ -10,13 +10,11 @@
 	\includegraphics[width=2in]{picam.jpg}
 	\caption{Pi NOIR Camera unit}
 \end{figure}
-\par The Raspberry Pi Camera v2 is the new official camera board released by the Raspberry Pi Foundation. The Raspberry Pi Camera Module v2 is a high quality 8 megapixel Sony IMX219 imagesensor custom designed add-on board for Raspberry Pi, featuring a fixed focus lens. It's capable of 3280 x 2464 pixel static images, and also supports 1080p30, 720p60 and 640x480p90 video. It attaches to Pi by way of one of the small sockets on the board upper surface and uses the dedicated CSi interface, designed especially for interfacing to cameras.
-\par A readily available python package allows for easy interfacing with the camera unit. This package provides a pure Python interface to the Raspberry Pi camera module for Python 2.7 (or above) or Python 3.2 (or above). It can configure resolution and give different dimensions to the video or picture files. It can also take photos under varying conditions if given the right parameters for a camera to take a good picture in a variety of different conditions including poor lighting. 
-The code for the camera is as follows
-\begin{figure}[h]
-	\includegraphics[width=2.3in]{camcode1.jpg}\\
-	\includegraphics[width=0.4\textwidth]{camcode2.jpg}
-\end{figure}
+\par The Raspberry Pi Camera v2 is the new official camera board released by the Raspberry Pi Foundation. The Raspberry Pi Camera Module v2 is a high quality 8 megapixel Sony IMX219 image-sensor custom designed add-on board for Raspberry Pi, featuring a fixed focus lens. It's capable of 3280 x 2464 pixel static images, and also supports 1080p30, 720p60 and 640x480p90 video. It attaches to Pi by way of one of the small sockets on the board upper surface and uses the dedicated CSi interface, designed especially for interfacing to cameras.
+
+\subsubsection{PyAudio}
+\par To begin the raspberry pi will receive a trigger from the Xbee to activate the camera. The camera would then take several pictures or a video file. The goal was to take a video of whoever approached the front door sensed by the motion sensor. The motion sensor would then communicate in tandem with the Xbee device and send a signal to the other Xbee device on the Raspberry Pi. The Xbee is connected to pin 16 on the Raspberry Pi and that will then start the camera to record the person at the door. Once the camera has captured enough video or pictures, the raspberry pi will then send the files to the main computer for viewing through the GUI. 
+\par Since the camera component does not work, we are replacing with recording audio whenever pin 16 is activated the code to record the audio via the microphone for whenever a person is at the door will be the main process instead. Through the implementation of python code and the triggers from the Xbee the raspberry pi will record audio of whenever motion is detected at the door and then save an audio file of the encounter which will then be automatically transferred over to the main computer over the network via WinSCP and the use of the planned GUI.
 
 
 %%%% REMOVED DETAILED LIST OF RASBERRY PI FEATURES	

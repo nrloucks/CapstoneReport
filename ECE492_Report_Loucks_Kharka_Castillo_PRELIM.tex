@@ -100,168 +100,47 @@
 		
 	\subsection{Abstract}
 		\input{abstract.tex}
+		
 	\subsection{Introduction}
 		\input{intro.tex}
 
-	
-	
 	\subsection{Student Statement}
 		\input{studentStatement.tex}
 
 	\tableofcontents
 	\listoffigures
-
+	\onecolumn
 	\section{Research and Design}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=.9\textwidth]{blkDiag.png}
+		\caption{Basic Functional Diagram of System}
+		\label{fig:blkDiag}
+	\end{figure}
+	\twocolumn
 		\subsection{The XBee S2C Module}
 			\input{xbeeS2C.tex}
 		\subsection{Raspberry Pi}
 			\input{raspberryPi.tex}
-		
 		\subsection{Supplying Power}
 			\input{powerSupply.tex}
 	
 	\subsection{Environment Monitoring Hardware}
 		\input{sensingHardware.tex}
-		% CONTAINS:
-			%\subsection{MQ6 Liquid Petroleum Gas Sensor}
-			%\subsection{Parallax PIR Motion Sensor}
 	
 	\section{Hardware Testing}
 		\input{hardwareTesting.tex}
 
-	
-
 	\section{Software Testing}
-	\subsection{Python, Primary Programming Language}
-	\input{python.tex}
-	\subsection{Creating the Wireless Network between the Coordinator and Router modules}
-	\par We wanted to create a wireless network between the coordinator and router modules this time. Firstly, we started off with soldering our XBee Explorer to connect our router modules on top of them. The reason we chose Xbee Explorer was because it will allow us to solder the input power voltage and the output pins that will be connected to the sensors. We used the application XCTU to help us set up each Xbee as a coordinator or router modules. We first set our coordinator in API mode that will allow us to communicate directly with the sensors via router modules. At the same time, we set the other three router modules to be in a AT or Transparent mode. This will allow sensors to send data directly to the coordinator. We also made sure all the XBee modules used the same Channel and Personal area network (PAN) ID. 
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width = 0.3\textwidth]{xbeeMiniExplorer.png}
-		\caption{Small XBee interface to be used in each module}
-	\end{figure}
-	\subsection{Controlling the Router XBee with XCTU Remote AT Command}
-	\par We decided to test our router XBee remotely by sending some AT Commands. We used the XCTU application to first create the Remote AT Command to turn on and off pin 18 of the router XBee. To see if we receive any output, we put an LED to see if the pin was turned on or not. In the figure below you can see the LED turning on and off via Pin 18 of the XBee device. The pictures help visualize what the pin is doing corresponding to the LED.
-	\begin{figure}[h!]
-		\centering
-		\begin{subfigure}[t]{0.22\textwidth}
-			\centering
-			\includegraphics[width=\textwidth]{xbeeXctu1.png}
-			\caption{Turn On Pin 18}
-		\end{subfigure}
-		\begin{subfigure}[t]{0.22\textwidth}
-			\centering
-			\includegraphics[width=\textwidth]{xbeeXctu1.png}
-			\caption{Turn Off Pin 18}
-		\end{subfigure}
-		\caption{Simple LED activation over 802.15.4}
-	\end{figure}
-	\begin{figure}[h!]
-		\centering
-		\begin{subfigure}[t]{0.45\textwidth}
-			\centering
-			\includegraphics[height=1.5in]{ledRemoteTest.png}
-			\caption{LED on via pin 18}
-		\end{subfigure}
-		\begin{subfigure}[t]{0.45\textwidth}
-			\centering
-			\includegraphics[height=1.5in]{ledRemoteTestOFF.png}
-			\caption{LED off via pin 18}
-		\end{subfigure}
-		\caption{Simple LED activation over 802.15.4 (2)}
-	\end{figure}
-	\subsection{XBee Digital In/Out setup \textit{(DIO)}}
-	\par The XBee devices have the capability to detect a change in a digital input signal. This edge detection allows the remote motion sensing module to transmit its data only if the signal changes. The coordinator will receive two packets, the first being a reading if logic high, the second being a reading of logic low once the sensor has stopped detecting any movement. In this way the unit does not need to send samples at a continuous rate, which saves power.
-	\par To enable the change detection feature on DIO3, we need to set the hexadecimal value in the setting DIO change detect to 0x4. As seen on the right side of Figure \ref{fig:changeDet} this will enable the change detection on bit 2 only, which corresponds to DIO3. 
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=\linewidth]{changeDetect.JPG}
-		\caption{Change detection parameters in XCTU}
-		\label{fig:changeDet}
-	\end{figure}
-	\par When initially attempting to read data from the XBee's DIO pin, the value read would always read high. This reading was verified with a multimeter as well as on the scope. After some trouble shooting it was discovered that the issue lie in the I/O settings of the XBee, which has the ability to pull its digital inputs or outputs high or low based on a bit mask. 
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=\linewidth]{bitMask.JPG}
-		\caption{Bit masking settings for pull-up/pull-down resistors.}
-		\label{fig:bitMask}
-	\end{figure}
-	\par In XCTU the mask had been set to pull all DIO pins high, which was not allowing a low input to be seen. Once re-masked, pulling the DIO pin used for the sensor reading down by default, the values were read correctly.
+		\input{softwareTesting.tex}
 	
-	
-	\subsection{Controlling XBee module using Python}
-	\par Since we now know that remote router XBee can be controlled by the coordinator XBee wirelessly, we decided to use python program for the same task. First, we connected our coordinator Xbee module to the computer and set it to API mode. Then we powered up the router module and now we know that it has been connected in a wireless mesh network. We used the XCTU application to generate the same Remote AT Command frame to control the pin 18 of the router module. Then opened the python program to start writing our program in a new script file. API frame generated to Turn on \& Off pin 18: 
-	\begin{figure}[h!]
-		\centering
-		\begin{subfigure}[t]{0.22\textwidth}
-			\centering
-			\includegraphics[width=\textwidth]{xctuFrames1.png}
-			\caption{Turn On Pin 18}
-		\end{subfigure}
-		\begin{subfigure}[t]{0.22\textwidth}
-			\centering
-			\includegraphics[width=\textwidth]{xctuFrames2.png}
-			\caption{Turn Off Pin 18}
-		\end{subfigure}
-		\caption{API Frames created in XCTU}
-	\end{figure} 
-	\begin{lstlisting}
-	#Configure AD2 and DIO2 to control pin-18
-	
-	import serial
-	import binascii
-	import time
-	
-	ser = serial.Serial(COM3)
-	ser.baudrate = 9600
-	
-	#XCTU API Frame remote AT command used to control pin-18
-	#Power ON
-	turnOn = "7E 00 01 17 01 00 13 A2 00 41 82 D2 22 FF FE 02 44 32 05 01"
-	#Power OFF
-	turnOff = "7E 00 01 17 01 00 13 A2 00 41 82 D2 22 FF FE 02 44 32 04 02"
-	
-	#Use binascii to convert hex instruction to binary
-	messageOn = "".join(turnOn.split()) 
-	on = binascii.unhexlify(messageOn)
-	
-	messageOff = "".join(turnOff.split())
-	off = binascii.unhexlify(messageOff)
-	
-	#Test write commands, flash led at 5 sec intervals
-	count = 0
-	while (count < 10)
-		ser.write(on)
-		time.sleep(5)
-		ser.write(off)
-		count = count + 1
-	\end{lstlisting}
-	
-	\subsection{Physical Construction of End-point Devices}
-	\par The modules themselves will be constructed on 6x8 cm perf-board and will be contained in a housing. Each module will contain all circuitry necessary including power, data acquisition and transmission. 
-	\begin{figure}[h!]
-		\centering
-		\begin{subfigure}[t]{0.45\textwidth}
-			\centering
-			\includegraphics[height=1.5in]{module_gas.jpg}
-			\caption{Gas Module}
-		\end{subfigure}
-		\begin{subfigure}[t]{0.45\textwidth}
-			\centering
-			\includegraphics[height=1.5in]{module_motion.jpg}
-			\caption{Motion Module}
-		\end{subfigure}
-		\caption{Internals of Gas (a), and Motion (b) sensing units}
-	\end{figure}
-	\par The gas sensor module requires two power supplies, one 3.3 volts to power the XBee itself and 5 volts to operate the Tin Dioxide (SnO2) gas sensor. \\
-	\par Our system consists of 4 separate modules:
-	\begin{itemize}
-		\item Coordinator Module - Connects directly to the PC, connects to user interface and controls messages between subsequent end point modules. 
-		\item LP Gas Module - A liquid petroleum gas sensor to detect gas leaks in the home. Can detect a wide range of flammable gasses commonly found a typical home.
-		\item Motion Sensing Module - The motion sensing module will detect movement and trigger a system response to suit. The Motion module is stand alone to allow the as much freedom of placement as possible.
-		\item Door Camera/Lock Module - This module, when directed to do so, can take an image of the area as well as lock the door automatically. This is the most complicated module in the system and includes a Raspberry Pi to transfer frames over the local area network.
-	\end{itemize}
+	\section{Physical Construction of End-point Devices}
+		\input{physicalContrtuction.tex}
+		
+	\section{Design Difficulties}
+		\input{difficulties.tex}
+		
 	%\begin{landscape}
 	\onecolumn
 	\section{Cost Analysis and Bill of Materials}
